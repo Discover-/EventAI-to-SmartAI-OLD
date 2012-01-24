@@ -5163,21 +5163,20 @@ INSERT INTO `creature_text` (`entry`,`groupid`,`id`,`text`,`type`,`language`,`pr
 SET @ENTRY := 28907;
 DELETE FROM `creature_text` WHERE `entry`=@ENTRY;
 INSERT INTO `creature_text` (`entry`,`groupid`,`id`,`text`,`type`,`language`,`probability`,`emote`,`duration`,`sound`,`comment`) VALUES
-(@ENTRY,0,0,"Open your eyes, brothers and sisters! GAZE UPON APOCALYPSE!",14,0,100,1,0,0,"Prince Valanar"),
-(@ENTRY,0,1,"The sky itself feeds upon the suffering of the conquered!",14,0,100,1,0,0,"Prince Valanar"),
-(@ENTRY,0,2,"The Scarlet Crusade is powerless to stop us!",14,0,100,1,0,0,"Prince Valanar"),
-(@ENTRY,1,0,"The corpses of those that try only serve to feed our expanding host!",14,0,100,1,0,0,"Prince Valanar"),
-(@ENTRY,1,1,"The Scarlet fleet lies in ruin upon the sundered coast!",14,0,100,1,0,0,"Prince Valanar"),
-(@ENTRY,1,2,"With each enemy slain, our strength grows! We mustn't relent!",14,0,100,1,0,0,"Prince Valanar"),
-(@ENTRY,2,0,"The Lich King has spoken to each of you! Let his words resonate among you once more!",14,0,100,1,0,0,"Prince Valanar"),
-(@ENTRY,2,1,"ALL. MUST. DIE.",14,0,100,1,0,0,"Prince Valanar"),
-(@ENTRY,2,2,"Leave no survivors in your wake, brothers and sisters!",14,0,100,1,0,0,"Prince Valanar"),
-(@ENTRY,3,0,"No mercy for the weak!",14,0,100,1,0,0,"Prince Valanar"),
-(@ENTRY,3,1,"TERROR!",14,0,100,1,0,0,"Prince Valanar"),
-(@ENTRY,3,2,"CHAOS!",14,0,100,1,0,0,"Prince Valanar"),
-(@ENTRY,4,0,"DESTRUCTION!",14,0,100,1,0,0,"Prince Valanar"),
-(@ENTRY,4,1,"With the approaching darkness comes the end of the Scarlet Crusade. You will battle once more! For the Scourge! For the Lich King!",14,0,100,1,0,0,"Prince Valanar"),
-(@ENTRY,4,2,"SUFFER WELL, DEATH KNIGHTS!",14,0,100,1,0,0,"Prince Valanar");
+(28907,0,0,"The sky itself feeds upon the suffering of the conquered!",12,7,100,5,0,0,"Prince Valanar"),
+(28907,1,0,"The Scarlet Crusade is powerless to stop us!",12,7,100,5,0,0,"Prince Valanar"),
+(28907,2,0,"The corpses of those that try only serve to feed our expanding host!",12,7,100,1,0,0,"Prince Valanar"),
+(28907,3,0,"The Scarlet fleet lies in ruin upon the sundered coast!",12,7,100,25,0,0,"Prince Valanar"),
+(28907,4,0,"With each enemy slain, our strength grows! We mustn''t relent!",12,7,100,5,0,0,"Prince Valanar"),
+(28907,5,0,"The Lich King has spoken to each of you! Let his words resonate among you once more!",12,7,100,25,0,0,"Prince Valanar"),
+(28907,6,0,"ALL. MUST. DIE.",12,7,100,22,0,0,"Prince Valanar"),
+(28907,7,0,"Leave no survivors in your wake, brothers and sisters!",12,7,100,274,0,0,"Prince Valanar"),
+(28907,8,0,"No mercy for the weak!",12,7,100,15,0,0,"Prince Valanar"),
+(28907,9,0,"TERROR!",12,7,100,5,0,0,"Prince Valanar"),
+(28907,10,0,"CHAOS!",12,7,100,22,0,0,"Prince Valanar"),
+(28907,11,0,"DESTRUCTION!",12,7,100,15,0,0,"Prince Valanar"),
+(28907,12,0,"With the approaching darkness comes the end of the Scarlet Crusade. You will battle once more! For the Scourge! For the Lich King!",12,7,100,5,0,0,"Prince Valanar"),
+(28907,13,0,"SUFFER WELL, DEATH KNIGHTS!",12,7,100,71,0,9006,"Prince Valanar");
 
 -- Text for Yara
 SET @ENTRY := 28917;

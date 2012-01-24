@@ -7,7 +7,4 @@ If you want push access, just ask Valcorb on IRC / Github / forums.
 
 
 Thanks to:
-
-- Discovered
-- Valcorb
-- Horn
+Discovered, Valcorb, Horn, ZxBiohazardZx, Malcrom
