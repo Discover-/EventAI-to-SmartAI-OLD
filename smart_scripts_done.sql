@@ -1906,7 +1906,7 @@ DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
 INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
 (@ENTRY,0,0,1,4,0,100,0,0,0,0,0,11,12544,0,0,0,0,0,1,0,0,0,0,0,0,0,"Defias Enchanter - On Aggro - Cast Frost Armor"),
 (@ENTRY,0,1,0,61,0,100,0,0,0,0,0,11,20811,0,0,0,0,0,2,0,0,0,0,0,0,0,"Defias Enchanter - On Aggro - Cast Fireball"),
-(@ENTRY,0,2,0,0,0,100,0,5000,14100,18000,36500,11,3443,0,0,0,0,0,1,0,0,0,0,0,0,0,"Defias Enchanter - In Combat - Cast Enchanted Quickness"),
+(@ENTRY,0,2,0,0,0,100,0,5000,14100,18000,36500,11,3443,0,0,0,0,0,1,0,0,0,0,0,0,0,"Defias Enchanter - In Combat - Cast Enchanted Quickness");
 
 -- Nightbane Tainted One SAI
 SET @ENTRY := 920;
@@ -3600,7 +3600,7 @@ INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type
 (@ENTRY,0,0,0,4,0,50,0,0,0,0,0,11,26364,0,0,0,0,0,1,0,0,0,0,0,0,0,"Frostmane Seer - On Aggro - Cast Lightning Shield"),
 (@ENTRY,0,1,0,4,0,15,0,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,"Frostmane Seer - On Aggro - Say Line 0 (random)"),
 (@ENTRY,0,2,0,0,0,100,0,4000,5000,4000,5000,11,9532,0,0,0,0,0,2,0,0,0,0,0,0,0,"Frostmane Seer - In Combat - Cast Lightning Bolt"),
-(@ENTRY,0,3,0,2,0,100,1,0,15,0,0,25,1,0,0,0,0,0,1,0,0,0,0,0,0,0,"Frostmane Seer - At 15% HP - Flee"),
+(@ENTRY,0,3,0,2,0,100,1,0,15,0,0,25,1,0,0,0,0,0,1,0,0,0,0,0,0,0,"Frostmane Seer - At 15% HP - Flee");
 
 -- Boss Galgosh SAI
 SET @ENTRY := 1398;
@@ -3622,7 +3622,7 @@ INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type
 (@ENTRY,0,0,0,4,0,100,0,0,0,0,0,1,0,0,0,0,0,0,2,0,0,0,0,0,0,0,"Magosh - On Aggro - Say Line 0 (random)"),
 (@ENTRY,0,1,0,0,0,100,0,4000,5000,4000,5000,11,9532,0,0,0,0,0,2,0,0,0,0,0,0,0,"Magosh - In Combat - Cast Lightning Bolt"),
 (@ENTRY,0,2,0,14,0,100,0,40,26700,26700,0,11,913,0,0,0,0,0,7,0,0,0,0,0,0,0,"Magosh - At 235 HP Damage - Cast Healing Wave on Friendlies"),
-(@ENTRY,0,3,0,0,0,100,0,1000,3200,20300,35000,11,2606,0,0,0,0,0,2,0,0,0,0,0,0,0,"Magosh - In Combat - Cast Shock"),
+(@ENTRY,0,3,0,0,0,100,0,1000,3200,20300,35000,11,2606,0,0,0,0,0,2,0,0,0,0,0,0,0,"Magosh - In Combat - Cast Shock");
 
 -- Topper McNabb SAI
 SET @ENTRY := 1402;
@@ -4901,7 +4901,7 @@ DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
 INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
 (@ENTRY,0,0,0,4,0,5,0,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,"Boulderfist Enforcer - On Aggro - Say Line 0 (random)"),
 (@ENTRY,0,1,0,0,0,100,0,4800,13100,30500,40900,11,13730,0,0,0,0,0,1,0,0,0,0,0,0,0,"Boulderfist Enforcer - In Combat - Cast Demoralizing Shout"),
-(@ENTRY,0,1,0,2,0,100,1,0,30,0,0,11,4955,0,0,0,0,0,1,0,0,0,0,0,0,0,"Boulderfist Enforcer - At 30% HP - Cast Fist of Stone");
+(@ENTRY,0,2,0,2,0,100,1,0,30,0,0,11,4955,0,0,0,0,0,1,0,0,0,0,0,0,0,"Boulderfist Enforcer - At 30% HP - Cast Fist of Stone");
 
 -- Giant Plains Creeper SAI
 SET @ENTRY := 2565;
@@ -4920,7 +4920,7 @@ DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
 INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
 (@ENTRY,0,0,0,4,0,5,0,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,"Boulderfist Brute - On Aggro - Say Line 0 (random)"),
 (@ENTRY,0,1,0,0,0,100,0,5000,11500,12000,17500,11,11428,0,0,0,0,0,2,0,0,0,0,0,0,0,"Boulderfist Brute - In Combat - Cast Knockdown"),
-(@ENTRY,0,1,0,2,0,100,1,0,30,0,0,11,4955,0,0,0,0,0,1,0,0,0,0,0,0,0,"Boulderfist Brute - At 30% HP - Cast Fist of Stone");
+(@ENTRY,0,2,0,2,0,100,1,0,30,0,0,11,4955,0,0,0,0,0,1,0,0,0,0,0,0,0,"Boulderfist Brute - At 30% HP - Cast Fist of Stone");
 
 -- Boulderfist Mauler SAI
 SET @ENTRY := 2569;
@@ -8564,7 +8564,7 @@ UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
 DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
 DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
 INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
-(@ENTRY,0,0,0,8,0,100,0,23359,-1,0,0,36,14640,0,0,0,0,0,1,0,0,0,0,0,0,0,"Cliff Giant - On Spellhit - Update Entry To Zapped Cliff Giant");
+(@ENTRY,0,0,0,8,0,100,0,23359,0,0,0,36,14640,0,0,0,0,0,1,0,0,0,0,0,0,0,"Cliff Giant - On Spellhit - Update Entry To Zapped Cliff Giant");
 
 -- Shore Strider SAI
 SET @ENTRY := 5359;
@@ -8572,7 +8572,7 @@ UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
 DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
 DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
 INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
-(@ENTRY,0,0,0,8,0,100,0,23359,-1,0,0,36,14603,0,0,0,0,0,1,0,0,0,0,0,0,0,"Shore Strider - On Spellhit - Update Entry To Zapped Shore Strider");
+(@ENTRY,0,0,0,8,0,100,0,23359,0,0,0,36,14603,0,0,0,0,0,1,0,0,0,0,0,0,0,"Shore Strider - On Spellhit - Update Entry To Zapped Shore Strider");
 
 -- Deep Strider SAI
 SET @ENTRY := 5360;
@@ -8580,7 +8580,7 @@ UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
 DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
 DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
 INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
-(@ENTRY,0,0,0,8,0,100,0,23359,-1,0,0,36,14639,0,0,0,0,0,1,0,0,0,0,0,0,0,"Deep Strider - On Spellhit - Update Entry To Zapped Deep Strider");
+(@ENTRY,0,0,0,8,0,100,0,23359,0,0,0,36,14639,0,0,0,0,0,1,0,0,0,0,0,0,0,"Deep Strider - On Spellhit - Update Entry To Zapped Deep Strider");
 
 -- Wave Strider SAI
 SET @ENTRY := 5361;
@@ -8588,7 +8588,7 @@ UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
 DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
 DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
 INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
-(@ENTRY,0,0,0,8,0,100,0,23359,-1,0,0,36,14638,0,0,0,0,0,1,0,0,0,0,0,0,0,"Wave Strider - On Spellhit - Update Entry To Zapped Wave Strider");
+(@ENTRY,0,0,0,8,0,100,0,23359,0,0,0,36,14638,0,0,0,0,0,1,0,0,0,0,0,0,0,"Wave Strider - On Spellhit - Update Entry To Zapped Wave Strider");
 
 -- Glasshide Basilisk SAI
 SET @ENTRY := 5419;
