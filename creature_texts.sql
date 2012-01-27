@@ -1735,11 +1735,21 @@ INSERT INTO `creature_text` (`entry`,`groupid`,`id`,`text`,`type`,`language`,`pr
 SET @ENTRY := 3644;
 DELETE FROM `creature_text` WHERE `entry`=@ENTRY;
 INSERT INTO `creature_text` (`entry`,`groupid`,`id`,`text`,`type`,`language`,`probability`,`emote`,`duration`,`sound`,`comment`) VALUES
-(@ENTRY,0,0,"Anaya...? Do my eyes deceive me? Is it really you?",12,0,100,0,0,0,"Cerellean Whiteclaw"),
-(@ENTRY,1,0,"That fates should be so cruel as to permit us only this after a thousand years apart...",12,0,100,0,0,0,"Cerellean Whiteclaw"),
-(@ENTRY,2,0,"Do you hate me, my love? That I was forced to destroy your living form, that your spirit be released from unhappy bondage.",12,0,100,0,0,0,"Cerellean Whiteclaw"),
-(@ENTRY,3,0,"No! Anaya... Anaya! Don't leave me! Please...",12,0,100,0,0,0,"Cerellean Whiteclaw"),
-(@ENTRY,4,0,"How, my love? How will I find the strength to face the ages of the world without you by my side...",12,0,100,0,0,0,"Cerellean Whiteclaw");
+(@ENTRY,0,0,"Anaya...? Do my eyes deceive me? Is it really you?",12,0,100,1,0,0,"Cerellean Whiteclaw"),
+(@ENTRY,1,0,"That fates should be so cruel as to permit us only this after a thousand years apart...",12,0,100,1,0,0,"Cerellean Whiteclaw"),
+(@ENTRY,2,0,"Do you hate me, my love? That I was forced to destroy your living form, that your spirit be released from unhappy bondage.",12,0,100,1,0,0,"Cerellean Whiteclaw"),
+(@ENTRY,3,0,"No! Anaya... Anaya! Don't leave me! Please...",12,0,100,5,0,0,"Cerellean Whiteclaw"),
+(@ENTRY,4,0,"How, my love? How will I find the strength to face the ages of the world without you by my side...",12,0,100,5,0,0,"Cerellean Whiteclaw");
+
+-- Text for Anaya
+SET @ENTRY := 3843;
+DELETE FROM `creature_text` WHERE `entry`=@ENTRY;
+INSERT INTO `creature_text` (`entry`,`groupid`,`id`,`text`,`type`,`language`,`probability`,`emote`,`duration`,`sound`,`comment`) VALUES
+(@ENTRY,0,0,"The ages have been cruel to you and I, my love, but be assured, it is, and at long last we are reunited.",12,0,100,1,0,0,"Anaya"),
+(@ENTRY,1,0,"Let it not trouble your heart, beloved. You have freed me from slavery, and for that I love you all the more.",12,0,100,1,0,0,"Anaya"),
+(@ENTRY,2,0,"Sadly, even this must be cut short... The ties that bind me to this world weaken, and pull me away...",12,0,100,1,0,0,"Anaya"),
+(@ENTRY,3,0,"Farewell, Cerellean, until we are joined once again...",12,0,100,1,0,0,"Anaya"),
+(@ENTRY,4,0,"Anaya's soft voice trails away into the mists, know that I love you always...",16,0,100,0,0,0,"Anaya");
 
 -- Text for Anaya Dawnrunner
 SET @ENTRY := 3667;
@@ -1794,16 +1804,6 @@ SET @ENTRY := 3841;
 DELETE FROM `creature_text` WHERE `entry`=@ENTRY;
 INSERT INTO `creature_text` (`entry`,`groupid`,`id`,`text`,`type`,`language`,`probability`,`emote`,`duration`,`sound`,`comment`) VALUES
 (@ENTRY,0,0,"Guards!",14,7,100,0,0,0,"Caylais Moonfeather");
-
--- Text for Anaya
-SET @ENTRY := 3843;
-DELETE FROM `creature_text` WHERE `entry`=@ENTRY;
-INSERT INTO `creature_text` (`entry`,`groupid`,`id`,`text`,`type`,`language`,`probability`,`emote`,`duration`,`sound`,`comment`) VALUES
-(@ENTRY,0,0,"The ages have been cruel to you and I, my love, but be assured, it is, and at long last we are reunited.",12,0,100,0,0,0,"Anaya"),
-(@ENTRY,1,0,"Let it not trouble your heart, beloved. You have freed me from slavery, and for that I love you all the more.",12,0,100,0,0,0,"Anaya"),
-(@ENTRY,2,0,"Sadly, even this must be cut short... The ties that bind me to this world weaken, and pull me away...",12,0,100,0,0,0,"Anaya"),
-(@ENTRY,3,0,"Farewell, Cerellean, until we are joined once again...",12,0,100,0,0,0,"Anaya"),
-(@ENTRY,4,0,"Anaya's soft voice trails away into the mists, know that I love you always...",16,0,100,0,0,0,"Anaya");
 
 -- Text for Thistlefur Avenger
 SET @ENTRY := 3925;

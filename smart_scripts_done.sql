@@ -11091,15 +11091,34 @@ DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
 DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
 
 -- Ram SAI
+-- It's a critter so handled in PassiveAI.cpp
 SET @ENTRY := 2098;
-UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+UPDATE `creature_template` SET `AIName`='' WHERE `entry`=@ENTRY;
 DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
 DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY;
+
+-- Cerellean Whiteclaw SAI
+SET @ENTRY := 3644;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=3843;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY*100 AND `source_type`=9;
 INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
-(@ENTRY,0,0,0,2,0,100,1,0,99,0,0,25,1,0,0,0,0,0,1,0,0,0,0,0,0,0,"Ram - On Aggro - Flee");
-
-
-
-
-
-
+(@ENTRY,0,0,0,20,0,100,0,963,0,0,0,80,@ENTRY*100,0,0,0,0,0,1,0,0,0,0,0,0,0,"Cerellean Whiteclaw - On quest reward - run script"),
+(@ENTRY*100,9,0,0,0,0,100,0,0,0,0,0,83,2,0,0,0,0,0,1,0,0,0,0,0,0,0,'Cerellean Whiteclaw - Script - remove quest giver flag'),
+(@ENTRY*100,9,1,0,0,0,100,0,0,0,0,0,12,3843,1,45500,0,0,0,8,0,0,0,6427.401,603.5203,9.462057,4.0631,'Cerellean Whiteclaw - Script - Spawn Anaya'),
+(@ENTRY*100,9,2,0,0,0,100,0,1000,1000,1000,1000,91,8,0,0,0,0,0,1,0,0,0,0,0,0,0,'Cerellean Whiteclaw - Script - stand'),
+(@ENTRY*100,9,3,0,0,0,100,0,1000,1000,1000,1000,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,'Cerellean Whiteclaw - Script - Say 0'),
+(@ENTRY*100,9,4,0,0,0,100,0,5000,5000,5000,5000,1,0,0,0,0,0,0,11,3843,10,0,0,0,0,0,'Cerellean Whiteclaw - Script - Anaya Say 0'),
+(@ENTRY*100,9,5,0,0,0,100,0,7000,7000,7000,7000,1,1,0,0,0,0,0,1,0,0,0,0,0,0,0,'Cerellean Whiteclaw - Script - Say 1'),
+(@ENTRY*100,9,6,0,0,0,100,0,4000,4000,4000,4000,1,2,0,0,0,0,0,1,0,0,0,0,0,0,0,'Cerellean Whiteclaw - Script - Say 2'),
+(@ENTRY*100,9,7,0,0,0,100,0,7000,7000,7000,7000,1,1,0,0,0,0,0,11,3843,10,0,0,0,0,0,'Cerellean Whiteclaw - Script - Anaya Say 1'),
+(@ENTRY*100,9,8,0,0,0,100,0,7000,7000,7000,7000,1,2,0,0,0,0,0,11,3843,10,0,0,0,0,0,'Cerellean Whiteclaw - Script - Anaya Say 2'),
+(@ENTRY*100,9,9,0,0,0,100,0,5000,5000,5000,5000,1,3,0,0,0,0,0,1,0,0,0,0,0,0,0,'Cerellean Whiteclaw - Script - Say 3'),
+(@ENTRY*100,9,10,0,0,0,100,0,6000,6000,6000,6000,1,3,0,0,0,0,0,11,3843,10,0,0,0,0,0,'Cerellean Whiteclaw - Script - Anaya Say 3'),
+(@ENTRY*100,9,11,0,0,0,100,0,2000,2000,2000,2000,1,4,0,0,0,0,0,11,3843,10,0,0,0,0,0,'Cerellean Whiteclaw - Script - Anaya Say 4'),
+(@ENTRY*100,9,12,0,0,0,100,0,1000,1000,1000,1000,1,4,0,0,0,0,0,1,0,0,0,0,0,0,0,'Cerellean Whiteclaw - Script - Say 4'),
+(@ENTRY*100,9,13,0,0,0,100,0,4000,4000,4000,4000,5,18,0,0,0,0,0,1,0,0,0,0,0,0,0,'Cerellean Whiteclaw - Script - emote cry'),
+(@ENTRY*100,9,14,0,0,0,100,0,4000,4000,4000,4000,90,8,0,0,0,0,0,1,0,0,0,0,0,0,0,'Cerellean Whiteclaw - Script - kneel'),
+(@ENTRY*100,9,15,0,0,0,100,0,2000,2000,2000,2000,82,2,0,0,0,0,0,1,0,0,0,0,0,0,0,'Cerellean Whiteclaw - Script - add quest giver flag');
