@@ -11299,3 +11299,3188 @@ DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
 DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
 INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
 (@ENTRY,0,0,0,0,0,100,0,10200,13600,10000,12000,11,15499,0,0,0,0,0,2,0,0,0,0,0,0,0,"General Cerulean - In Combat - Cast Frost Shock");
+
+-- Mossy Rampager SAI
+SET @ENTRY := 28323;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,0,4000,8000,18000,18000,11,54475,0,0,0,0,0,1,0,0,0,0,0,0,0,"Mossy Rampager - In Combat - Cast Rampage");
+
+-- Ravenous Mangal Crocolisk SAI
+SET @ENTRY := 28325;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,0,5000,9000,9000,14000,11,34370,0,0,0,0,0,2,0,0,0,0,0,0,0,"Ravenous Mangal Crocolisk - In Combat - Cast Jagged Tooth Snap");
+
+-- Stratholme Citizen SAI
+SET @ENTRY := 28340;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,9,0,100,0,0,5,9000,13000,11,52633,0,0,0,0,0,2,0,0,0,0,0,0,0,"Stratholme Citizen - Cast Void Strike"),
+(@ENTRY,0,1,0,0,0,100,0,9000,15000,12000,18000,11,52636,0,0,0,0,0,1,0,0,0,0,0,0,0,"Stratholme Citizen - In Combat - Cast Time Shift"),
+(@ENTRY,0,2,0,0,0,100,2,16000,21000,21000,29000,11,52634,0,0,0,0,0,1,0,0,0,0,0,0,0,"Stratholme Citizen (Normal) - In Combat - Cast Void Shield"),
+(@ENTRY,0,3,0,0,0,100,4,16000,21000,21000,29000,11,58813,0,0,0,0,0,1,0,0,0,0,0,0,0,"Stratholme Citizen (Heroic) - In Combat - Cast Void Shield"),
+(@ENTRY,0,4,0,8,0,100,2,0,127,0,0,11,52635,0,0,0,0,0,1,0,0,0,0,0,0,0,"Stratholme Citizen (Normal) - On Spellhit - Cast Accelerate"),
+(@ENTRY,0,5,0,8,0,100,4,0,127,0,0,11,58820,0,0,0,0,0,1,0,0,0,0,0,0,0,"Stratholme Citizen (Heroic) - On Spellhit - Cast Accelerate");
+
+-- Stratholme Resident SAI
+SET @ENTRY := 28341;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,2,5000,9000,12000,17000,11,52660,0,0,0,0,0,2,0,0,0,0,0,0,0,"Stratholme Resident (Normal) - In Combat - Cast Arcane Wave"),
+(@ENTRY,0,1,0,0,0,100,4,5000,9000,12000,17000,11,58817,0,0,0,0,0,2,0,0,0,0,0,0,0,"Stratholme Resident (Heroic) - In Combat - Cast Arcane Wave"),
+(@ENTRY,0,2,0,0,0,100,2,9000,12000,15000,21000,11,52657,0,0,0,0,0,5,0,0,0,0,0,0,0,"Stratholme Resident (Normal) - In Combat - Cast Temporal Vortex"),
+(@ENTRY,0,3,0,0,0,100,4,9000,12000,15000,21000,11,58816,0,0,0,0,0,5,0,0,0,0,0,0,0,"Stratholme Resident (Heroic) - In Combat - Cast Temporal Vortex");
+
+-- Miles Sidney SAI
+SET @ENTRY := 28347;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,1,0,100,0,5000,5000,60000,60000,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,"Miles Sidney - Out of Combat - Say Line 0 (random)");
+
+-- Wright Williams SAI
+SET @ENTRY := 28355;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,1,0,100,0,0,0,60000,60000,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,"Wright Williams - Out of Combat - Say Line 0 (random)");
+
+-- Venomtip SAI
+SET @ENTRY := 28358;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,0,7000,9000,17000,20000,11,61550,0,0,0,0,0,2,0,0,0,0,0,0,0,"Venomtip - In Combat - Cast Cobra Strike"),
+(@ENTRY,0,1,0,9,0,100,0,0,30,7000,12000,11,32330,0,0,0,0,0,5,0,0,0,0,0,0,0,"Venomtip - On Range - Cast Poison Spit");
+
+-- Sparkling Hare SAI
+SET @ENTRY := 28371;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,6,0,100,0,0,0,0,0,11,51442,0,0,0,0,0,7,0,0,0,0,0,0,0,"Sparkling Hare - On Death - Cast Blessing of the Sparkling Hare");
+
+-- Cultist Infiltrator SAI
+SET @ENTRY := 28373;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,0,3000,6000,22000,30000,11,54962,0,0,0,0,0,2,0,0,0,0,0,0,0,"Cultist Infiltrator - In Combat - Cast Ticking Bomb");
+
+-- Primordial Drake SAI
+SET @ENTRY := 28378;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,11,0,100,1,0,0,0,0,11,52791,0,0,0,0,0,1,0,0,0,0,0,0,0,"Primordial Drake - Out of Combat - Cast Birthing Flame"),
+(@ENTRY,0,1,0,0,0,100,0,3000,6000,9000,12000,11,55071,0,0,0,0,0,2,0,0,0,0,0,0,0,"Primordial Drake - In Combat - Cast Flame Spit");
+
+-- Shattertusk Bull SAI
+SET @ENTRY := 28380;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,0,2000,5000,5000,8000,11,51944,0,0,0,0,0,2,0,0,0,0,0,0,0,"Shattertusk Bull - In Combat - Trample"),
+(@ENTRY,0,1,0,0,0,100,0,7000,10000,13000,16000,11,55196,0,0,0,0,0,2,0,0,0,0,0,0,0,"Shattertusk Bull - In Combat - Stomp");
+
+-- Zim'Torga Defender SAI
+SET @ENTRY := 28387;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,0,5000,10000,10000,20000,11,54673,0,0,0,0,0,2,0,0,0,0,0,0,0,"Zim'Torga Defender - In Combat - Cast Ice Boulder");
+
+-- Cursed Offspring of Har'koa SAI
+SET @ENTRY := 28404;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,0,8000,12000,8000,12000,11,54604,0,0,0,0,0,2,0,0,0,0,0,0,0,"Cursed Offspring of Har'koa - In Combat - Cast Curse of Blood"),
+(@ENTRY,0,1,2,8,0,100,0,51895,0,0,0,11,51891,0,0,0,0,0,1,0,0,0,0,0,0,0,"Cursed Offspring of Har'koa - On Spellhit - Cast But First My Offspring: Summon Released Offspring of Har'koa (Quest: 12632)"),
+(@ENTRY,0,2,3,61,0,100,0,51895,0,0,0,33,28526,0,0,0,0,0,7,0,0,0,0,0,0,0,"Cursed Offspring of Har'koa - On Spellhit - Give quest credit (Quest: 12632)"),
+(@ENTRY,0,3,0,61,0,100,0,51895,0,0,0,41,1000,0,0,0,0,0,1,0,0,0,0,0,0,0,"Cursed Offspring of Har'koa - On Spellhit - Despawn (Quest: 12632)");
+
+-- Primordial Drake Egg SAI
+SET @ENTRY := 28408;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,6,0,100,0,0,0,0,0,11,51595,0,0,0,0,0,1,0,0,0,0,0,0,0,"Primordial Drake Egg - On Death - Summon Primordial Hatchling");
+
+-- Captive Footman SAI
+SET @ENTRY := 28415;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,1,0,100,1,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,"Captive Footman - Out of Combat - Say Line 0 (random) on Spawn");
+
+-- Drakkari Bear Trapper SAI
+SET @ENTRY := 28418;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,4,0,100,0,0,0,0,0,11,61227,0,0,0,0,0,2,0,0,0,0,0,0,0,"Drakkari Bear Trapper - On Aggro - Cast Jump Attack"),
+(@ENTRY,0,1,0,0,0,100,0,4000,8000,10000,14000,11,38556,0,0,0,0,0,2,0,0,0,0,0,0,0,"Drakkari Bear Trapper - In Combat - Cast Throw"),
+(@ENTRY,0,2,0,0,0,100,0,4000,10000,20000,22000,11,53432,0,0,0,0,0,1,0,0,0,0,0,0,0,"Drakkari Bear Trapper - In Combat - Cast Bear Trap");
+
+-- Frenzied Geist SAI
+SET @ENTRY := 28419;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,4,0,100,0,0,0,0,0,11,40414,0,0,0,0,0,2,0,0,0,0,0,0,0,"Frenzied Geist - On Aggro - Cast Fixed");
+
+-- Thalgran Blightbringer SAI
+SET @ENTRY := 28443;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,11,0,100,0,0,0,0,0,11,26047,0,0,0,0,0,1,0,0,0,0,0,0,0,"Thalgran Blightbringer - On Respawn - Cast Birth"),
+(@ENTRY,0,1,0,0,0,100,0,13000,19000,15000,25000,11,51854,0,0,0,0,0,5,0,0,0,0,0,0,0,"Thalgran Blightbringer - In Combat - Cast Deathbolt"),
+(@ENTRY,0,2,0,0,0,100,0,4000,7000,9000,17000,11,54210,0,0,0,0,0,5,0,0,0,0,0,0,0,"Thalgran Blightbringer - In Combat - Rain of Fire");
+
+-- Highlord Darion Mograine SAI
+SET @ENTRY := 28444;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,1,0,100,0,60000,90000,60000,90000,4,12893,0,0,0,0,0,1,0,0,0,0,0,0,0,"Highlord Darion Mograine - Out of Combat - Play Sound");
+
+-- Elemental Rift SAI
+SET @ENTRY := 28452;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,1,25,0,100,0,0,0,0,0,20,0,0,0,0,0,0,1,0,0,0,0,0,0,0,"Elemental Rift - On Spawn - Disable Attack"),
+(@ENTRY,0,1,0,61,0,100,0,0,0,0,0,21,0,0,0,0,0,0,1,0,0,0,0,0,0,0,"Elemental Rift - On Spawn - Disable Movement"),
+(@ENTRY,0,2,0,0,0,100,0,1000,1000,0,0,11,12058,0,0,0,0,0,2,0,0,0,0,0,0,0,"Elemental Rift - In Combat - Cast Chain Lightning"),
+(@ENTRY,0,3,0,0,0,100,0,5000,5000,0,0,11,9672,0,0,0,0,0,2,0,0,0,0,0,0,0,"Elemental Rift - In Combat - Cast Frostbolt"),
+(@ENTRY,0,4,0,0,0,100,0,10000,10000,0,0,11,51648,0,0,0,0,0,1,0,0,0,0,0,0,0,"Elemental Rift - In Combat - Summon Frozen Earth"),
+(@ENTRY,0,5,0,0,0,100,0,40000,40000,0,0,11,51648,0,0,0,0,0,1,0,0,0,0,0,0,0,"Elemental Rift - In Combat - Summon Frozen Earth"),
+(@ENTRY,0,6,0,0,0,100,0,70000,70000,0,0,11,51648,0,0,0,0,0,1,0,0,0,0,0,0,0,"Elemental Rift - In Combat - Summon Frozen Earth");
+
+-- Heb'Drakkar Striker SAI
+SET @ENTRY := 28465;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,4,0,100,0,0,0,0,0,43,0,0,0,0,0,0,1,0,0,0,0,0,0,0,"Heb'Drakkar Striker - On Aggro - Dismount"),
+(@ENTRY,0,1,0,7,0,100,0,0,0,0,0,43,0,9074,0,0,0,0,1,0,0,0,0,0,0,0,"Heb'Drakkar Striker - On Evade - Mount Up"),
+(@ENTRY,0,2,0,0,0,100,0,5000,5000,16000,16000,11,11976,0,0,0,0,0,2,0,0,0,0,0,0,0,"Heb'Drakkar Striker - In Combat - Cast Strike"),
+(@ENTRY,0,3,0,0,0,100,0,4000,14000,50000,60000,11,51951,0,0,0,0,0,2,0,0,0,0,0,0,0,"Heb'Drakkar Striker - In Combat - Cast Rabies");
+
+-- Broodmother Slivina SAI
+SET @ENTRY := 28467;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,0,3000,6000,5000,7000,11,51772,0,0,0,0,0,2,0,0,0,0,0,0,0,"Broodmother Slivina - In Combat - Cast Claw"),
+(@ENTRY,0,1,0,0,0,100,0,9000,12000,12000,17000,11,51768,0,0,0,0,0,2,0,0,0,0,0,0,0,"Broodmother Slivina - In Combat - Cast Flame Breath");
+
+-- Runeforge (SE) SAI
+SET @ENTRY := 28481;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,8,0,100,0,51769,1,0,0,11,51738,0,0,0,0,0,1,0,0,0,0,0,0,0,"Runeforge (SE) - On Spellhit - Cast Shadow Storm");
+
+-- Squire Edwards SAI
+SET @ENTRY := 28486;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,1,0,100,0,30000,30000,180000,180000,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,"Squire Edwards - Out of Combat - Say Line 0"),
+(@ENTRY,0,1,0,1,0,100,0,42000,42000,180000,180000,1,1,0,0,0,0,0,1,0,0,0,0,0,0,0,"Squire Edwards - Out of Combat - Say Line 1");
+
+-- Val'kyr Battle-maiden SAI
+SET @ENTRY := 28487;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,54,0,100,0,0,0,0,0,1,0,0,0,0,0,0,7,0,0,0,0,0,0,0,"Val'kyr Battle-maiden - Just Summoned - Say Line 0");
+
+-- Kutube'sa SAI
+SET @ENTRY := 28494;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,9,0,100,0,8,25,45000,45000,11,57793,0,0,0,0,0,2,0,0,0,0,0,0,0,"Kutube'sa - Range 5 to 25 - Cast Heroic Leap"),
+(@ENTRY,0,1,0,0,0,100,0,3000,6000,17000,21000,11,35144,0,0,0,0,0,2,0,0,0,0,0,0,0,"Kutube'sa - In Combat - Cast Vicious Rend"),
+(@ENTRY,0,2,0,9,0,100,0,0,8,7000,9000,11,49807,0,0,0,0,0,1,0,0,0,0,0,0,0,"Kutube'sa - Range below 8 - Cast Whirlwind"),
+(@ENTRY,0,3,0,6,0,100,0,0,0,0,0,11,51815,0,0,0,0,0,1,0,0,0,0,0,0,0,"Kutube'sa - On Death Summon the Treasure of Kutube'sa");
+
+-- Chulo the Mad SAI
+SET @ENTRY := 28496;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,0,3000,13000,10000,15000,11,51876,0,0,0,0,0,2,0,0,0,0,0,0,0,"Chulo the Mad - In Combat - Cast Stormstrike"),
+(@ENTRY,0,1,0,0,0,100,0,2000,6000,10000,15000,11,50188,0,0,0,0,0,2,0,0,0,0,0,0,0,"Chulo the Mad - In Combat - Cast Wildly Flailing"),
+(@ENTRY,0,2,0,6,0,100,0,0,0,0,0,11,51813,0,0,0,0,0,1,0,0,0,0,0,0,0,"Chulo the Mad - On Death - Summon the Treasure of Chulo the Mad");
+
+-- Jin'Alai Medicine Man SAI
+SET @ENTRY := 28504;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,0,5000,15000,10000,20000,11,54626,0,0,0,0,0,2,0,0,0,0,0,0,0,"Jin'Alai Medicine Man - In Combat - Cast Vial of Poison"),
+(@ENTRY,0,1,0,2,0,100,1,0,25,0,0,11,54633,0,0,0,0,0,1,0,0,0,0,0,0,0,"Jin'Alai Medicine Man - Health below 25% - Drink Healing Potion");
+
+-- Cultist Saboteur SAI
+SET @ENTRY := 28538;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,0,5000,9000,10000,15000,11,40062,0,0,0,0,0,5,0,0,0,0,0,0,0,"Cultist Saboteur - In Combat - Cast Throw Dynamite");
+
+-- Rhunok's Tormentor SAI
+SET @ENTRY := 28575;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,4,0,100,0,0,0,0,0,1,0,0,0,0,0,0,2,0,0,0,0,0,0,0,"Rhunok's Tormentor - On Aggro - Say Line 0"),
+(@ENTRY,0,1,0,0,0,100,0,3000,8000,10000,20000,11,38556,0,0,0,0,0,2,0,0,0,0,0,0,0,"Rhunok's Tormentor - In Combat - Cast Throw"),
+(@ENTRY,0,2,0,0,0,100,0,5000,30000,30000,35000,11,54526,0,0,0,0,0,2,0,0,0,0,0,0,0,"Rhunok's Tormentor - In Combat - Cast Torment");
+
+-- Hardened Steel Reaver SAI
+SET @ENTRY := 28578;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,0,4000,7000,6000,10000,11,42724,0,0,0,0,0,2,0,0,0,0,0,0,0,"Hardened Steel Reaver - In Combat - Cast Cleave"),
+(@ENTRY,0,1,0,0,0,100,2,9000,18000,12000,24000,11,15655,0,0,0,0,0,2,0,0,0,0,0,0,0,"Hardened Steel Reaver (Normal) - In Combat - Cast Shield Slam"),
+(@ENTRY,0,2,0,0,0,100,4,9000,18000,12000,24000,11,59142,0,0,0,0,0,2,0,0,0,0,0,0,0,"Hardened Steel Reaver (Heroic) - In Combat - Cast Shield Slam");
+
+-- Hardened Steel Berserker SAI
+SET @ENTRY := 28579;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,2,4000,9000,14000,21000,11,52740,0,0,0,0,0,5,0,0,0,0,0,0,0,"Hardened Steel Berserker (Normal) - In Combat - Cast Hurl Weapon"),
+(@ENTRY,0,1,0,0,0,100,4,4000,9000,14000,18000,11,59259,0,0,0,0,0,5,0,0,0,0,0,0,0,"Hardened Steel Berserker (Heroic) - In Combat - Cast Hurl Weapon"),
+(@ENTRY,0,2,0,2,0,100,1,0,30,0,0,11,61369,0,0,0,0,0,1,0,0,0,0,0,0,0,"Hardened Steel Berserker - At 30% HP - Cast Enrage"),
+(@ENTRY,0,3,0,2,0,100,1,0,30,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,"Hardened Steel Berserker - At 30% HP - Say Line 0");
+
+-- Stormforged Tactician SAI
+SET @ENTRY := 28581;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,2,0,9000,11000,14000,11,52778,0,0,0,0,0,5,0,0,0,0,0,0,0,"Stormforged Tactician (Normal) - In Combat - Cast Welding Beam"),
+(@ENTRY,0,1,0,0,0,100,4,0,9000,11000,14000,11,59166,0,0,0,0,0,5,0,0,0,0,0,0,0,"Stormforged Tactician (Heroic) - In Combat - Cast Welding Beam"),
+(@ENTRY,0,2,0,2,0,100,1,0,50,15000,27000,11,59085,0,0,0,0,0,6,0,0,0,0,0,0,0,"Stormforged Tactician - At 50% HP - Cast Arc Weld");
+
+-- Stormforged Mender SAI
+SET @ENTRY := 28582;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,14,0,100,2,40,0,0,0,11,52774,0,0,0,0,0,7,0,0,0,0,0,0,0,"Stormforged Mender (Normal) - Friendly Health - Cast Renew Steel"),
+(@ENTRY,0,1,0,14,0,100,4,40,0,0,0,11,59160,0,0,0,0,0,7,0,0,0,0,0,0,0,"Stormforged Mender (Heroic) - Friendly Health - Cast Renew Steel"),
+(@ENTRY,0,2,0,2,0,100,1,0,80,10000,13000,11,52773,0,0,0,0,0,2,0,0,0,0,0,0,0,"Stormforged Mender - HP below 80%  - Cast Hammer Blow");
+
+-- Blistering Steamrager SAI
+SET @ENTRY := 28583;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,9,0,100,2,0,10,9000,12000,11,52531,0,0,0,0,0,1,0,0,0,0,0,0,0,"Blistering Steamrager (Normal) - On Range - Cast Steam Blast"),
+(@ENTRY,0,1,0,9,0,100,4,0,10,9000,12000,11,59141,0,0,0,0,0,1,0,0,0,0,0,0,0,"Blistering Steamrager (Heroic) - On Range - Cast Steam Blast");
+
+-- Unbound Firestorm SAI
+SET @ENTRY := 28584;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,2,0,6000,8000,12000,11,53788,0,0,0,0,0,2,0,0,0,0,0,0,0,"Unbound Firestorm (Normal) - In Combat - Cast Lava Burst"),
+(@ENTRY,0,1,0,0,0,100,4,0,6000,8000,12000,11,59182,0,0,0,0,0,2,0,0,0,0,0,0,0,"Unbound Firestorm (Heroic) - In Combat - Cast Lava Burst"),
+(@ENTRY,0,2,0,2,0,100,3,0,75,16000,22000,11,52624,0,0,0,0,0,1,0,0,0,0,0,0,0,"Unbound Firestorm (Normal) - At 75% HP - Cast Afterburn"),
+(@ENTRY,0,3,0,2,0,100,5,0,75,16000,22000,11,59183,0,0,0,0,0,1,0,0,0,0,0,0,0,"Unbound Firestorm (Heroic) - At 75% HP - Cast Afterburn");
+
+-- Slag SAI
+SET @ENTRY := 28585;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,2,5000,10000,25000,30000,11,61509,0,0,0,0,0,2,0,0,0,0,0,0,0,"Slag (Normal) - In Combat - Cast Melt Armor"),
+(@ENTRY,0,1,0,6,0,100,2,0,0,0,0,11,23113,0,0,0,0,0,1,0,0,0,0,0,0,0,"Slag (Normal) - On Death - Cast Blast Wave"),
+(@ENTRY,0,2,0,0,0,100,4,5000,10000,25000,30000,11,61510,0,0,0,0,0,2,0,0,0,0,0,0,0,"Slag (Heroic) - In Combat - Cast Melt Armor"),
+(@ENTRY,0,3,0,6,0,100,4,0,0,0,0,11,22424,0,0,0,0,0,1,0,0,0,0,0,0,0,"Slag (Heroic) - On Death - Cast Blast Wave");
+
+-- Guardian of Zim'Rhuk SAI
+SET @ENTRY := 28597;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,0,1000,10000,15000,15000,11,54565,0,0,0,0,0,2,0,0,0,0,0,0,0,"Guardian of Zim'Rhuk - In Combat - Cast Whammy");
+
+-- Scarlet Infantryman SAI
+SET @ENTRY := 28609;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,4,0,20,0,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,"Scarlet Infantryman - On Aggro - Say Line 0 (random)"),
+(@ENTRY,0,1,0,9,0,100,0,0,5,6000,9000,11,25710,0,0,0,0,0,2,0,0,0,0,0,0,0,"Scarlet Infantryman - On Range - Cast Heroic Strike"),
+(@ENTRY,0,2,0,0,0,100,0,9000,15000,16000,19000,11,53399,0,0,0,0,0,2,0,0,0,0,0,0,0,"Scarlet Infantryman - In Combat - Cast Sweeping Slam");
+
+-- Scarlet Captain SAI
+SET @ENTRY := 28611;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,4,0,20,0,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,"Scarlet Captain - On Aggro - Say Line 0 (random)"),
+(@ENTRY,0,1,0,9,0,100,0,0,5,4000,9000,11,52221,0,0,0,0,0,2,0,0,0,0,0,0,0,"Scarlet Captain - On Range - Cast Heroic Strike");
+
+-- Blood of Mam'toth SAI
+SET @ENTRY := 28779;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,1,0,100,1,0,0,0,0,11,54582,0,0,0,0,0,1,0,0,0,0,0,0,0,"Blood of Mam'toth - Out of Combat - Cast Plasma");
+
+-- Stormfury Revenant SAI
+SET @ENTRY := 28826;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,2,0,5000,17000,23000,11,53043,0,0,0,0,0,5,0,0,0,0,0,0,0,"Stormfury Revenant (Normal) - In Combat - Cast Electro Shock"),
+(@ENTRY,0,1,0,0,0,100,4,0,5000,17000,23000,11,59168,0,0,0,0,0,5,0,0,0,0,0,0,0,"Stormfury Revenant (Heroic) - In Combat - Cast Electro Shock"),
+(@ENTRY,0,2,0,0,0,100,2,14000,16000,15000,18000,11,52905,0,0,0,0,0,2,0,0,0,0,0,0,0,"Stormfury Revenant (Normal) - In Combat - Cast Thunderbolt"),
+(@ENTRY,0,3,0,0,0,100,4,14000,16000,15000,18000,11,59167,0,0,0,0,0,2,0,0,0,0,0,0,0,"Stormfury Revenant (Heroic) - In Combat - Cast Thunderbolt");
+
+-- Stormforged Construct SAI
+SET @ENTRY := 28835;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,75,2,4000,7000,1000,14000,11,53167,0,0,0,0,0,2,0,0,0,0,0,0,0,"Stormforged Construct (Normal) - In Combat - Cast Forked Lightning"),
+(@ENTRY,0,1,0,0,0,75,4,4000,7000,9000,14000,11,59152,0,0,0,0,0,2,0,0,0,0,0,0,0,"Stormforged Construct (Heroic) - In Combat - Cast Forked Lightning"),
+(@ENTRY,0,2,0,9,0,100,2,0,5,12000,18000,11,61596,0,0,0,0,0,6,0,0,0,0,0,0,0,"Stormforged Construct (Normal) - On Range - Cast Runic Focus"),
+(@ENTRY,0,3,0,9,0,100,4,0,5,12000,18000,11,61579,0,0,0,0,0,6,0,0,0,0,0,0,0,"Stormforged Construct (Heroic) - On Range - Cast Runic Focus"),
+(@ENTRY,0,4,0,2,0,100,3,0,65,11000,15000,11,53068,0,0,0,0,0,2,0,0,0,0,0,0,0,"Stormforged Construct (Normal) - HP@65% - Cast Rune Punch"),
+(@ENTRY,0,5,0,2,0,100,5,0,75,11000,15000,11,59151,0,0,0,0,0,2,0,0,0,0,0,0,0,"Stormforged Construct (Heroic) - HP@ 75% - Cast Rune Punch");
+
+-- Stormforged Runeshaper SAI
+SET @ENTRY := 28836;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,0,3000,5000,17000,21000,11,53048,0,0,0,0,0,1,0,0,0,0,0,0,0,"Stormforged Runeshaper - In Combat - Cast Startling Roar"),
+(@ENTRY,0,1,0,0,0,100,2,7000,10000,24000,30000,11,53049,0,0,0,0,0,1,0,0,0,0,0,0,0,"Stormforged Runeshaper (Normal) - In Combat - Cast Charged Flurry"),
+(@ENTRY,0,2,0,0,0,100,4,7000,10000,24000,30000,11,61581,0,0,0,0,0,1,0,0,0,0,0,0,0,"Stormforged Runeshaper (Heroic) - In Combat - Cast Charged Flurry");
+
+-- Stormforged Sentinel SAI
+SET @ENTRY := 28837;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,2,9000,17000,20000,25000,11,53045,0,0,0,0,0,6,0,0,0,0,0,0,0,"Stormforged Sentinel (Normal) - In Combat - Cast Sleep"),
+(@ENTRY,0,1,0,0,0,100,4,7000,9000,20000,25000,11,59165,0,0,0,0,0,6,0,0,0,0,0,0,0,"Stormforged Sentinel (Heroic) - In Combat - Cast Sleep"),
+(@ENTRY,0,2,0,14,0,100,2,40000,9000,15000,0,11,34423,0,0,0,0,0,7,0,0,0,0,0,0,0,"Stormforged Sentinel (Normal) - Friendly Health - Cast Renew"),
+(@ENTRY,0,3,0,14,0,100,4,50000,9000,15000,0,11,37978,0,0,0,0,0,7,0,0,0,0,0,0,0,"Stormforged Sentinel (Heroic) - Friendly Health - Cast Renew"),
+(@ENTRY,0,4,0,2,0,100,1,0,30,0,0,11,53047,0,0,0,0,0,1,0,0,0,0,0,0,0,"Stormforged Sentinel - HP@30% - Cast Storming");
+
+-- Overlook Sentry SAI
+SET @ENTRY := 28840;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,0,6000,10000,12000,16000,11,55030,0,0,0,0,0,1,0,0,0,0,0,0,0,"Overlook Sentry - In Combat - Cast Rune Detonation");
+
+-- Prophet of Har'koa SAI
+SET @ENTRY := 28848;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,0,5000,5000,15000,15000,11,52719,0,0,0,0,0,2,0,0,0,0,0,0,0,"Prophet of Har'koa - In Combat - Cast Concussion Blow");
+
+-- Blood of the Old God SAI
+SET @ENTRY := 28854;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,0,4000,11000,0,0,11,52564,0,0,0,0,0,1,0,0,0,0,0,0,0,"Blood of the Old God - In Combat - Cast Corruption of the Old God");
+
+-- Storm Revenant SAI
+SET @ENTRY := 28858;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,0,2000,4000,5000,7000,11,32018,0,0,0,0,0,2,0,0,0,0,0,0,0,"Storm Revenant - In Combat - Cast Call Lightning");
+
+-- Aqueous Spirit SAI
+SET @ENTRY := 28862;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,0,6000,9000,7000,10000,11,55087,0,0,0,0,0,5,0,0,0,0,0,0,0,"Aqueous Spirit - In Combat - Cast Typhoon");
+
+-- Stormwatcher SAI
+SET @ENTRY := 28877;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,0,3000,5000,3000,5000,11,32018,0,0,0,0,0,2,0,0,0,0,0,0,0,"Stormwatcher - In Combat - Cast Call Lightning");
+
+-- Enchanted Tiki Warrior SAI
+SET @ENTRY := 28882;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,1,0,100,1,0,0,0,0,11,54647,0,0,0,0,0,1,0,0,0,0,0,0,0,"Enchanted Tiki Warrior - Out of Combat - Cast Spirit Burn"),
+(@ENTRY,0,1,0,0,0,100,0,9000,21000,12000,24000,11,54657,0,0,0,0,0,1,0,0,0,0,0,0,0,"Enchanted Tiki Warrior - In Combat - Cast Incorporeal");
+
+-- Yara SAI
+SET @ENTRY := 28917;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,1,4,0,100,0,0,0,0,0,11,48594,0,0,0,0,0,1,0,0,0,0,0,0,0,"Yara - On Aggro - Cast Sprint"),
+(@ENTRY,0,1,0,61,0,100,0,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,"Yara - On Aggro - Say Line 0"),
+(@ENTRY,0,2,0,0,0,100,0,6000,8000,10000,20000,11,14516,0,0,0,0,0,2,0,0,0,0,0,0,0,"Yara - In Combat - Cast Strike"),
+(@ENTRY,0,3,0,0,0,100,0,8000,16000,16000,24000,11,15618,0,0,0,0,0,2,0,0,0,0,0,0,0,"Yara - In Combat - Cast Snap Kick");
+
+-- Stormforged Giant SAI
+SET @ENTRY := 28920;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,2,0,7000,8000,11000,11,53072,0,0,0,0,0,2,0,0,0,0,0,0,0,"Stormforged Giant (Normal) - In Combat - Cast Storm Bolt"),
+(@ENTRY,0,1,0,0,0,100,4,0,7000,8000,11000,11,59155,0,0,0,0,0,2,0,0,0,0,0,0,0,"Stormforged Giant (Heroic) - In Combat - Cast Storm Bolt"),
+(@ENTRY,0,2,0,0,0,100,2,13000,17000,9000,15000,11,53071,0,0,0,0,0,1,0,0,0,0,0,0,0,"Stormforged Giant (Normal) - In Combat - Cast Thunderstorm"),
+(@ENTRY,0,3,0,0,0,100,4,13000,17000,9000,15000,11,59154,0,0,0,0,0,1,0,0,0,0,0,0,0,"Stormforged Giant (Heroic) - In Combat - Cast Thunderstorm"),
+(@ENTRY,0,4,0,2,0,100,5,0,50,11000,19000,11,32315,0,0,0,0,0,2,0,0,0,0,0,0,0,"Stormforged Giant (Heroic) - HP@50% - Cast Soul Strike");
+
+-- Anub'ar Crusher SAI
+SET @ENTRY := 28922;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,2,4000,9000,12000,18000,11,53318,0,0,0,0,0,2,0,0,0,0,0,0,0,"Anub'ar Crusher (Normal) - In Combat - Cast Smash"),
+(@ENTRY,0,1,0,0,0,100,4,4000,7000,9000,12000,11,59346,0,0,0,0,0,2,0,0,0,0,0,0,0,"Anub'ar Crusher (Heroic) - In Combat - Cast Smash"),
+(@ENTRY,0,2,0,2,0,100,1,0,30,600000,600000,11,53801,0,0,0,0,0,1,0,0,0,0,0,0,0,"Anub'ar Crusher - At 30% HP - Cast Frenzy"),
+(@ENTRY,0,3,0,2,0,100,1,0,30,600000,600000,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,"Anub'ar Crusher - At 30% HP - Say Line 0");
+
+-- Charged Sentry Totem SAI
+SET @ENTRY := 28938;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,0,2000,4000,2000,4000,11,52705,0,0,0,0,0,2,0,0,0,0,0,0,0,"Charged Sentry Totem - In Combat - Cast Sentry Shock");
+
+-- Scarlet Commander Rodrick SAI
+SET @ENTRY := 29000;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,9,0,100,0,0,5,7000,13000,11,52835,0,0,0,0,0,2,0,0,0,0,0,0,0,"Scarlet Commander Rodrick - On Range - Cast Cleave"),
+(@ENTRY,0,1,0,2,0,100,1,0,30,7000,10000,11,31713,0,0,0,0,0,1,0,0,0,0,0,0,0,"Scarlet Commander Rodrick - 30% HP - Cast Holy Light");
+
+-- Crimson Acolyte SAI
+SET @ENTRY := 29007;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,1,0,100,0,1000,1000,1800000,1800000,11,34809,0,0,0,0,0,1,0,0,0,0,0,0,0,"Crimson Acolyte - Out of Combat - Cast Holy Fury"),
+(@ENTRY,0,1,0,0,0,100,0,1000,4000,4000,6000,11,15498,0,0,0,0,0,2,0,0,0,0,0,0,0,"Crimson Acolyte - In Combat - Holy Smite"),
+(@ENTRY,0,2,0,0,0,100,0,6000,9000,25000,30000,11,19725,0,0,0,0,0,6,0,0,0,0,0,0,0,"Crimson Acolyte - In Combat - Turn Undead");
+
+-- Perch Guardian SAI
+SET @ENTRY := 29013;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,0,3000,6000,9000,15000,11,52702,0,0,0,0,0,2,0,0,0,0,0,0,0,"Perch Guardian - In Combat - Cast Rune Punch");
+
+-- Spirit of Ha-Khalan SAI
+SET @ENTRY := 29018;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,0,1000,1000,125000,135000,11,50502,0,0,0,0,0,1,0,0,0,0,0,0,0,"Spirit of Ha-Khalan - In Combat - Cast Thick Hide"),
+(@ENTRY,0,1,0,0,0,100,0,5000,10000,12000,16000,11,34370,0,0,0,0,0,2,0,0,0,0,0,0,0,"Spirit of Ha-Khalan - In Combat - Cast Jagged Tooth Snap"),
+(@ENTRY,0,2,0,0,0,100,0,3000,5000,7000,11000,11,48287,0,0,0,0,0,2,0,0,0,0,0,0,0,"Spirit of Ha-Khalan - In Combat - Cast Powerful Bite");
+
+-- Spirit of Atha SAI
+SET @ENTRY := 29033;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,0,2000,4000,5000,7000,11,3391,0,0,0,0,0,1,0,0,0,0,0,0,0,"Spirit of Atha - In Combat - Cast Trash"),
+(@ENTRY,0,1,0,0,0,100,0,8000,13000,12000,16000,11,21790,0,0,0,0,0,1,0,0,0,0,0,0,0,"Spirit of Atha - In Combat - Cast Aqua Jet");
+
+-- Servant of Freya SAI
+SET @ENTRY := 29036;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,0,2000,5000,35000,48000,11,55067,0,0,0,0,0,1,0,0,0,0,0,0,0,"Servant of Freya - In Combat - Cast Flower Power");
+
+-- [Chapter II] Torch Toss Dummy SAI
+SET @ENTRY := 29038;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,25,0,100,0,0,0,0,0,11,52955,0,0,0,0,0,1,0,0,0,0,0,0,0,"[Chapter II] Torch Toss Dummy - Spawn - Torch");
+
+-- Goretalon Matriarch SAI
+SET @ENTRY := 29044;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,0,2000,4000,5000,7000,11,55079,0,0,0,0,0,2,0,0,0,0,0,0,0,"Goretalon Matriarch - In Combat - Cast Swoop"),
+(@ENTRY,0,1,0,0,0,100,0,6000,9000,10000,13000,11,49865,0,0,0,0,0,2,0,0,0,0,0,0,0,"Goretalon Matriarch - In Combat - Cast Eye Peck"),
+(@ENTRY,0,2,0,0,0,100,0,9000,12000,15000,20000,11,51946,0,0,0,0,0,1,0,0,0,0,0,0,0,"Goretalon Matriarch - In Combat - Cast Evasive Maneuver");
+
+-- Glimmering Pillar Credit SAI
+SET @ENTRY := 29056;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,8,0,100,0,53038,0,0,0,33,29056,0,0,0,0,0,7,0,0,0,0,0,0,0,"Glimmering Pillar Credit - On Spellhit - Quest Credit for Didgeridoo of Contemplation(Quest: 12736)");
+
+-- Mosslight Pillar Credit SAI
+SET @ENTRY := 29057;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,8,0,100,0,53038,0,0,0,33,29057,0,0,0,0,0,7,0,0,0,0,0,0,0,"Mosslight Pillar Credit - On Spellhit - Quest Credit for Didgeridoo of Contemplation (Quest: 12736)");
+
+-- Suntouched Pillar Credit SAI
+SET @ENTRY := 29058;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,8,0,100,0,53038,0,0,0,33,29058,0,0,0,0,0,7,0,0,0,0,0,0,0,"Suntouched Pillar Credit - On Spellhit - Quest Credit for Didgeridoo of Contemplation (Quest: 12736)");
+
+-- Anub'ar Champion SAI
+SET @ENTRY := 29062;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,2,6000,9000,17000,32000,11,53317,0,0,0,0,0,5,0,0,0,0,0,0,0,"Anub'ar Champion (Normal)- In Combat - Cast Rend"),
+(@ENTRY,0,1,0,0,0,100,4,4000,7000,15000,18000,11,59343,0,0,0,0,0,5,0,0,0,0,0,0,0,"Anub'ar Champion (Heroic)- In Combat - Cast Rend"),
+(@ENTRY,0,2,0,13,0,100,2,14000,17000,0,0,11,53394,0,0,0,0,0,7,0,0,0,0,0,0,0,"Anub'ar Champion (Normal)- In Combat - Cast Pummel on Target Spell Cast"),
+(@ENTRY,0,3,0,13,0,100,4,9000,12000,0,0,11,59344,0,0,0,0,0,7,0,0,0,0,0,0,0,"Anub'ar Champion (Heroic)- In Combat - Cast Pummel on Target Spell Cast");
+
+-- Anub'ar Crypt Fiend SAI
+SET @ENTRY := 29063;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,0,4000,7000,9000,12000,11,53330,0,0,0,0,0,5,0,0,0,0,0,0,0,"Anub'ar Crypt Fiend (Normal)- In Combat - Cast Infected Wounds"),
+(@ENTRY,0,1,0,0,0,100,0,4000,7000,9000,12000,11,59348,0,0,0,0,0,5,0,0,0,0,0,0,0,"Anub'ar Crypt Fiend (Heroic)- In Combat - Cast Infected Wounds"),
+(@ENTRY,0,2,0,0,0,100,0,9000,12000,13000,17000,11,53322,0,0,0,0,0,5,0,0,0,0,0,0,0,"Anub'ar Crypt Fiend (Normal)- In Combat - Cast Crushing Webs"),
+(@ENTRY,0,3,0,0,0,100,0,9000,12000,10000,13000,11,59347,0,0,0,0,0,5,0,0,0,0,0,0,0,"Anub'ar Crypt Fiend (Heroic)- In Combat - Cast Crushing Webs");
+
+-- Skyreach Pillar Credit SAI
+SET @ENTRY := 29069;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,8,0,100,0,53038,0,0,0,33,29069,0,0,0,0,0,7,0,0,0,0,0,0,0,"Skyreach Pillar Credit - On Spellhit - Quest Credit for Didgeridoo of Contemplation (Quest: 12736)");
+
+-- Bloodmoon Servant SAI
+SET @ENTRY := 29082;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,2,0,100,1,0,30,12000,16000,11,32714,0,0,0,0,0,1,0,0,0,0,0,0,0,"Bloodmoon Servant - At 30% HP - Cast Enrage");
+
+-- Anub'ar Champion SAI
+SET @ENTRY := 29096;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,2,6000,9000,17000,32000,11,53317,0,0,0,0,0,5,0,0,0,0,0,0,0,"Anub'ar Champion (Normal)- In Combat - Cast Rend"),
+(@ENTRY,0,1,0,0,0,100,4,4000,7000,15000,18000,11,59343,0,0,0,0,0,5,0,0,0,0,0,0,0,"Anub'ar Champion (Heroic)- In Combat - Cast Rend"),
+(@ENTRY,0,2,0,13,0,100,2,14000,17000,0,0,11,53394,0,0,0,0,0,7,0,0,0,0,0,0,0,"Anub'ar Champion (Normal)- In Combat - Cast Pummel on Target Spell Cast"),
+(@ENTRY,0,3,0,13,0,100,4,9000,12000,0,0,11,59344,0,0,0,0,0,7,0,0,0,0,0,0,0,"Anub'ar Champion (Heroic)- In Combat - Cast Pummel on Target Spell Cast");
+
+-- Anub'ar Crypt Fiend SAI
+SET @ENTRY := 29097;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,2,4000,7000,9000,12000,11,53330,0,0,0,0,0,5,0,0,0,0,0,0,0,"Anub'ar Crypt Fiend (Normal)- In Combat - Cast Infected Wounds"),
+(@ENTRY,0,1,0,0,0,100,4,4000,7000,9000,12000,11,59348,0,0,0,0,0,5,0,0,0,0,0,0,0,"Anub'ar Crypt Fiend (Heroic)- In Combat - Cast Infected Wounds"),
+(@ENTRY,0,2,0,0,0,100,2,9000,12000,13000,17000,11,53322,0,0,0,0,0,5,0,0,0,0,0,0,0,"Anub'ar Crypt Fiend (Normal)- In Combat - Cast Crushing Webs"),
+(@ENTRY,0,3,0,0,0,100,4,9000,12000,10000,13000,11,59347,0,0,0,0,0,5,0,0,0,0,0,0,0,"Anub'ar Crypt Fiend (Heroic)- In Combat - Cast Crushing Webs");
+
+-- Anub'ar Champion SAI
+SET @ENTRY := 29117;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,2,6000,9000,17000,32000,11,53317,0,0,0,0,0,5,0,0,0,0,0,0,0,"Anub'ar Champion (Normal)- In Combat - Cast Rend"),
+(@ENTRY,0,1,0,0,0,100,4,4000,7000,15000,18000,11,59343,0,0,0,0,0,5,0,0,0,0,0,0,0,"Anub'ar Champion (Heroic)- In Combat - Cast Rend"),
+(@ENTRY,0,2,0,13,0,100,2,14000,17000,0,0,11,53394,0,0,0,0,0,7,0,0,0,0,0,0,0,"Anub'ar Champion (Normal)- In Combat - Cast Pummel on Target Spell Cast"),
+(@ENTRY,0,3,0,13,0,100,4,9000,12000,0,0,11,59344,0,0,0,0,0,7,0,0,0,0,0,0,0,"Anub'ar Champion (Heroic)- In Combat - Cast Pummel on Target Spell Cast");
+
+-- Anub'ar Crypt Fiend SAI
+SET @ENTRY := 29118;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,2,4000,7000,9000,12000,11,53330,0,0,0,0,0,5,0,0,0,0,0,0,0,"Anub'ar Crypt Fiend (Normal)- In Combat - Cast Infected Wounds"),
+(@ENTRY,0,1,0,0,0,100,4,4000,7000,9000,12000,11,59348,0,0,0,0,0,5,0,0,0,0,0,0,0,"Anub'ar Crypt Fiend (Heroic)- In Combat - Cast Infected Wounds"),
+(@ENTRY,0,2,0,0,0,100,2,9000,12000,13000,17000,11,53322,0,0,0,0,0,5,0,0,0,0,0,0,0,"Anub'ar Crypt Fiend (Normal)- In Combat - Cast Crushing Webs"),
+(@ENTRY,0,3,0,0,0,100,4,9000,12000,10000,13000,11,59347,0,0,0,0,0,5,0,0,0,0,0,0,0,"Anub'ar Crypt Fiend (Heroic)- In Combat - Cast Crushing Webs");
+
+-- Monstrous Wight SAI
+SET @ENTRY := 29123;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,0,5000,8000,9000,12000,11,51334,0,0,0,0,0,2,0,0,0,0,0,0,0,"Monstrous Wight - In Combat - Cast Smash");
+
+-- Lifeblood Elemental SAI
+SET @ENTRY := 29124;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,0,2000,5000,12000,18000,11,54790,0,0,0,0,0,2,0,0,0,0,0,0,0,"Lifeblood Elemental - In Combat - Cast Blood Tap");
+
+-- Disturbed Soul SAI
+SET @ENTRY := 29133;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,0,3000,8000,8000,12000,11,51818,0,0,0,0,0,2,0,0,0,0,0,0,0,"Disturbed Soul - In Combat - Cast Shadow Word: Death");
+
+-- Vekgar SAI
+SET @ENTRY := 29146;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,9,0,100,0,5,30,9000,12000,11,54487,0,0,0,0,0,2,0,0,0,0,0,0,0,"Vekgar - On Range - Cast Jump Attack"),
+(@ENTRY,0,1,0,2,0,100,1,0,30,10000,13000,11,52071,0,0,0,0,0,1,0,0,0,0,0,0,0,"Vekgar - HP @ 30% - Cast Killing Rage");
+
+-- Defender of the Light SAI
+SET @ENTRY := 29174;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,4,0,100,0,0,0,0,0,11,53625,0,0,0,0,0,2,0,0,0,0,0,0,0,"Defender of the Light - On Aggro - Cast Heroic Leap"),
+(@ENTRY,0,1,0,0,0,100,0,10000,20000,10000,20000,11,53625,0,0,0,0,0,6,0,0,0,0,0,0,0,"Defender of the Light - In Combat - Cast Heroic Leap"),
+(@ENTRY,0,2,0,0,0,100,0,10000,20000,10000,20000,11,53643,0,0,0,0,0,2,0,0,0,0,0,0,0,"Defender of the Light - In Combat - Cast Holy Strike"),
+(@ENTRY,0,3,0,0,0,100,0,10000,20000,10000,20000,11,53638,0,0,0,0,0,2,0,0,0,0,0,0,0,"Defender of the Light - In Combat - Cast Holy Wrath"),
+(@ENTRY,0,4,0,0,0,100,0,10000,20000,10000,20000,11,53629,0,0,0,0,0,2,0,0,0,0,0,0,0,"Defender of the Light - In Combat - Cast Uppercut"),
+(@ENTRY,0,5,0,14,0,100,0,20,5000,10000,0,11,29427,0,0,0,0,0,7,0,0,0,0,0,0,0,"Defender of the Light - Friendly health - Cast Holy Light");
+
+-- Korfax, Champion of the Light SAI
+SET @ENTRY := 29176;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,0,10000,20000,10000,10000,11,53631,0,0,0,0,0,2,0,0,0,0,0,0,0,"Korfax - In Combat - Cast Cleave"),
+(@ENTRY,0,1,0,0,0,100,0,10000,20000,10000,10000,11,53625,0,0,0,0,0,2,0,0,0,0,0,0,0,"Korfax - In Combat - Cast Heroic Leap");
+
+-- Commander Eligor Dawnbringer SAI
+SET @ENTRY := 29177;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,14,0,100,0,20,5000,10000,0,11,37979,0,0,0,0,0,7,0,0,0,0,0,0,0,"Commander Eligor Dawnbringer - Friendly Health -  Cast Holy Light");
+
+-- Rayne SAI
+SET @ENTRY := 29181;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,0,10000,20000,10000,20000,11,20678,0,0,0,0,0,2,0,0,0,0,0,0,0,"Rayne - In Combat - Cast Starfall"),
+(@ENTRY,0,1,0,0,0,100,0,10000,20000,10000,20000,11,21807,0,0,0,0,0,2,0,0,0,0,0,0,0,"Rayne - In Combat - Cast Wrath"),
+(@ENTRY,0,2,0,14,0,100,0,20,5000,10000,0,11,20664,0,0,0,0,0,7,0,0,0,0,0,0,0,"Rayne - Friendly Health - Cast Rejuvenation"),
+(@ENTRY,0,3,0,14,0,100,0,20,5000,10000,0,11,25817,0,0,0,0,0,7,0,0,0,0,0,0,0,"Rayne - Friendly Health - Cast Tranquility");
+
+-- Rimblat Earthshatter SAI
+SET @ENTRY := 29182;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,0,10000,20000,10000,10000,11,53630,0,0,0,0,0,2,0,0,0,0,0,0,0,"Rimblat Earthshatter - In Combat - Cast Thunder"),
+(@ENTRY,0,1,0,14,0,100,0,20,5000,10000,0,11,33642,0,0,0,0,0,7,0,0,0,0,0,0,0,"Rimblat Earthshatter - Friendly Health - Cast Chain Heal");
+
+-- Rampaging Abomination SAI
+SET @ENTRY := 29186;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,0,10000,20000,10000,10000,11,53633,0,0,0,0,0,2,0,0,0,0,0,0,0,"Rampaging Abomination - In Combat - Cast Cleave"),
+(@ENTRY,0,1,0,0,0,100,0,10000,20000,10000,10000,11,50335,0,0,0,0,0,6,0,0,0,0,0,0,0,"Rampaging Abomination - In Combat - Cast Scourge Hook");
+
+-- Flesh Behemoth SAI
+SET @ENTRY := 29190;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,0,10000,20000,10000,10000,11,36706,0,0,0,0,0,1,0,0,0,0,0,0,0,"Flesh Behemoth - In Combat - Cast Thunderclap"),
+(@ENTRY,0,1,0,0,0,100,0,10000,20000,10000,20000,11,53634,0,0,0,0,0,1,0,0,0,0,0,0,0,"Flesh Behemoth - In Combat - Cast Stomp");
+
+-- Lord Thorval SAI
+SET @ENTRY := 29196;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY*100 AND `source_type`=9;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,1,0,100,0,60000,60000,600000,600000,80,@ENTRY*100,0,0,0,0,0,1,0,0,0,0,0,0,0,"Lord Thorval - Out of Combat - Run Script"),
+(@ENTRY*100,9,0,0,0,0,100,0,8000,8000,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,"Lord Thorval - Script - Say Line 0"),
+(@ENTRY*100,9,1,0,0,0,100,0,8000,8000,0,0,1,1,0,0,0,0,0,1,0,0,0,0,0,0,0,"Lord Thorval - Script - Say Line 1"),
+(@ENTRY*100,9,2,0,0,0,100,0,8000,8000,0,0,1,2,0,0,0,0,0,1,0,0,0,0,0,0,0,"Lord Thorval - Script - Say Line 2"),
+(@ENTRY*100,9,3,0,0,0,100,0,8000,8000,0,0,1,3,0,0,0,0,0,1,0,0,0,0,0,0,0,"Lord Thorval - Script - Say Line 3"),
+(@ENTRY*100,9,4,0,0,0,100,0,8000,8000,0,0,1,4,0,0,0,0,0,1,0,0,0,0,0,0,0,"Lord Thorval - Script - Say Line 4"),
+(@ENTRY*100,9,5,0,0,0,100,0,8000,8000,0,0,1,5,0,0,0,0,0,1,0,0,0,0,0,0,0,"Lord Thorval - Script - Say Line 5"),
+(@ENTRY*100,9,6,0,0,0,100,0,8000,8000,0,0,1,6,0,0,0,0,0,1,0,0,0,0,0,0,0,"Lord Thorval - Script - Say Line 6"),
+(@ENTRY*100,9,7,0,0,0,100,0,8000,8000,0,0,1,7,0,0,0,0,0,1,0,0,0,0,0,0,0,"Lord Thorval - Script - Say Line 7"),
+(@ENTRY*100,9,8,0,0,0,100,0,8000,8000,0,0,1,8,0,0,0,0,0,1,0,0,0,0,0,0,0,"Lord Thorval - Script - Say Line 8");
+
+-- Koltira Deathweaver SAI
+SET @ENTRY := 29199;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,0,10000,20000,10000,20000,11,52374,0,0,0,0,0,2,0,0,0,0,0,0,0,"Koltira Deathweaver - In Combat - Cast Blood Strike"),
+(@ENTRY,0,1,0,0,0,100,0,10000,20000,10000,20000,11,52372,0,0,0,0,0,2,0,0,0,0,0,0,0,"Koltira Deathweaver - In Combat - Cast Icy Touch"),
+(@ENTRY,0,2,0,0,0,100,0,10000,20000,10000,20000,11,50668,0,0,0,0,0,2,0,0,0,0,0,0,0,"Koltira Deathweaver - In Combat - Cast Plague Strike");
+
+-- Thassarian SAI
+SET @ENTRY := 29200;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,0,10000,20000,10000,20000,11,52374,0,0,0,0,0,2,0,0,0,0,0,0,0,"Thassarian - In Combat - Cast Blood Strike"),
+(@ENTRY,0,1,0,0,0,100,0,10000,20000,10000,20000,11,52372,0,0,0,0,0,2,0,0,0,0,0,0,0,"Thassarian - In Combat - Cast Icy Touch"),
+(@ENTRY,0,2,0,0,0,100,0,10000,20000,10000,20000,11,50668,0,0,0,0,0,2,0,0,0,0,0,0,0,"Thassarian - In Combat - Cast Plague Strike");
+
+-- Orbaz Bloodbane SAI
+SET @ENTRY := 29204;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,0,10000,20000,10000,20000,11,52374,0,0,0,0,0,2,0,0,0,0,0,0,0,"Orbaz Bloodbane - In Combat - Cast Blood Strike"),
+(@ENTRY,0,1,0,0,0,100,0,10000,20000,10000,20000,11,52372,0,0,0,0,0,2,0,0,0,0,0,0,0,"Orbaz Bloodbane - In Combat - Cast Icy Touch"),
+(@ENTRY,0,2,0,0,0,100,0,10000,20000,10000,20000,11,50668,0,0,0,0,0,2,0,0,0,0,0,0,0,"Orbaz Bloodbane - In Combat - Cast Plague Strike"),
+(@ENTRY,0,3,0,2,0,100,1,0,15,0,0,25,1,0,0,0,0,0,1,0,0,0,0,0,0,0,"Orbaz Bloodbane - At 15% HP - Flee");
+
+-- Warrior of the Frozen Wastes SAI
+SET @ENTRY := 29206;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,0,10000,20000,10000,10000,11,53631,0,0,0,0,0,2,0,0,0,0,0,0,0,"Warrior of the Frozen Wastes - In Combat - Cast Cleave");
+
+-- Volatile Ghoul SAI
+SET @ENTRY := 29219;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,0,10000,20000,10000,10000,11,53632,0,0,0,0,0,2,0,0,0,0,0,0,0,"Volatile Ghoul - In Combat - Cast Ghoulplosion");
+
+-- Gundrak Savage SAI
+SET @ENTRY := 29235;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,0,2000,8000,20000,30000,11,5515,0,0,0,0,0,1,0,0,0,0,0,0,0,"Gundrak Savage - In Combat - Cast Savagery");
+
+-- Gundrak Brute SAI
+SET @ENTRY := 29236;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,0,2000,4000,20000,30000,11,54678,0,0,0,0,0,2,0,0,0,0,0,0,0,"Gundrak Brute - In Combat - Cast Brute Force");
+
+-- Gundrak Fire-eater SAI
+SET @ENTRY := 29237;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,0,4000,6000,14000,28000,11,54682,0,0,0,0,0,2,0,0,0,0,0,0,0,"Gundrak Fire-eater - In Combat - Cast Flame Breath");
+
+-- Captain Paul Carver SAI
+SET @ENTRY := 29287;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,1,0,100,0,4000,9000,7000,15000,10,1,273,6,0,0,0,1,0,0,0,0,0,0,0,"Captian Paul Carver - Out of Combat - Random Emote OOC");
+
+-- First Mate Edgar Flores SAI
+SET @ENTRY := 29289;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,1,0,100,0,4000,9000,7000,15000,10,1,6,274,0,0,0,1,0,0,0,0,0,0,0,"First Mate Edgar Flores - Out of Combat - Random Emote OOC");
+
+-- Navigator Rian Trost SAI
+SET @ENTRY := 29290;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,1,0,100,0,4000,9000,7000,15000,10,1,273,6,0,0,0,1,0,0,0,0,0,0,0,"Navigator Rian Trost - Out of Combat - Random Emote OOC");
+
+-- Galley Chief Paul Kubit SAI
+SET @ENTRY := 29291;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,1,0,100,0,4000,9000,7000,15000,10,1,6,274,0,0,0,1,0,0,0,0,0,0,0,"Galley Chief Paul Kubit - Out of Combat - Random Emote OOC");
+
+-- Serban Oprescu SAI
+SET @ENTRY := 29299;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,1,0,100,0,4000,9000,7000,15000,10,1,273,6,0,0,0,1,0,0,0,0,0,0,0,"Serban Oprescu - Out of Combat - Random Emote OOC");
+
+-- Sifreldar Storm Maiden SAI
+SET @ENTRY := 29323;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,4,0,100,0,0,0,16000,21000,11,57408,0,0,0,0,0,1,0,0,0,0,0,0,0,"Sifreldar Storm Maiden - On Aggro - Cast Storm Cloud");
+
+-- Gundrak Bat Rider SAI
+SET @ENTRY := 29332;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,4,0,100,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,"Gundrak Bat Rider - On Aggro - Dismount"),
+(@ENTRY,0,1,0,7,0,100,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,"Gundrak Bat Rider - On Evade - Remount"),
+(@ENTRY,0,2,0,0,0,100,0,3000,7000,14000,26000,11,54684,0,0,0,0,0,2,0,0,0,0,0,0,0,"Gundrak Bat Rider - In Combat - Cast Firebomb");
+
+-- Gundrak Raptor SAI
+SET @ENTRY := 29334;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,0,2000,6000,8000,18000,11,54487,0,0,0,0,0,2,0,0,0,0,0,0,0,"Gundrak Raptor - In Combat - Cast Jump Attack");
+
+-- Anub'ar Webspinner SAI
+SET @ENTRY := 29335;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,2,4000,7000,9000,12000,11,54290,0,0,0,0,0,5,0,0,0,0,0,0,0,"Anub'ar Webspinner (Normal)- In Combat - Cast Web Shot"),
+(@ENTRY,0,1,0,0,0,100,4,4000,7000,9000,12000,11,59362,0,0,0,0,0,5,0,0,0,0,0,0,0,"Anub'ar Webspinner (Heroic)- In Combat - Cast Web Shot"),
+(@ENTRY,0,2,0,0,0,100,0,10000,13000,19000,22000,11,52086,0,0,0,0,0,5,0,0,0,0,0,0,0,"Anub'ar Webspinner - In Combat - Cast Web Wrap");
+
+-- Lord-Commander Arete SAI
+SET @ENTRY := 29344;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,25,0,100,0,0,0,0,0,11,57764,0,0,0,0,0,1,0,0,0,0,0,0,0,"Bone Commander Arete - On Reset - Cast Hover");
+
+-- Torseg the Exiled SAI
+SET @ENTRY := 29350;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,0,4000,7000,12000,16000,11,33707,0,0,0,0,0,2,0,0,0,0,0,0,0,"Torseg the Exiled - In Combat - Cast Backbreaker"),
+(@ENTRY,0,1,0,0,0,100,0,9000,14000,16000,20000,11,53437,0,0,0,0,0,1,0,0,0,0,0,0,0,"Torseg the Exiled - In Combat - Cast War Stomp");
+
+-- Stormforged Taskmaster SAI
+SET @ENTRY := 29369;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,0,1000,1000,35000,50000,11,52701,0,0,0,0,0,1,0,0,0,0,0,0,0,"Stormforged Taskmaster - In Combat - Cast Lightning Charged"),
+(@ENTRY,0,1,0,0,0,100,0,9000,12000,15000,18000,11,51876,0,0,0,0,0,2,0,0,0,0,0,0,0,"Stormforged Taskmaster - In Combat - Cast Storm Strike"),
+(@ENTRY,0,2,0,5,0,30,0,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,"Stormforged Taskmaster - On Kill - Chance to Say on Player");
+
+-- Stormforged Champion SAI
+SET @ENTRY := 29370;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,0,1000,1000,35000,50000,11,52701,0,0,0,0,0,1,0,0,0,0,0,0,0,"Stormforged Champion - In Combat - Cast Lightning Charged");
+
+-- Stormforged Magus SAI
+SET @ENTRY := 29374;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,1,0,100,0,1000,1000,605000,610000,11,12550,0,0,0,0,0,1,0,0,0,0,0,0,0,"Stormforged Magus - Out of Combat - Cast Lightning Shield"),
+(@ENTRY,0,1,0,0,0,100,0,1000,5000,15000,35000,11,12550,0,0,0,0,0,1,0,0,0,0,0,0,0,"Stormforged Magus - In Combat - Cast Lightning Shield"),
+(@ENTRY,0,2,0,0,0,100,0,4000,9000,16000,19000,11,32193,0,0,0,0,0,5,0,0,0,0,0,0,0,"Stormforged Magus - In Combat - Cast Lightning Cloud");
+
+-- Stormforged Iron Giant SAI
+SET @ENTRY := 29375;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,0,6000,12000,20000,25000,11,57741,0,0,0,0,0,2,0,0,0,0,0,0,0,"Stormforged Iron Giant - In Combat - Cast Shockwave"),
+(@ENTRY,0,1,0,2,0,100,1,0,30,120000,120000,11,55512,0,0,0,0,0,5,0,0,0,0,0,0,0,"Stormforged Iron Giant - 30% HP - Cast Call of Earth");
+
+-- Stormforged Artificer SAI
+SET @ENTRY := 29376;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,9,0,100,0,0,40,7000,9000,11,57580,0,0,0,0,0,5,0,0,0,0,0,0,0,"Stormforged Artificer - On Range - Cast Lightning Infusion");
+
+-- Stormforged War Golem SAI
+SET @ENTRY := 29380;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,0,3000,6000,15000,19000,11,56352,0,0,0,0,0,2,0,0,0,0,0,0,0,"Stormforged War Golem - In Combat - Cast Storm Punch");
+
+-- Stormforged Reaver SAI
+SET @ENTRY := 29382;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,9,0,100,0,0,10,7000,15000,11,55825,0,0,0,0,0,1,0,0,0,0,0,0,0,"Stormforged Reaver - On Range - Cast Thunderstorm");
+
+-- Ironwool Mammoth SAI
+SET @ENTRY := 29402;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,0,1000,3000,7000,10000,11,56356,0,0,0,0,0,1,0,0,0,0,0,0,0,"Ironwool Mammoth - In Combat - Ironwool Coat");
+
+-- Snowblind Devotee SAI
+SET @ENTRY := 29407;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,2,0,100,1,0,30,120000,130000,11,56410,0,0,0,0,0,1,0,0,0,0,0,0,0,"Snowblind Devotee - 30% HP - Cast Blind Faith");
+
+-- Garm Watcher SAI
+SET @ENTRY := 29409;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,4,0,100,0,0,0,0,0,11,50413,0,0,0,0,0,1,0,0,0,0,0,0,0,"Garm Watcher - On Aggro - Cast Magnataur Charge");
+
+-- Crystalweb Weaver SAI
+SET @ENTRY := 29411;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,9,0,100,0,0,30,9000,15000,11,47698,0,0,0,0,0,5,0,0,0,0,0,0,0,"Crystalweb Weaver - On Range - Cast Crystal Chains");
+
+-- Crystalweb Spitter SAI
+SET @ENTRY := 29412;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,0,5000,8000,12000,15000,11,57616,0,0,0,0,0,2,0,0,0,0,0,0,0,"Crystalweb Spitter - In Combat - Cast Crystal Spike"),
+(@ENTRY,0,1,0,9,0,100,0,0,30,12000,17000,11,12023,0,0,0,0,0,5,0,0,0,0,0,0,0,"Crystalweb Spitter - On Range - Cast Web");
+
+-- Snowblind Digger SAI
+SET @ENTRY := 29413;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,0,3000,5000,7000,11000,11,50370,0,0,0,0,0,2,0,0,0,0,0,0,0,"Snowblind Digger - In Combat - Cast Sunder Armor"),
+(@ENTRY,0,1,0,0,0,100,0,9000,12000,7000,12000,11,48374,0,0,0,0,0,2,0,0,0,0,0,0,0,"Snowblind Digger - In Combat - Cast Puncture Wound");
+
+-- Hyldnir Overseer SAI
+SET @ENTRY := 29426;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,0,3000,7000,11000,16000,11,30931,0,0,0,0,0,1,0,0,0,0,0,0,0,"Hyldnir Overseer - In Combat - Cast Battle Shout"),
+(@ENTRY,0,1,0,8,0,100,0,0,5,6000,9000,11,46182,0,0,0,0,0,2,0,0,0,0,0,0,0,"Hyldnir Overseer - On Spellhit - Cast Snap Kick");
+
+-- Burr SAI
+SET @ENTRY := 29454;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,10,0,100,0,1,20,2000,2000,33,29454,0,0,0,0,0,7,0,0,0,0,0,0,0,"Burr - OOC LOS - Quest Credit");
+
+-- Gerk SAI
+SET @ENTRY := 29455;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,10,0,100,0,1,20,2000,2000,33,29455,0,0,0,0,0,7,0,0,0,0,0,0,0,"Gerk - OOC LOS - Quest Credit");
+
+-- Icetip Crawler SAI
+SET @ENTRY := 29461;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,0,1000,3000,7000,10000,11,57617,0,0,0,0,0,5,0,0,0,0,0,0,0,"Icetip Crawler - In Combat - Cast Icetip Poison");
+
+-- Crusader Dargath SAI
+SET @ENTRY := 29468;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,10,0,100,0,1,20,2000,2000,33,29468,0,0,0,0,0,7,0,0,0,0,0,0,0,"Crusader Dargath - OOC LOS - Quest Credit");
+
+-- Ice Steppe Rhino SAI
+SET @ENTRY := 29469;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,9,0,100,0,5,35,25000,30000,11,55193,0,0,0,0,0,1,0,0,0,0,0,0,0,"Ice Steppe Rhino - On Range - Cast Rhino Charge");
+
+-- Brunnhildar Warmaiden SAI
+SET @ENTRY := 29498;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,0,3000,6000,7000,10000,11,15496,0,0,0,0,0,2,0,0,0,0,0,0,0,"Brunnhildar Warmaiden - In Combat - Cast Cleave");
+
+-- Fjorn SAI
+SET @ENTRY := 29503;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,0,7000,11000,9000,23000,11,57801,0,0,0,0,0,2,0,0,0,0,0,0,0,"Fjorn - In Combat - Cast Flame Breath"),
+(@ENTRY,0,1,0,0,0,100,0,12000,15000,30000,35000,11,55512,0,0,0,0,0,2,0,0,0,0,0,0,0,"Fjorn - In Combat - Cast Call of Earth");
+
+-- Seething Revenant SAI
+SET @ENTRY := 29504;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,0,3000,7000,9000,12000,11,56620,0,0,0,0,0,1,0,0,0,0,0,0,0,"Seething Revenant - In Combat - Cast Seething Flame");
+
+-- Overseer Syra SAI
+SET @ENTRY := 29518;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,0,3000,6000,12000,15000,11,6253,0,0,0,0,0,2,0,0,0,0,0,0,0,"Overseer Syra - In Combat - Cast Backhand"),
+(@ENTRY,0,1,0,0,0,100,0,9000,12000,9000,12000,11,49807,0,0,0,0,0,2,0,0,0,0,0,0,0,"Overseer Syra - In Combat - Cast Whirlwind");
+
+-- Garm Watcher SAI
+SET @ENTRY := 29553;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,9,0,100,0,5,35,25000,28000,11,50413,0,0,0,0,0,1,0,0,0,0,0,0,0,"Garm Watcher - On Range - Cast Magnataur Charge");
+
+-- Snowblind Devotee SAI
+SET @ENTRY := 29554;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,2,0,100,1,0,30,120000,130000,11,56410,0,0,0,0,0,1,0,0,0,0,0,0,0,"Snowblind Devotee - 30% HP - Cast Blind Faith");
+
+-- Valkyrion Aspirant SAI
+SET @ENTRY := 29569;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,2,0,100,1,0,30,120000,140000,11,57524,0,0,0,0,0,1,0,0,0,0,0,0,0,"Valkyrion Aspirant - 30% HP - Cast Metanoia");
+
+-- Nascent Val'kyr SAI
+SET @ENTRY := 29570;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,0,9000,12000,12000,15000,11,57547,0,0,0,0,0,5,0,0,0,0,0,0,0,"Nascent Val'kyr - In Combat - Cast Touch of the Val'kyr"),
+(@ENTRY,0,1,0,0,0,100,0,3000,6000,4000,6000,11,60991,0,0,0,0,0,2,0,0,0,0,0,0,0,"Nascent Val'kyr - In Combat - Cast Lash");
+
+-- Stormforged Pillager SAI
+SET @ENTRY := 29586;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,0,1000,3000,35000,42000,11,52701,0,0,0,0,0,1,0,0,0,0,0,0,0,"Stormforged Pillager - In Combat - Cast Lightning Charged");
+
+-- Yorg Stormheart SAI
+SET @ENTRY := 29593;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,0,3000,8000,18000,23000,11,19135,0,0,0,0,0,1,0,0,0,0,0,0,0,"Yorg Stormheart - In Combat - Cast Avatar");
+
+-- Savage Hill Brute SAI
+SET @ENTRY := 29623;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,0,6000,9000,20000,26000,11,54678,0,0,0,0,0,1,0,0,0,0,0,0,0,"Savage Hill Brute - In Combat - Cast Brute Force");
+
+-- Stormrider SAI
+SET @ENTRY := 29624;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,0,5000,8000,9000,12000,11,12549,0,0,0,0,0,2,0,0,0,0,0,0,0,"Stormrider - In Combat - Cast Forked Lightning"),
+(@ENTRY,0,1,0,0,0,100,0,3000,5000,15000,18000,11,51876,0,0,0,0,0,2,0,0,0,0,0,0,0,"Stormrider - In Combat - Cast Stormstrike");
+
+-- Tormar Frostgut SAI
+SET @ENTRY := 29626;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,0,3000,6000,12000,15000,11,50410,0,0,0,0,0,2,0,0,0,0,0,0,0,"Tormar Frostgut - In Combat - Cast Tusk Strike"),
+(@ENTRY,0,1,0,0,0,100,0,7000,9000,15000,18000,11,11876,0,0,0,0,0,1,0,0,0,0,0,0,0,"Tormar Frostgut - In Combat - Cast War Stomp");
+
+-- Banshee Soulclaimer SAI
+SET @ENTRY := 29646;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,0,10000,10000,5000,15000,11,28993,0,0,0,0,0,2,0,0,0,0,0,0,0,"Banshee Soulclaimer - In Combat - Cast Bashee Wail");
+
+-- Bone Gryphon SAI
+SET @ENTRY := 29648;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,25,0,100,0,0,0,0,0,11,57764,0,0,0,0,0,1,0,0,0,0,0,0,0,"Bone Gryphon - On Reset - Cast Hover");
+
+-- Drakuru Blood Drinker SAI
+SET @ENTRY := 29654;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,0,1000,10000,20000,30000,11,37838,0,0,0,0,0,2,0,0,0,0,0,0,0,"Drakuru Blood Drinker - In Combat - Cast Blood Leach");
+
+-- Drakuru Berserker SAI
+SET @ENTRY := 29656;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,0,6000,8000,20000,30000,11,54959,0,0,0,0,0,2,0,0,0,0,0,0,0,"Drakuru Berserker - In Combat - Cast Dire Stomp");
+
+-- Ragemane SAI
+SET @ENTRY := 29664;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,4,0,100,0,0,0,0,0,11,51492,0,0,0,0,0,1,0,0,0,0,0,0,0,"Ragemane - On Aggro - Cast Charge"),
+(@ENTRY,0,1,0,0,0,100,0,7000,15000,15000,21000,11,50169,0,0,0,0,0,2,0,0,0,0,0,0,0,"Ragemane - In Combat - Cast Flipper Thwack"),
+(@ENTRY,0,2,0,2,0,100,1,0,30,0,0,11,50420,0,0,0,0,0,1,0,0,0,0,0,0,0,"Ragemane - At 30% HP - Cast Enrage");
+
+-- Ticking Bomb SAI
+SET @ENTRY := 29684;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,25,0,100,0,0,0,0,0,11,54955,0,0,0,0,0,1,0,0,0,0,0,0,0,"Ticking Bomb (Normal) - On Reset - Starts Countdown"),
+(@ENTRY,0,1,0,0,0,100,0,5500,5500,0,0,41,0,0,0,0,0,0,1,0,0,0,0,0,0,0,"Ticking Bomb (Normal) - In Combat - Despawn After Explosion");
+
+-- Chief Rageclaw SAI
+SET @ENTRY := 29690;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,23,0,100,0,12550,0,0,0,11,12550,0,0,0,0,0,1,0,0,0,0,0,0,0,"Chief Rageclaw - Aura - Cast Lightning Shield");
+
+-- Serpent Defender SAI
+SET @ENTRY := 29693;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,9,0,100,0,0,5,7000,10000,11,34811,0,0,0,0,0,2,0,0,0,0,0,0,0,"Serpent Defender - On Range - Cast Tail Lash");
+
+-- Hyldsmeet Drakerider SAI
+SET @ENTRY := 29694;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,0,2000,5000,5000,9000,11,32736,0,0,0,0,0,2,0,0,0,0,0,0,0,"Hyldsmeet Drakerider - In Combat - Cast Mortal Strike");
+
+-- Stormforged Pursuer SAI
+SET @ENTRY := 29696;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,9,0,100,0,5,30,7000,11000,11,55007,0,0,0,0,0,5,0,0,0,0,0,0,0,"Stormforged Pursuer - On Range - Cast Throw Hammer");
+
+-- Drakuru Prophet SAI
+SET @ENTRY := 29697;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,0,1000,6000,120000,120000,11,50366,0,0,0,0,0,1,0,0,0,0,0,0,0,"Drakuru Prophet - In Combat - Cast Plague Cloud");
+
+-- Elder Shaman Moky SAI
+SET @ENTRY := 29733;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,4,0,100,0,0,0,0,0,11,12550,0,0,0,0,0,1,0,0,0,0,0,0,0,"Elder Shaman Moky - On Aggro - Cast Lightning Shield");
+
+-- Savage Worg SAI
+SET @ENTRY := 29735;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,4,0,100,0,0,0,0,0,11,55077,0,0,0,0,0,2,0,0,0,0,0,0,0,"Savage Worg - On Aggro - Cast Pounce"),
+(@ENTRY,0,1,0,2,0,100,1,0,60,14000,16000,11,42745,0,0,0,0,0,1,0,0,0,0,0,0,0,"Savage Worg - At 60% HP - Cast Enrage");
+
+-- Stormpeak Hatchling SAI
+SET @ENTRY := 29755;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,0,3000,5000,5000,7000,11,61554,0,0,0,0,0,2,0,0,0,0,0,0,0,"Stormpeak Hatchling - In Combat - Cast Wing Smash");
+
+-- Unyielding Constrictor SAI
+SET @ENTRY := 29768;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,2,4000,9000,9000,12000,11,55602,0,0,0,0,0,2,0,0,0,0,0,0,0,"Unyielding Constrictor (Normal) - In Combat - Cast Vicious Bite"),
+(@ENTRY,0,1,0,0,0,100,4,4000,9000,9000,12000,11,59021,0,0,0,0,0,2,0,0,0,0,0,0,0,"Unyielding Constrictor (Heroic) - In Combat - Cast Vicious Bite");
+
+-- Frostfeather Screecher SAI
+SET @ENTRY := 29792;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,0,2000,4000,4000,7000,11,57815,0,0,0,0,0,1,0,0,0,0,0,0,0,"Frostfeather Screecher - In Combat - Cast Piercing Screech");
+
+-- Frostfeather Witch SAI
+SET @ENTRY := 29793;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,0,2000,5000,5000,7000,11,51877,0,0,0,0,0,2,0,0,0,0,0,0,0,"Frostfeather Witch - In Combat - Cast Coldwind Blast");
+
+-- Sirana Iceshriek SAI
+SET @ENTRY := 29794;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,0,3000,5000,5000,7000,11,61223,0,0,0,0,0,2,0,0,0,0,0,0,0,"Sirana Iceshriek - In Combat - Cast Talon Strike"),
+(@ENTRY,0,1,0,0,0,100,0,8000,11000,9000,13000,11,61211,0,0,0,0,0,2,0,0,0,0,0,0,0,"Sirana Iceshriek - In Combat - Cast Ice Shriek");
+
+-- Stormcrest Hatchling SAI
+SET @ENTRY := 29808;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,0,2000,3000,4000,6000,11,55079,0,0,0,0,0,2,0,0,0,0,0,0,0,"Stormcrest Hatchling - In Combat - Cast Swoop");
+
+-- Deathcharger Steed SAI
+SET @ENTRY := 29818;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,0,3300,7500,10000,10900,11,55317,0,0,0,0,0,5,0,0,0,0,0,0,0,"Deathcharger Steed - In Combat - Cast Charge");
+
+-- Drakkari Lancer SAI
+SET @ENTRY := 29819;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,2,4000,7000,12000,15000,11,55622,0,0,0,0,0,2,0,0,0,0,0,0,0,"Drakkari Lancer (Normal) - In Combat - Cast Impale"),
+(@ENTRY,0,1,0,0,0,100,4,4000,7000,12000,15000,11,58978,0,0,0,0,0,2,0,0,0,0,0,0,0,"Drakkari Lancer (Heroic) - In Combat - Cast Impale"),
+(@ENTRY,0,2,0,0,0,100,0,9000,12000,15000,18000,11,6713,0,0,0,0,0,2,0,0,0,0,0,0,0,"Drakkari Lancer - In Combat - Cast Disarm"),
+(@ENTRY,0,3,0,0,0,100,0,10000,15000,17000,20000,11,40546,0,0,0,0,0,1,0,0,0,0,0,0,0,"Drakkari Lancer - Combat- Cast Retaliation");
+
+-- Drakkari Medicine Man SAI
+SET @ENTRY := 29826;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,14,0,100,0,30,12000,15000,0,11,55598,0,0,0,0,0,7,0,0,0,0,0,0,0,"Drakkari Medecine Man - Cast Cleanse Magic on Friendlies"),
+(@ENTRY,0,1,0,3,0,100,1,0,30,22000,29000,11,55582,0,0,0,0,0,5,0,0,0,0,0,0,0,"Drakkari Medecine Man - Cast Mana Link at 30% MP"),
+(@ENTRY,0,2,0,14,0,100,2,40,14000,21000,0,11,55597,0,0,0,0,0,7,0,0,0,0,0,0,0,"Drakkari Medecine Man (Normal) - Cast Healing Wave on Friendlies"),
+(@ENTRY,0,3,0,14,0,100,4,40,14000,21000,0,11,58980,0,0,0,0,0,7,0,0,0,0,0,0,0,"Drakkari Medecine Man (Heroic) - Cast Healing Wave on Friendlies"),
+(@ENTRY,0,4,0,2,0,100,3,0,50,0,0,11,55599,0,0,0,0,0,1,0,0,0,0,0,0,0,"Drakkari Medecine Man (Normal) - Cast Earth Shield at 50% HP"),
+(@ENTRY,0,5,0,2,0,100,5,0,50,0,0,11,58981,0,0,0,0,0,1,0,0,0,0,0,0,0,"Drakkari Medecine Man (Heroic) - Cast Earth Shield at 50% HP");
+
+-- Drakkari Earthshaker SAI
+SET @ENTRY := 29829;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,9,0,100,2,0,5,9000,14000,11,16172,0,0,0,0,0,2,0,0,0,0,0,0,0,"Drakkari Earthshaker (Normal) - In Combat - Cast Head Crack"),
+(@ENTRY,0,1,0,9,0,100,4,0,5,9000,14000,11,58969,0,0,0,0,0,2,0,0,0,0,0,0,0,"Drakkari Earthshaker (Heroic) - In Combat - Cast Head Crack"),
+(@ENTRY,0,2,0,0,0,100,0,5000,8000,5000,7000,11,55567,0,0,0,0,0,2,0,0,0,0,0,0,0,"Drakkari Earthshaker - Cast Powerful Blow"),
+(@ENTRY,0,3,0,0,0,100,0,12000,15000,12000,18000,11,55563,0,0,0,0,0,1,0,0,0,0,0,0,0,"Drakkari Earthshaker - Cast Slam Ground");
+
+-- Drakkari Golem SAI
+SET @ENTRY := 29832;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,2,2000,5000,14000,17000,11,55635,0,0,0,0,0,1,0,0,0,0,0,0,0,"Drakkari Golem (Normal) - Cast Thunderclap"),
+(@ENTRY,0,1,0,0,0,100,4,2000,5000,14000,17000,11,58975,0,0,0,0,0,1,0,0,0,0,0,0,0,"Drakkari Golem (Heroic) - Cast Thunderclap"),
+(@ENTRY,0,2,0,0,0,100,2,5000,9000,20000,25000,11,55636,0,0,0,0,0,2,0,0,0,0,0,0,0,"Drakkari Golem (Normal) - In Combat - Cast Shockwave"),
+(@ENTRY,0,3,0,0,0,100,4,5000,9000,20000,25000,11,58977,0,0,0,0,0,2,0,0,0,0,0,0,0,"Drakkari Golem (Heroic) - In Combat - Cast Shockwave"),
+(@ENTRY,0,4,0,2,0,100,1,0,30,17000,20000,11,55633,0,0,0,0,0,1,0,0,0,0,0,0,0,"Drakkari Golem - Cast Body of Stone at 30% HP");
+
+-- Drakkari Rhino SAI
+SET @ENTRY := 29838;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,4,0,100,2,0,0,0,0,11,55530,0,0,0,0,0,2,0,0,0,0,0,0,0,"Drakkari Rhino (Normal) - On Aggro - Cast Charge"),
+(@ENTRY,0,1,0,4,0,100,4,0,0,0,0,11,58991,0,0,0,0,0,2,0,0,0,0,0,0,0,"Drakkari Rhino (Heroic) - On Aggro - Cast Charge"),
+(@ENTRY,0,2,0,0,0,100,2,5000,11000,14000,20000,11,55663,0,0,0,0,0,1,0,0,0,0,0,0,0,"Drakkari Rhino (Normal) - Cast Deafening Roar"),
+(@ENTRY,0,3,0,0,0,100,4,5000,11000,14000,20000,11,58992,0,0,0,0,0,1,0,0,0,0,0,0,0,"Drakkari Rhino (Heroic) - Cast Deafening Roar");
+
+-- Stormforged Loreseeker SAI
+SET @ENTRY := 29843;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,0,1000,1000,20000,40000,11,12550,0,0,0,0,0,1,0,0,0,0,0,0,0,"Stormforged Loreseeker - Cast Lightning Shield"),
+(@ENTRY,0,1,0,0,0,100,0,4000,7000,6000,12000,11,61561,0,0,0,0,0,2,0,0,0,0,0,0,0,"Stormforged Loreseeker - Cast Lightning Fury");
+
+-- Icebound Revenant SAI
+SET @ENTRY := 29844;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,0,5000,7000,9000,15000,11,55216,0,0,0,0,0,5,0,0,0,0,0,0,0,"Icebound Revenant - Cast Avalanche");
+
+-- Rageclaw Pup SAI
+SET @ENTRY := 29848;
+UPDATE `creature_template` SET `AIName`='' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+UPDATE `creature_template_addon` SET `auras`=55474 WHERE `entry`=@ENTRY;
+
+-- Stormcrest Eagle SAI
+SET @ENTRY := 29854;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,0,2000,5000,4000,7000,11,43517,0,0,0,0,0,2,0,0,0,0,0,0,0,"Stormcrest Eagle - In Combat - Cast Talon");
+
+-- Stormforged Eradicator SAI
+SET @ENTRY := 29861;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,0,3000,7000,14000,18000,11,56352,0,0,0,0,0,2,0,0,0,0,0,0,0,"Stormforged Eradicator - In Combat - Cast Storm Punch"),
+(@ENTRY,0,1,0,0,0,100,0,9000,12000,13000,18000,11,15588,0,0,0,0,0,1,0,0,0,0,0,0,0,"Stormforged Eradicator - In Combat - Cast Thunderclap");
+
+-- Stormforged Monitor SAI
+SET @ENTRY := 29862;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,0,1000,3000,30000,40000,11,52701,0,0,0,0,0,1,0,0,0,0,0,0,0,"Stormforged Monitor - In Combat - Cast Lightning Charged"),
+(@ENTRY,0,1,0,0,0,100,0,9000,12000,15000,18000,11,57580,0,0,0,0,0,5,0,0,0,0,0,0,0,"Stormforged Monitor - In Combat - Cast Lightning Infusion");
+
+-- Drakkari Inciter SAI
+SET @ENTRY := 29874;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,9,0,100,2,0,5,5000,7000,11,12057,0,0,0,0,0,2,0,0,0,0,0,0,0,"Drakkari Inciter (Normal) - In Combat - Cast Strike"),
+(@ENTRY,0,1,0,9,0,100,4,0,5,5000,7000,11,15580,0,0,0,0,0,2,0,0,0,0,0,0,0,"Drakkari Inciter (Heroic) - In Combat - Cast Strike");
+
+-- Icemane Yeti SAI
+SET @ENTRY := 29875;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,0,3000,8000,9000,15000,11,56402,0,0,0,0,0,2,0,0,0,0,0,0,0,"Icemane Yeti - In Combat - Cast Crashing Slam");
+
+-- Drakkari Rhino SAI
+SET @ENTRY := 29931;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,4,0,100,2,0,0,0,0,11,55530,0,0,0,0,0,2,0,0,0,0,0,0,0,"Drakkari Rhino (Normal) - On Aggro - Cast Charge"),
+(@ENTRY,0,1,0,4,0,100,4,0,0,0,0,11,58991,0,0,0,0,0,2,0,0,0,0,0,0,0,"Drakkari Rhino (Heroic) - On Aggro - Cast Charge"),
+(@ENTRY,0,2,0,0,0,100,2,5000,11000,14000,20000,11,55663,0,0,0,0,0,1,0,0,0,0,0,0,0,"Drakkari Rhino (Normal) - Cast Deafening Roar"),
+(@ENTRY,0,3,0,0,0,100,4,5000,11000,14000,20000,11,58992,0,0,0,0,0,1,0,0,0,0,0,0,0,"Drakkari Rhino (Heroic) - Cast Deafening Roar");
+
+-- Warsong Hold Grunt SAI
+SET @ENTRY := 29942;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,0,2000,5000,5000,8000,11,19643,0,0,0,0,0,2,0,0,0,0,0,0,0,"Warsong Hold Grunt - In Combat - Cast Mortal Strike"),
+(@ENTRY,0,1,0,9,0,100,0,0,5,7000,9000,11,15618,0,0,0,0,0,2,0,0,0,0,0,0,0,"Warsong Hold Grunt - Cast Snap Kick");
+
+-- Tunka'lo Brave SAI
+SET @ENTRY := 29973;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,0,3000,7000,9000,15000,11,52058,0,0,0,0,0,1,0,0,0,0,0,0,0,"Tunka'lo Brave - Cast Ground Slam");
+
+-- Niffelem Forefather SAI
+SET @ENTRY := 29974;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,0,1000,5000,8000,13000,11,57454,0,0,0,0,0,5,0,0,0,0,0,0,0,"Niffelem Forefather - Cast Ice Spike");
+
+-- Earthen Elite SAI
+SET @ENTRY := 29980;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,0,3000,8000,11000,17000,11,55715,0,0,0,0,0,5,0,0,0,0,0,0,0,"Earthen Elite - Cast Torn Earth");
+
+-- Earthen Warder SAI
+SET @ENTRY := 29981;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,9,0,100,0,0,30,9000,12000,11,55704,0,0,0,0,0,2,0,0,0,0,0,0,0,"Earthen Warder - Cast Lava Burst");
+
+-- Drakkari Raider SAI
+SET @ENTRY := 29982;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,9,0,100,0,0,5,5000,7000,11,15496,0,0,0,0,0,2,0,0,0,0,0,0,0,"Drakkari Raider - On Range - Cast Cleave");
+
+-- Iron Sentinel SAI
+SET @ENTRY := 29984;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,0,1000,5000,12000,18000,11,5568,0,0,0,0,0,5,0,0,0,0,0,0,0,"Iron Sentinel - In Combat - Cast Throw Boulder"),
+(@ENTRY,0,1,0,0,0,100,0,7000,12000,12000,15000,11,56490,0,0,0,0,0,2,0,0,0,0,0,0,0,"Iron Sentinel - In Combat - Casr Stomp");
+
+-- Snorts SAI
+SET @ENTRY := 29996;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,4,0,100,0,0,0,0,0,11,3385,0,0,0,0,0,1,0,0,0,0,0,0,0,"Snorts - On Aggro - Cast Boar Charge");
+
+-- Warsmith Sigfinna SAI
+SET @ENTRY := 30006;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,9,0,100,0,5,35,25000,28000,11,35570,0,0,0,0,0,2,0,0,0,0,0,0,0,"Warsmith Sigfinna - Cast Charge");
+
+-- Icebound Revenant SAI
+SET @ENTRY := 30053;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,0,6000,15000,14000,20000,11,55216,0,0,0,0,0,5,0,0,0,0,0,0,0,"Icebound Revenant - Cast Avalanche");
+
+-- Stormforged Warmonger SAI
+SET @ENTRY := 30060;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,0,1000,3000,32000,36000,11,52701,0,0,0,0,0,1,0,0,0,0,0,0,0,"Stormforged Warmonger - Cast Lightning Charged"),
+(@ENTRY,0,1,0,9,0,100,0,0,5,14000,18000,11,51876,0,0,0,0,0,2,0,0,0,0,0,0,0,"Stormforged Warmonger - Cast Storm Strike");
+
+-- Stormforged Decimator SAI
+SET @ENTRY := 30063;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,0,5000,9000,15000,19000,11,56352,0,0,0,0,0,2,0,0,0,0,0,0,0,"Stormforged Decimator - Cast Storm Punch"),
+(@ENTRY,0,1,0,0,0,100,0,9000,12000,18000,22000,11,35238,0,0,0,0,0,2,0,0,0,0,0,0,0,"Stormforged Decimator - Cast War Stomp");
+
+-- Iron Behemoth SAI
+SET @ENTRY := 30064;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,0,9000,15000,20000,26000,11,56062,0,0,0,0,0,2,0,0,0,0,0,0,0,"Iron Behemoth - Cast Thunderous Stomp"),
+(@ENTRY,0,1,0,2,0,100,1,0,15,0,0,11,56062,0,0,0,0,0,2,0,0,0,0,0,0,0,"Iron Behemoth - Cast Thunderous Stomp and Obliterate at 15% HP");
+
+-- Stitched Colossus SAI
+SET @ENTRY := 30071;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,2,5400,12200,15500,22300,11,55821,0,0,0,0,0,1,0,0,0,0,0,0,0,"Stitched Colossus (Normal) - Cast Massive Stomp"),
+(@ENTRY,0,1,0,0,0,100,4,5400,12200,15500,22300,11,55826,0,0,0,0,0,1,0,0,0,0,0,0,0,"Stitched Colossus (Heroic) - Cast Massive Stomp"),
+(@ENTRY,0,2,0,2,0,100,1,0,30,0,0,11,54356,0,0,0,0,0,1,0,0,0,0,0,0,0,"Stitched Colossus - Cast Unstoppable Enrage at 30% HP");
+
+-- Marauding Geist SAI
+SET @ENTRY := 30083;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,4,0,100,0,0,0,0,0,11,56729,0,0,0,0,0,2,0,0,0,0,0,0,0,"Marauding Geist - Cast Frenzied Leap on Aggro");
+
+-- Vigilant Shade SAI
+SET @ENTRY := 30085;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,25,0,100,0,0,0,0,0,11,55848,0,0,0,0,0,1,0,0,0,0,0,0,0,"Vigilant Shade - Cast Invisibility on Spawn"),
+(@ENTRY,0,1,0,4,0,100,0,0,0,0,0,28,55848,0,0,0,0,0,1,0,0,0,0,0,0,0,"Vigilant Shade - Remove Invisibility on Aggro"),
+(@ENTRY,0,2,0,0,0,100,2,2300,2300,9600,9900,11,55850,0,0,0,0,0,2,0,0,0,0,0,0,0,"Vigilant Shade (Normal) - In Combat - Cast Shadow Bolt Volley"),
+(@ENTRY,0,3,0,0,0,100,4,2300,2300,9600,9900,11,55851,0,0,0,0,0,2,0,0,0,0,0,0,0,"Vigilant Shade (Heroic) - In Combat - Cast Shadow Bolt Volley");
+
+-- Seething Revenant SAI
+SET @ENTRY := 30120;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,0,3000,6000,7000,12000,11,56620,0,0,0,0,0,1,0,0,0,0,0,0,0,"Seething Revenant - Cast Seething Flame");
+
+-- Stormforged Soldier SAI
+SET @ENTRY := 30136;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,0,3000,8000,9000,12000,11,56621,0,0,0,0,0,5,0,0,0,0,0,0,0,"Stormforged Soldier - Cast Thunder Orb"),
+(@ENTRY,0,1,0,0,0,100,0,3000,8000,9000,12000,11,56622,0,0,0,0,0,5,0,0,0,0,0,0,0,"Stormforged Soldier - Cast Thunder Orb");
+
+-- The Iron Watcher SAI
+SET @ENTRY := 30142;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,0,4000,9000,11000,17000,11,60925,0,0,0,0,0,1,0,0,0,0,0,0,0,"The Iron Watcher - Cast Thundering Stomp");
+
+-- Garhal SAI
+SET @ENTRY := 30147;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,9,0,100,0,0,5,5000,9000,11,50306,0,0,0,0,0,2,0,0,0,0,0,0,0,"Garhal - In Combat - Cast Thrash Kick");
+
+-- Bruor Ironbane SAI
+SET @ENTRY := 30152;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,2,0,100,1,0,30,120000,130000,11,56330,0,0,0,0,0,1,0,0,0,0,0,0,0,"Bruor Ironbane - Cast Iron's Bane at 30% HP");
+
+-- Brittle Revenant SAI
+SET @ENTRY := 30160;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,0,2000,6000,12000,15000,11,50731,0,0,0,0,0,2,0,0,0,0,0,0,0,"Brittle Revenant - Cast Mace Smash"),
+(@ENTRY,0,1,0,13,0,100,0,16000,20000,0,0,11,11972,0,0,0,0,0,7,0,0,0,0,0,0,0,"Brittle Revenant - In Combat - Cast Shield Bash");
+
+-- Gimorak SAI
+SET @ENTRY := 30167;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,9,0,100,0,5,35,25000,28000,11,54487,0,0,0,0,0,2,0,0,0,0,0,0,0,"Gimorak - Cast Jump Attack"),
+(@ENTRY,0,1,0,9,0,100,0,0,5,12000,16000,11,50046,0,0,0,0,0,2,0,0,0,0,0,0,0,"Gimorak - Cast Gnaw Bone"),
+(@ENTRY,0,2,0,0,0,100,0,9000,12000,17000,20000,11,32019,0,0,0,0,0,5,0,0,0,0,0,0,0,"Gimorak - Cast Gore");
+
+-- Twilight Apostle SAI
+SET @ENTRY := 30179;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,25,0,100,2,0,0,0,0,11,12550,0,0,0,0,0,1,0,0,0,0,0,0,0,"Twilight Apostle (Normal)- Cast Lightning Shield On Spawn"),
+(@ENTRY,0,1,0,25,0,100,4,0,0,0,0,11,61570,0,0,0,0,0,1,0,0,0,0,0,0,0,"Twilight Apostle (Heroic)- Cast Lightning Shield On Spawn"),
+(@ENTRY,0,2,0,14,0,100,0,40,14000,17000,0,11,11986,0,0,0,0,0,7,0,0,0,0,0,0,0,"Twilight Apostle - Cast Healing Wave on Friendlies"),
+(@ENTRY,0,3,0,2,0,100,1,0,30,12000,15000,11,28902,0,0,0,0,0,1,0,0,0,0,0,0,0,"Twilight Apostle - In Combat - Cast Bloodlust at 30% HP"),
+(@ENTRY,0,4,0,2,0,100,1,0,15,0,0,25,1,0,0,0,0,0,1,0,0,0,0,0,0,0,"Twilight Apostle - At 15% HP - Flee");
+
+-- Yorg Stormheart SAI
+SET @ENTRY := 30182;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,0,1000,4000,30000,38000,11,19135,0,0,0,0,0,1,0,0,0,0,0,0,0,"Yorg Stormheart - Cast Avatar"),
+(@ENTRY,0,1,0,0,0,100,0,6000,12000,15000,19000,11,15548,0,0,0,0,0,1,0,0,0,0,0,0,0,"Yorg Stormheart - Cast Thunderclap");
+
+-- Scion of Storm SAI
+SET @ENTRY := 30184;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,0,7000,13000,9000,16000,11,57480,0,0,0,0,0,5,0,0,0,0,0,0,0,"Scion of Storm - Cast Kinetic Beam"),
+(@ENTRY,0,1,0,6,0,100,0,0,0,0,0,11,50215,0,0,0,0,0,7,0,0,0,0,0,0,0,"Scion of Storm - Cast Zephyr on Death");
+
+-- Alanura Firecloud SAI
+SET @ENTRY := 30239;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,4,0,100,0,0,0,0,0,11,35917,0,0,0,0,0,1,0,0,0,0,0,0,0,"Alanura Firecloud - Cast Fiery Intellect On Aggro");
+
+-- Marisalira SAI
+SET @ENTRY := 30254;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,4,0,100,0,0,0,0,0,11,35917,0,0,0,0,0,1,0,0,0,0,0,0,0,"Marisalira - Cast Fiery Intellect On Aggro");
+
+-- Skymaster Baeric SAI
+SET @ENTRY := 30269;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,4,0,100,0,0,0,0,0,11,35917,0,0,0,0,0,1,0,0,0,0,0,0,0,"Skymaster Baeric - Cast Fiery Intellect On Aggro");
+
+-- Ahn'kahar Web Winder SAI
+SET @ENTRY := 30276;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,9,0,100,2,0,40,14000,19000,11,56640,0,0,0,0,0,5,0,0,0,0,0,0,0,"Ahn'kahar Web Winder (Normal)- Cast Web Grab"),
+(@ENTRY,0,1,0,9,0,100,4,0,40,14000,19000,11,59106,0,0,0,0,0,5,0,0,0,0,0,0,0,"Ahn'kahar Web Winder (Heroic)- Cast Web Grab"),
+(@ENTRY,0,2,0,0,0,100,0,5000,9000,16000,21000,11,56632,0,0,0,0,0,5,0,0,0,0,0,0,0,"Ahn'kahar Web Winder - Tangled Webs");
+
+-- Ahn'kahar Slasher SAI
+SET @ENTRY := 30277;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,0,4000,7000,14000,17000,11,42746,0,0,0,0,0,2,0,0,0,0,0,0,0,"Ahn'kahar Slasher - Cleave"),
+(@ENTRY,0,1,0,0,0,100,0,9000,12000,15000,18000,11,56643,0,0,0,0,0,1,0,0,0,0,0,0,0,"Ahn'kahar Slasher - Triple Slash"),
+(@ENTRY,0,2,0,2,0,100,3,0,30,8000,10000,11,56646,0,0,0,0,0,1,0,0,0,0,0,0,0,"Ahn'kahar Slasher (Normal)- Enrage at 30% HP"),
+(@ENTRY,0,3,0,2,0,100,5,0,30,8000,10000,11,32714,0,0,0,0,0,1,0,0,0,0,0,0,0,"Ahn'kahar Slasher (Heroic)- Enrage at 30% HP");
+
+-- Deep Crawler SAI
+SET @ENTRY := 30279;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,2,4000,7000,9000,12000,11,56580,0,0,0,0,0,5,0,0,0,0,0,0,0,"Deep Crawler (Normal)- Gluttinous Poison"),
+(@ENTRY,0,1,0,0,0,100,4,4000,7000,9000,12000,11,59108,0,0,0,0,0,5,0,0,0,0,0,0,0,"Deep Crawler (Heroic)- Gluttinous Poison"),
+(@ENTRY,0,2,0,12,0,100,3,0,20,14000,17000,11,56581,0,0,0,0,0,7,0,0,0,0,0,0,0,"Deep Crawler (Normal)- Cast Fatal Sting at 20% Target HP"),
+(@ENTRY,0,3,0,12,0,100,5,0,20,14000,17000,11,59109,0,0,0,0,0,7,0,0,0,0,0,0,0,"Deep Crawler (Heroic)- Cast Fatal Sting at 20% Target HP");
+
+-- Plague Walker SAI
+SET @ENTRY := 30283;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,25,0,100,2,0,0,0,0,11,56709,0,0,0,0,0,1,0,0,0,0,0,0,0,"Plague Walker (Normal)- Cast Aura of Lost Hope On Spawn"),
+(@ENTRY,0,1,0,25,0,100,4,0,0,0,0,11,61459,0,0,0,0,0,1,0,0,0,0,0,0,0,"Plague Walker (Heroic)- Cast Aura of Lost Hope On Spawn"),
+(@ENTRY,0,2,0,0,0,100,0,7000,11000,120000,130000,11,56707,0,0,0,0,0,2,0,0,0,0,0,0,0,"Plague Walker - Cast Contagion of Rot");
+
+-- Bonegrinder SAI
+SET @ENTRY := 30284;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,2,4000,7000,18000,22000,11,56736,0,0,0,0,0,1,0,0,0,0,0,0,0,"Bonegrinder (Normal)- Trample"),
+(@ENTRY,0,1,0,0,0,100,4,4000,7000,18000,22000,11,59107,0,0,0,0,0,1,0,0,0,0,0,0,0,"Bonegrinder (Heroic)- Trample"),
+(@ENTRY,0,2,0,0,0,100,0,11000,14000,22000,25000,11,56737,0,0,0,0,0,1,0,0,0,0,0,0,0,"Bonegrinder - Cast Stomp"),
+(@ENTRY,0,3,0,0,0,100,0,20000,23000,24000,27000,11,19134,0,0,0,0,0,1,0,0,0,0,0,0,0,"Bonegrinder - Cast Frightenning Shout"),
+(@ENTRY,0,4,0,2,0,100,1,0,30,120000,130000,11,8599,0,0,0,0,0,1,0,0,0,0,0,0,0,"Bonegrinder - At 30% HP - Cast Enrage");
+
+-- Plundering Geist SAI
+SET @ENTRY := 30287;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,2,0,100,1,0,50,9000,12000,11,56715,0,0,0,0,0,2,0,0,0,0,0,0,0,"Plundering Geist (Normal)- Cast Plunder Health at 50% HP"),
+(@ENTRY,0,1,0,2,0,100,1,0,75,6000,8000,11,59114,0,0,0,0,0,2,0,0,0,0,0,0,0,"Plundering Geist (Heroic)- Cast Plunder Health at 75% HP");
+
+-- Iron Colossus SAI
+SET @ENTRY := 30300;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,0,9000,16000,20000,28000,11,61673,0,0,0,0,0,2,0,0,0,0,0,0,0,"Iron Colossus - Cast Ground Slam");
+
+-- Savage Cave Beast SAI
+SET @ENTRY := 30329;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,0,4000,7000,9000,12000,11,30471,0,0,0,0,0,2,0,0,0,0,0,0,0,"Savage Cave Beast - In Combat - Cast Uppercut"),
+(@ENTRY,0,1,0,0,0,100,2,9000,12000,17000,20000,11,56867,0,0,0,0,0,1,0,0,0,0,0,0,0,"Savage Cave Beast (Normal)- In Combat - Cast Poison Cloud"),
+(@ENTRY,0,2,0,0,0,100,4,9000,12000,17000,20000,11,59116,0,0,0,0,0,1,0,0,0,0,0,0,0,"Savage Cave Beast (Heroic)- In Combat - Cast Poison Cloud"),
+(@ENTRY,0,3,0,2,0,100,1,0,30,12000,15000,11,48193,0,0,0,0,0,1,0,0,0,0,0,0,0,"Savage Cave Beast - At 30% HP - Cast Enrage");
+
+-- Ahn'kahar Swarmer SAI
+SET @ENTRY := 30338;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,0,1000,1000,35000,45000,11,56354,0,0,0,0,0,1,0,0,0,0,0,0,0,"Ahn'kahar Swarmer - Cast Sprint");
+
+-- Eisenfaust SAI
+SET @ENTRY := 30341;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,0,3000,8000,9000,14000,11,56490,0,0,0,0,0,2,0,0,0,0,0,0,0,"Eisenfaust - Cast Stomp");
+
+-- Elder Sardis SAI
+SET @ENTRY := 30348;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,25,0,100,0,0,0,0,0,11,25824,0,0,0,0,0,1,0,0,0,0,0,0,0,"Elder Sardis - Spotlight");
+
+-- Duronn the Runewrought SAI
+SET @ENTRY := 30353;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,0,2000,7000,11000,17000,11,56490,0,0,0,0,0,2,0,0,0,0,0,0,0,"Duronn the Runewrought - Stomp"),
+(@ENTRY,0,1,0,2,0,100,1,0,10,20000,30000,11,61315,0,0,0,0,0,1,0,0,0,0,0,0,0,"Duronn the Runewrought - Cast Reconstruction at 10% HP");
+
+-- Elder Beldak SAI
+SET @ENTRY := 30357;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,25,0,100,0,0,0,0,0,11,25824,0,0,0,0,0,1,0,0,0,0,0,0,0,"Elder Beldak - Spotlight");
+
+-- Elder Morthie SAI
+SET @ENTRY := 30358;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,25,0,100,0,0,0,0,0,11,25824,0,0,0,0,0,1,0,0,0,0,0,0,0,"Elder Morthie - Spotlight");
+
+-- Elder Fargal SAI
+SET @ENTRY := 30359;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,25,0,100,0,0,0,0,0,11,25824,0,0,0,0,0,1,0,0,0,0,0,0,0,"Elder Fargal - Spotlight");
+
+-- Elder Northal SAI
+SET @ENTRY := 30360;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,25,0,100,0,0,0,0,0,11,25824,0,0,0,0,0,1,0,0,0,0,0,0,0,"Elder Northal - Spotlight");
+
+-- Elder Sandrene SAI
+SET @ENTRY := 30362;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,25,0,100,0,0,0,0,0,11,25824,0,0,0,0,0,1,0,0,0,0,0,0,0,"Elder Sandrene - Spotlight");
+
+-- Elder Thoim SAI
+SET @ENTRY := 30363;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,25,0,100,0,0,0,0,0,11,25824,0,0,0,0,0,1,0,0,0,0,0,0,0,"Elder Thoim - Spotlight");
+
+-- Elder Arp SAI
+SET @ENTRY := 30364;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,25,0,100,0,0,0,0,0,11,25824,0,0,0,0,0,1,0,0,0,0,0,0,0,"Elder Arp - Spotlight");
+
+-- Elder Wanikaya SAI
+SET @ENTRY := 30365;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,25,0,100,0,0,0,0,0,11,25824,0,0,0,0,0,1,0,0,0,0,0,0,0,"Elder Wanikaya - Spotlight");
+
+-- Elder Lunaro SAI
+SET @ENTRY := 30367;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,25,0,100,0,0,0,0,0,11,25824,0,0,0,0,0,1,0,0,0,0,0,0,0,"Elder Lunaro - Spotlight");
+
+-- Elder Bluewolf SAI
+SET @ENTRY := 30368;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,25,0,100,0,0,0,0,0,11,25824,0,0,0,0,0,1,0,0,0,0,0,0,0,"Elder Bluewolf - Spotlight");
+
+-- Elder Tauros SAI
+SET @ENTRY := 30369;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,25,0,100,0,0,0,0,0,11,25824,0,0,0,0,0,1,0,0,0,0,0,0,0,"Elder Tauros - Spotlight");
+
+-- Elder Graymane SAI
+SET @ENTRY := 30370;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,25,0,100,0,0,0,0,0,11,25824,0,0,0,0,0,1,0,0,0,0,0,0,0,"Elder Graymane - Spotlight");
+
+-- Elder Pamuya SAI
+SET @ENTRY := 30371;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,25,0,100,0,0,0,0,0,11,25824,0,0,0,0,0,1,0,0,0,0,0,0,0,"Elder Pamuya - Spotlight");
+
+-- Elder Whurain SAI
+SET @ENTRY := 30372;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,25,0,100,0,0,0,0,0,11,25824,0,0,0,0,0,1,0,0,0,0,0,0,0,"Elder Whurain - Spotlight");
+
+-- Elder Skywarden SAI
+SET @ENTRY := 30373;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,25,0,100,0,0,0,0,0,11,25824,0,0,0,0,0,1,0,0,0,0,0,0,0,"Elder Skywarden - Spotlight");
+
+-- Elder Muraco SAI
+SET @ENTRY := 30374;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,25,0,100,0,0,0,0,0,11,25824,0,0,0,0,0,1,0,0,0,0,0,0,0,"Elder Muraco - Spotlight");
+
+-- Elder Stonebeard SAI
+SET @ENTRY := 30375;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,25,0,100,0,0,0,0,0,11,25824,0,0,0,0,0,1,0,0,0,0,0,0,0,"Elder Stonebeard - Spotlight");
+
+-- Seething Revenant SAI
+SET @ENTRY := 30387;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,1,0,100,0,1000,1000,0,0,11,56620,0,0,0,0,0,1,0,0,0,0,0,0,0,"Seething Revenant - Cast Seething Flame on Spawn");
+
+-- Forgotten One SAI
+SET @ENTRY := 30414;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,2,7000,11000,17000,20000,11,60833,0,0,0,0,0,5,0,0,0,0,0,0,0,"Forgotten One (Normal)- In Combat - Cast Shadow Crash"),
+(@ENTRY,0,1,0,0,0,100,4,4000,7000,17000,20000,11,60848,0,0,0,0,0,5,0,0,0,0,0,0,0,"Forgotten One (Heroic)- In Combat - Cast Shadow Crash"),
+(@ENTRY,0,2,0,9,3,100,2,0,5,16000,19000,11,60845,0,0,0,0,0,1,0,0,0,0,0,0,0,"Forgotten One (Normal)- In Combat - Cast Shadow Nova"),
+(@ENTRY,0,3,0,9,3,100,4,0,5,16000,19000,11,60851,0,0,0,0,0,1,0,0,0,0,0,0,0,"Forgotten One (Heroic)- In Combat - Cast Shadow Nova"),
+(@ENTRY,0,4,0,0,3,100,0,9000,12000,18000,21000,11,34322,0,0,0,0,0,1,0,0,0,0,0,0,0,"Forgotten One - Cast Psychic Dream");
+
+-- Ice Steppe Bull SAI
+SET @ENTRY := 30445;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,4,0,100,0,0,0,0,0,11,55193,0,0,0,0,0,1,0,0,0,0,0,0,0,"Ice Steppe Bull - Cast Rhino Charge on Aggro"),
+(@ENTRY,0,1,0,9,0,100,0,0,5,5000,7000,11,51944,0,0,0,0,0,2,0,0,0,0,0,0,0,"Ice Steppe Bull - In Combat - Cast Trample");
+
+-- Romping Rhino SAI
+SET @ENTRY := 30447;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,0,6000,9000,9000,13000,11,57468,0,0,0,0,0,1,0,0,0,0,0,0,0,"Romping Rhino - Cast Romp");
+
+-- Plains Mammoth SAI
+SET @ENTRY := 30448;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,9,0,100,0,0,5,5000,8000,11,50410,0,0,0,0,0,2,0,0,0,0,0,0,0,"Plains Mammoth - Cast Tusk Strike");
+
+-- Wailing Winds SAI
+SET @ENTRY := 30450;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,9,0,100,0,8,30,12000,16000,11,57488,0,0,0,0,0,2,0,0,0,0,0,0,0,"Wailing Winds - Cast Squall");
+
+-- The North Wind SAI
+SET @ENTRY := 30474;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,0,9000,15000,23000,26000,11,61662,0,0,0,0,0,5,0,0,0,0,0,0,0,"The North Wind - Cast Cyclone"),
+(@ENTRY,0,1,0,0,0,100,0,6000,13000,15000,23000,11,56861,0,0,0,0,0,5,0,0,0,0,0,0,0,"The North Wind - Cast Gale"),
+(@ENTRY,0,2,0,9,0,100,0,0,5,8000,11000,11,61663,0,0,0,0,0,2,0,0,0,0,0,0,0,"The North Wind - Cast Gust of Wind");
+
+-- Elder Jarten SAI
+SET @ENTRY := 30531;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,25,0,100,0,0,0,0,0,11,25824,0,0,0,0,0,1,0,0,0,0,0,0,0,"Elder Jarten - Spotlight");
+
+-- Elder Nurgen SAI
+SET @ENTRY := 30533;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,25,0,100,0,0,0,0,0,11,25824,0,0,0,0,0,1,0,0,0,0,0,0,0,"Elder Nurgen - Spotlight");
+
+-- Elder Kilias SAI
+SET @ENTRY := 30534;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,25,0,100,0,0,0,0,0,11,25824,0,0,0,0,0,1,0,0,0,0,0,0,0,"Elder Kilias - Spotlight");
+
+-- Elder Yurauk SAI
+SET @ENTRY := 30535;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,25,0,100,0,0,0,0,0,11,25824,0,0,0,0,0,1,0,0,0,0,0,0,0,"Elder Yurauk - Spotlight");
+
+-- Elder Igasho SAI
+SET @ENTRY := 30536;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,25,0,100,0,0,0,0,0,11,25824,0,0,0,0,0,1,0,0,0,0,0,0,0,"Elder Igasho - Spotlight");
+
+-- Elder Ohanzee SAI
+SET @ENTRY := 30537;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,25,0,100,0,0,0,0,0,11,25824,0,0,0,0,0,1,0,0,0,0,0,0,0,"Elder Ohanzee - Spotlight");
+
+-- Elder Chogan'gada SAI
+SET @ENTRY := 30538;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,25,0,100,0,0,0,0,0,11,25824,0,0,0,0,0,1,0,0,0,0,0,0,0,"Elder Chogangada - Spotlight");
+
+-- Image of the North Wind SAI
+SET @ENTRY := 30550;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,0,4000,7000,12000,16000,11,57322,0,0,0,0,0,2,0,0,0,0,0,0,0,"Image of the North Wind - Cast Lightning Nova");
+
+-- Nightmare Aberration SAI
+SET @ENTRY := 30617;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,25,0,100,0,0,0,0,0,11,41408,0,0,0,0,0,1,0,0,0,0,0,0,0,"add aura on spawn");
+
+-- Nightmare Figment SAI
+SET @ENTRY := 30627;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,25,0,100,0,0,0,0,0,11,41408,0,0,0,0,0,1,0,0,0,0,0,0,0,"add aura on spawn");
+
+-- Portal Guardian SAI
+SET @ENTRY := 30660;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,0,5000,7000,6000,9000,11,58504,0,0,0,0,0,2,0,0,0,0,0,0,0,"Portal Guardian - Cast Agonizing Strike"),
+(@ENTRY,0,1,0,0,0,100,0,7000,12000,9000,11000,11,58508,0,0,0,0,0,5,0,0,0,0,0,0,0,"Portal Guardian - Cast Side Swipe");
+
+-- Azure Invader SAI
+SET @ENTRY := 30661;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,1,0,100,0,1000,1000,0,0,11,58040,0,0,0,0,0,1,0,0,0,0,0,0,0,"Azure Invader - Cast Destroy Door Seal on Spawn"),
+(@ENTRY,0,1,0,9,0,100,2,0,5,13000,16000,11,58459,0,0,0,0,0,2,0,0,0,0,0,0,0,"Azure Invader (Normal) - Cast Impale"),
+(@ENTRY,0,2,0,9,0,100,4,0,5,13000,16000,11,59256,0,0,0,0,0,2,0,0,0,0,0,0,0,"Azure Invader (Heroic) - Cast Impale"),
+(@ENTRY,0,3,0,0,0,100,0,8000,11000,5000,9000,11,15496,0,0,0,0,0,2,0,0,0,0,0,0,0,"Azure Invader - In Combat - Cast Cleave");
+
+-- Azure Spellbreaker SAI
+SET @ENTRY := 30662;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,1,0,100,0,1000,1000,0,0,11,58040,0,0,0,0,0,1,0,0,0,0,0,0,0,"Azure Spellbreaker - Cast Destroy Door Seal on Spawn"),
+(@ENTRY,0,1,0,9,0,100,2,0,30,13000,16000,11,58462,0,0,0,0,0,5,0,0,0,0,0,0,0,"Azure Spellbreaker (Normal) - Cast Arcane Blast"),
+(@ENTRY,0,2,0,9,0,100,4,0,30,13000,16000,11,59257,0,0,0,0,0,5,0,0,0,0,0,0,0,"Azure Spellbreaker (Heroic) - Cast Arcane Blast"),
+(@ENTRY,0,3,0,0,0,100,0,3000,6000,7000,10000,11,25603,0,0,0,0,0,2,0,0,0,0,0,0,0,"Azure Spellbreaker - Cast Slow");
+
+-- Azure Mage Slayer SAI
+SET @ENTRY := 30664;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,1,0,100,0,1000,1000,0,0,11,58040,0,0,0,0,0,1,0,0,0,0,0,0,0,"Azure Mage Slayer - Cast Destroy Door Seal on Spawn"),
+(@ENTRY,0,1,0,0,0,100,0,1000,5000,14000,20000,11,58469,0,0,0,0,0,1,0,0,0,0,0,0,0,"Azure Mage Slayer - Cast Arcane Empowerment");
+
+-- Azure Captain SAI
+SET @ENTRY := 30666;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,1,0,100,0,1000,1000,0,0,11,58040,0,0,0,0,0,1,0,0,0,0,0,0,0,"Azure Captain - Cast Destroy Door Seal on Spawn"),
+(@ENTRY,0,1,0,9,0,100,0,0,5,5000,9000,11,41056,0,0,0,0,0,1,0,0,0,0,0,0,0,"Azure Captain - In Combat - Cast Whirlwind"),
+(@ENTRY,0,2,0,0,0,100,0,3000,6000,7000,10000,11,32736,0,0,0,0,0,2,0,0,0,0,0,0,0,"Azure Captain - In Combat - Cast Mortal Strike");
+
+-- Azure Raider SAI
+SET @ENTRY := 30668;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,1,0,100,0,1000,1000,0,0,11,58040,0,0,0,0,0,1,0,0,0,0,0,0,0,"Azure Raider - Cast Destroy Door Seal on Spawn"),
+(@ENTRY,0,1,0,9,0,100,0,0,8,9000,14000,11,52719,0,0,0,0,0,2,0,0,0,0,0,0,0,"Azure Raider - Cast Concussion Blow"),
+(@ENTRY,0,2,0,0,0,100,0,7000,14000,12000,18000,11,60158,0,0,0,0,0,1,0,0,0,0,0,0,0,"Azure Raider - Cast Magic Reflection");
+
+-- A'dal SAI
+SET @ENTRY := 30691;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,1,0,100,0,6000,6000,6000,6000,41,0,0,0,0,0,0,1,0,0,0,0,0,0,0,"A'dal despawn after 6 sec");
+
+-- M'ori SAI
+SET @ENTRY := 30692;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,1,0,100,0,6000,6000,6000,6000,41,0,0,0,0,0,0,1,0,0,0,0,0,0,0,"M'ori despawn after 6 sec");
+
+-- K'uri SAI
+SET @ENTRY := 30693;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,1,0,100,0,6000,6000,6000,6000,41,0,0,0,0,0,0,1,0,0,0,0,0,0,0,"K'uri despawn after 6 sec");
+
+-- Spirit of Bridenbrad SAI
+SET @ENTRY := 30694;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,1,0,100,0,3000,3000,3000,3000,11,57771,0,0,0,0,0,1,0,0,0,0,0,0,0,"Spirit of Bridenbrad cast Holy Nova after 3 sec"),
+(@ENTRY,0,1,0,1,0,100,0,6000,6000,6000,6000,0,0,0,1,0,0,0,0,0,0,0,"Spirit of Bridenbrad cast Holy Nova after 3 sec"),
+(@ENTRY,0,2,0,1,0,100,0,6500,6500,6500,6500,41,0,0,0,0,0,0,1,0,0,0,0,0,0,0,"Spirit of Bridenbrad despawn after 6 sec");
+
+-- Bridenbrad Light Bunny SAI
+SET @ENTRY := 30712;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,25,0,100,0,0,0,0,0,3,0,11686,0,0,0,0,1,0,0,0,0,0,0,0,"Bridenbrad Light Bunny model"),
+(@ENTRY,0,1,0,1,0,100,0,6000,6000,6000,6000,41,0,0,0,0,0,0,1,0,0,0,0,0,0,0,"Bridenbrad Light Bunny despawn after 6 sec");
+
+-- Unbound Ancient SAI
+SET @ENTRY := 30861;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,0,1000,5000,15000,20000,11,33844,0,0,0,0,0,2,0,0,0,0,0,0,0,"Unbound Ancient - Cast Entangling Roots"),
+(@ENTRY,0,1,0,0,0,100,0,6000,9000,9000,12000,11,51944,0,0,0,0,0,2,0,0,0,0,0,0,0,"Unbound Ancient - In Combat - Cast Trample");
+
+-- Unbound Ent SAI
+SET @ENTRY := 30862;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,4,0,100,0,0,0,0,0,11,35361,0,0,0,0,0,1,0,0,0,0,0,0,0,"Unbound Ent - Cast Thorns on Aggro"),
+(@ENTRY,0,1,0,0,0,100,0,6000,16000,22000,30000,11,58624,0,0,0,0,0,2,0,0,0,0,0,0,0,"Unbound Ent - Cast Corrupted Rejuvenation");
+
+-- Shandaral Druid Spirit SAI
+SET @ENTRY := 30863;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,0,7000,12000,20000,26000,11,15798,0,0,0,0,0,2,0,0,0,0,0,0,0,"Shandaral Druid Spirit - Cast Moonfire"),
+(@ENTRY,0,1,0,14,0,100,0,40,35000,45000,0,11,16561,0,0,0,0,0,7,0,0,0,0,0,0,0,"Shandaral Druid Spirit - Cast Regrowth on a Friendly");
+
+-- Shandaral Warrior Spirit SAI
+SET @ENTRY := 30865;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,9,0,100,0,0,5,6000,9000,11,57846,0,0,0,0,0,2,0,0,0,0,0,0,0,"Shandaral Warrior Spirit - In Combat - Cast Heroic Strike"),
+(@ENTRY,0,1,0,13,0,100,0,9000,12000,0,0,11,38233,0,0,0,0,0,7,0,0,0,0,0,0,0,"Shandaral Warrior Spirit - In Combat - Cast Shield Bash on Spellcast");
+
+-- Portal Guardian SAI
+SET @ENTRY := 30892;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,0,6000,10000,11000,16000,11,58526,0,0,0,0,0,5,0,0,0,0,0,0,0,"Portal Guardian - Cast Azure Bindings"),
+(@ENTRY,0,1,0,9,0,100,2,0,5,13000,21000,11,58517,0,0,0,0,0,2,0,0,0,0,0,0,0,"Portal Guardian (Normal) - Cast Grievous Wound"),
+(@ENTRY,0,2,0,9,0,100,4,0,5,13000,21000,11,59262,0,0,0,0,0,2,0,0,0,0,0,0,0,"Portal Guardian (Heroic) - Cast Grievous Wound"),
+(@ENTRY,0,3,0,9,0,100,0,0,5,7000,12000,11,58516,0,0,0,0,0,2,0,0,0,0,0,0,0,"Portal Guardian - Cast Overpower");
+
+-- Eidolon Watcher SAI
+SET @ENTRY := 30947;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,25,0,100,0,0,0,0,0,11,58540,0,0,0,0,0,1,0,0,0,0,0,0,0,"Eidolon Watcher - Cast Eidolon Prison");
+
+-- Baelok SAI
+SET @ENTRY := 30953;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,0,4000,7000,9000,13000,11,61094,0,0,0,0,0,2,0,0,0,0,0,0,0,"Baelok - Cast Death Grip"),
+(@ENTRY,0,1,0,0,0,100,0,15000,20000,18000,25000,11,61090,0,0,0,0,0,2,0,0,0,0,0,0,0,"Baelok - Cast Draw Soul"),
+(@ENTRY,0,2,0,0,0,100,0,10000,13000,35000,45000,11,61086,0,0,0,0,0,1,0,0,0,0,0,0,0,"Baelok - Summon Dancing Runeblade"),
+(@ENTRY,0,3,0,6,0,100,0,0,0,0,0,33,31159,0,0,0,0,0,7,0,0,0,0,0,0,0,"Baelok - Quest Credit on Death (Quest: 13163)");
+
+-- Rokir SAI
+SET @ENTRY := 30954;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,0,2000,4000,60000,90000,11,61088,0,0,0,0,0,1,0,0,0,0,0,0,0,"Rokir - Cast Zombie Horde"),
+(@ENTRY,0,1,0,9,0,100,0,0,5,15000,19000,11,61109,0,0,0,0,0,2,0,0,0,0,0,0,0,"Rokir - Cast Plague Strike"),
+(@ENTRY,0,2,0,0,0,100,0,8000,13000,16000,21000,11,61112,0,0,0,0,0,5,0,0,0,0,0,0,0,"Rokir - Cast Death and Decay"),
+(@ENTRY,0,3,0,6,0,100,0,0,0,0,0,33,31160,0,0,0,0,0,7,0,0,0,0,0,0,0,"Rokir - Quest Credit on Death (Quest: 13161)");
+
+-- Sapph SAI
+SET @ENTRY := 30956;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,4,0,100,0,0,0,0,0,1,0,0,0,0,0,0,2,0,0,0,0,0,0,0,"Sapph - Yell on Aggro"),
+(@ENTRY,0,1,0,9,0,100,0,10,40,9000,13000,11,61077,0,0,0,0,0,2,0,0,0,0,0,0,0,"Sapph - Cast Chains of Ice"),
+(@ENTRY,0,2,0,9,0,100,0,0,8,18000,25000,11,61058,0,0,0,0,0,2,0,0,0,0,0,0,0,"Sapph - Cast Hungering Cold"),
+(@ENTRY,0,3,0,0,0,100,0,60000,120000,120000,240000,1,1,0,0,0,0,0,1,0,0,0,0,0,0,0,"Sapph - Say During Combat"),
+(@ENTRY,0,4,0,5,0,100,0,0,0,0,0,1,2,0,0,0,0,0,1,0,0,0,0,0,0,0,"Sapph - Yell on Player Kill"),
+(@ENTRY,0,5,6,6,0,100,0,0,0,0,0,1,3,0,0,0,0,0,1,0,0,0,0,0,0,0,"Sapph - Say and Quest Credit on Death (Quest: 13162)"),
+(@ENTRY,0,6,0,61,0,100,0,0,0,0,0,33,31161,0,0,0,0,0,7,0,0,0,0,0,0,0,"Sapph - Say and Quest Credit on Death (Quest: 13162)");
+
+-- Azure Invader SAI
+SET @ENTRY := 30961;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,1,0,100,0,1000,1000,0,0,11,58040,0,0,0,0,0,1,0,0,0,0,0,0,0,"Azure Invader - Cast Destroy Door Seal on Spawn"),
+(@ENTRY,0,1,0,9,0,100,0,0,5,5000,9000,11,58461,0,0,0,0,0,2,0,0,0,0,0,0,0,"Azure Invader - In Combat - Cast Sunder Armor"),
+(@ENTRY,0,2,0,0,0,100,0,3000,6000,7000,12000,11,58460,0,0,0,0,0,2,0,0,0,0,0,0,0,"Azure Invader - Cast Brutal Strike");
+
+-- Azure Spellbreaker SAI
+SET @ENTRY := 30962;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,1,0,100,0,1000,1000,0,0,11,58040,0,0,0,0,0,1,0,0,0,0,0,0,0,"Azure Spellbreaker - Cast Destroy Door Seal on Spawn"),
+(@ENTRY,0,1,0,0,0,100,2,7000,11000,11000,17000,11,58463,0,0,0,0,0,1,0,0,0,0,0,0,0,"Azure Spellbreaker (Normal) - Cast Cone of Cold"),
+(@ENTRY,0,2,0,0,0,100,4,7000,11000,11000,17000,11,59258,0,0,0,0,0,1,0,0,0,0,0,0,0,"Azure Spellbreaker (Heroic) - Cast Cone of Cold"),
+(@ENTRY,0,3,0,9,0,100,0,0,30,9000,13000,11,58464,0,0,0,0,0,5,0,0,0,0,0,0,0,"Azure Spellbreaker - Cast Chains of Ice");
+
+-- Azure Mage Slayer SAI
+SET @ENTRY := 30963;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,1,0,100,0,1000,1000,0,0,11,58040,0,0,0,0,0,1,0,0,0,0,0,0,0,"Azure Mage Slayer - Cast Destroy Door Seal on Spawn"),
+(@ENTRY,0,1,0,13,0,100,2,0,0,0,0,11,30849,0,0,0,0,0,7,0,0,0,0,0,0,0,"Azure Mage Slayer (Normal) - Cast Spell Lock on Target Spell Casting");
+
+-- Magistrate Barthilas SAI
+SET @ENTRY := 30994;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,1,0,100,0,20000,20000,240000,240000,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,"Magistrate Barthilas - Say Line 0 (random) 1 OOC"),
+(@ENTRY,0,1,0,1,0,100,0,27000,27000,247000,247000,1,1,0,0,0,0,0,1,0,0,0,0,0,0,0,"Magistrate Barthilas - Say Line 0 (random) 2 OOC");
+
+-- Azure Invader SAI
+SET @ENTRY := 31008;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,9,0,100,2,0,5,13000,16000,11,58459,0,0,0,0,0,2,0,0,0,0,0,0,0,"Azure Invader (Normal) - Cast Impale"),
+(@ENTRY,0,1,0,9,0,100,4,0,5,13000,16000,11,59256,0,0,0,0,0,2,0,0,0,0,0,0,0,"Azure Invader (Heroic) - Cast Impale"),
+(@ENTRY,0,2,0,0,0,100,0,8000,11000,5000,9000,11,15496,0,0,0,0,0,2,0,0,0,0,0,0,0,"Azure Invader - In Combat - Cast Cleave");
+
+-- Azure Spellbreaker SAI
+SET @ENTRY := 31009;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,9,0,100,2,0,30,13000,16000,11,58462,0,0,0,0,0,5,0,0,0,0,0,0,0,"Azure Spellbreaker (Normal) - Cast Arcane Blast"),
+(@ENTRY,0,1,0,9,0,100,4,0,30,13000,16000,11,59257,0,0,0,0,0,5,0,0,0,0,0,0,0,"Azure Spellbreaker (Heroic) - Cast Arcane Blast"),
+(@ENTRY,0,2,0,0,0,100,0,3000,6000,7000,10000,11,25603,0,0,0,0,0,2,0,0,0,0,0,0,0,"Azure Spellbreaker - Cast Slow");
+
+-- Azure Mage Slayer SAI
+SET @ENTRY := 31010;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,0,1000,5000,14000,20000,11,58469,0,0,0,0,0,1,0,0,0,0,0,0,0,"Azure Mage Slayer - Cast Arcane Empowerment");
+
+-- Dispirited Ent SAI
+SET @ENTRY := 31041;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,0,0,1000,600000,600000,11,35361,0,0,0,0,0,1,0,0,0,0,0,0,0,"Azure Manashaper - Cast Thorns on Aggro"),
+(@ENTRY,0,1,0,14,0,100,0,40,18000,30000,0,11,15981,0,0,0,0,0,7,0,0,0,0,0,0,0,"Azure Manashaper - Cast Rejuvenation on a Friendly");
+
+-- Mechanical Greeter RY7R SAI
+SET @ENTRY := 31057;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,10,0,100,0,1,10,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,"Mechanical Greeter RY7R - Say on OOC LOS");
+
+-- Azure Saboteur SAI
+SET @ENTRY := 31079;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,1,0,100,0,1000,1000,0,0,11,58291,0,0,0,0,0,1,0,0,0,0,0,0,0,"Azure Saboteur - Cast Shield Disruption");
+
+-- Val'kyr Battle-maiden SAI
+SET @ENTRY := 31095;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,0,5000,7000,7000,9000,11,57547,0,0,0,0,0,5,0,0,0,0,0,0,0,"Val'kyr Battle-maiden - Cast Touch of the Val'kyr");
+
+-- Terrifying Abomination SAI
+SET @ENTRY := 31098;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,9,0,100,0,8,40,0,0,11,50335,0,0,0,0,0,7,0,0,0,0,0,0,0,"Terrifying Abomination - Cast Scourge Hook"),
+(@ENTRY,0,1,0,9,0,100,0,0,5,7000,9000,11,15496,0,0,0,0,0,1,0,0,0,0,0,0,0,"Terrifying Abomination - In Combat - Cast Cleave");
+
+-- Shandaral Spirit Wolf SAI
+SET @ENTRY := 31123;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,0,2000,6000,8000,13000,11,3604,0,0,0,0,0,2,0,0,0,0,0,0,0,"Shandaral Spirit Wolf - In Combat - Cast Tendon Rip");
+
+-- Baelok SAI
+SET @ENTRY := 31159;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,0,4000,7000,9000,13000,11,61094,0,0,0,0,0,2,0,0,0,0,0,0,0,"Baelok - Cast Death Grip"),
+(@ENTRY,0,1,0,0,0,100,0,15000,20000,18000,25000,11,61090,0,0,0,0,0,2,0,0,0,0,0,0,0,"Baelok - Cast Draw Soul"),
+(@ENTRY,0,2,0,0,0,100,0,10000,13000,35000,45000,11,61086,0,0,0,0,0,1,0,0,0,0,0,0,0,"Baelok - Summon Dancing Runeblade");
+
+-- Rokir SAI
+SET @ENTRY := 31160;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,0,2000,4000,60000,90000,11,61088,0,0,0,0,0,1,0,0,0,0,0,0,0,"Rokir - Cast Zombie Horde"),
+(@ENTRY,0,1,0,9,0,100,0,0,5,15000,19000,11,61109,0,0,0,0,0,2,0,0,0,0,0,0,0,"Rokir - Cast Plague Strike"),
+(@ENTRY,0,2,0,0,0,100,0,8000,13000,16000,21000,11,61112,0,0,0,0,0,5,0,0,0,0,0,0,0,"Rokir - Cast Death and Decay");
+
+-- Sapph SAI
+SET @ENTRY := 31161;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,4,0,100,0,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,"Sapph - Yell on Aggro"),
+(@ENTRY,0,1,0,9,0,100,0,10,40,9000,13000,11,61077,0,0,0,0,0,2,0,0,0,0,0,0,0,"Sapph - Cast Chains of Ice"),
+(@ENTRY,0,2,0,9,0,100,0,0,8,18000,25000,11,61058,0,0,0,0,0,2,0,0,0,0,0,0,0,"Sapph - Cast Hungering Cold"),
+(@ENTRY,0,3,0,0,0,100,0,60000,120000,120000,240000,1,1,0,0,0,0,0,1,0,0,0,0,0,0,0,"Sapph - Say During Combat"),
+(@ENTRY,0,4,0,5,0,100,0,0,0,0,0,1,2,0,0,0,0,0,1,0,0,0,0,0,0,0,"Sapph - Yell on Player Kill"),
+(@ENTRY,0,5,0,6,0,100,0,0,0,0,0,1,3,0,0,0,0,0,1,0,0,0,0,0,0,0,"Sapph - Yell on Death");
+
+-- Grove Walker SAI
+SET @ENTRY := 31228;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,0,0,1000,600000,600000,11,35361,0,0,0,0,0,1,0,0,0,0,0,0,0,"Grove Walker - Cast Thorns on Aggro"),
+(@ENTRY,0,1,0,14,0,100,0,40,18000,30000,0,11,15981,0,0,0,0,0,7,0,0,0,0,0,0,0,"Grove Walker - Cast Rejuvenation on a Friendly");
+
+-- Ancient Watcher SAI
+SET @ENTRY := 31229;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,0,5000,10000,25000,35000,11,33844,0,0,0,0,0,2,0,0,0,0,0,0,0,"Ancient Watcher - Cast Entangling Roots"),
+(@ENTRY,0,1,0,0,0,100,0,3000,8000,18000,24000,11,51944,0,0,0,0,0,2,0,0,0,0,0,0,0,"Ancient Watcher - In Combat - Cast Trample");
+
+-- Lost Shandaral Spirit SAI
+SET @ENTRY := 31231;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,0,7000,12000,20000,26000,11,15798,0,0,0,0,0,2,0,0,0,0,0,0,0,"Lost Shandaral Spirit - Cast Moonfire"),
+(@ENTRY,0,1,0,14,0,100,0,40,35000,45000,0,11,16561,0,0,0,0,0,7,0,0,0,0,0,0,0,"Lost Shandaral Spirit - Cast Regrowth on a Friendly");
+
+-- Sinewy Wolf SAI
+SET @ENTRY := 31233;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,4,0,100,0,0,0,0,0,11,36589,0,0,0,0,0,1,0,0,0,0,0,0,0,"Sinewy Wolf - Cast Dash on Aggro"),
+(@ENTRY,0,1,0,0,0,100,0,4000,8000,6000,9000,11,32919,0,0,0,0,0,2,0,0,0,0,0,0,0,"Sinewy Wolf - Cast Snarl"),
+(@ENTRY,0,2,0,0,0,100,0,12000,16000,19000,29000,11,59008,0,0,0,0,0,5,0,0,0,0,0,0,0,"Sinewy Wolf - Cast Throat Rip");
+
+-- Dappled Stag SAI
+SET @ENTRY := 31236;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,0,3000,7000,7000,12000,11,59110,0,0,0,0,0,2,0,0,0,0,0,0,0,"Dappled Stag - Cast Butt");
+
+-- Crystal Wyrm SAI
+SET @ENTRY := 31393;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,0,5000,10000,18000,26000,11,47425,0,0,0,0,0,2,0,0,0,0,0,0,0,"Crystal Wyrm - In Combat - Cast Frost Breath"),
+(@ENTRY,0,1,0,0,0,100,0,3000,7000,20000,30000,11,59110,0,0,0,0,0,2,0,0,0,0,0,0,0,"Crystal Wyrm - Cast Butt");
+
+-- Azure Manashaper SAI
+SET @ENTRY := 31401;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,0,15000,25000,15000,25000,11,10833,0,0,0,0,0,2,0,0,0,0,0,0,0,"Azure Manashaper - Cast Arcane Blast"),
+(@ENTRY,0,1,0,0,0,100,0,2000,6000,14000,20000,11,25603,0,0,0,0,0,2,0,0,0,0,0,0,0,"Azure Manashaper - Cast Slow");
+
+-- Azure Manabeast SAI
+SET @ENTRY := 31404;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,0,3000,7000,12000,20000,11,59105,0,0,0,0,0,2,0,0,0,0,0,0,0,"Azure Manabeast - Cast Mana Bite");
+
+-- Ancient Sentinel SAI
+SET @ENTRY := 31797;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,0,3000,8000,9000,13000,11,12612,0,0,0,0,0,2,0,0,0,0,0,0,0,"Ancient Sentinel - Cast Stomp"),
+(@ENTRY,0,1,0,0,0,100,0,9000,12000,15000,18000,11,5568,0,0,0,0,0,1,0,0,0,0,0,0,0,"Ancient Sentinel - In Combat - Cast Trample");
+
+-- Fallen Hero's Spirit SAI
+SET @ENTRY := 32149;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,8,0,100,0,66719,-1,25000,25000,33,35055,0,0,0,0,0,7,0,0,0,0,0,0,0,"Fallen Hero Spirit Credit - q14107"),
+(@ENTRY,0,1,0,8,0,60,0,66719,-1,25000,25000,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,"Fallen Hero Spirit Say"),
+(@ENTRY,0,2,0,8,0,20,0,66719,-1,25000,25000,1,1,0,0,0,0,0,1,0,0,0,0,0,0,0,"Fallen Hero Spirit Say");
+
+-- Magister Surdiel SAI
+SET @ENTRY := 32170;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,25,0,100,0,0,0,0,0,11,12544,0,0,0,0,0,1,0,0,0,0,0,0,0,"Magister Surdiel - In Combat - Cast Frost Armor on spawn");
+
+-- Tempus Wyrm SAI
+SET @ENTRY := 32180;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,0,4000,9000,10000,17000,11,60076,0,0,0,0,0,2,0,0,0,0,0,0,0,"Tempus Wyrm - Cast Time Shock");
+
+-- Infinite Eradicator SAI
+SET @ENTRY := 32185;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,0,1000,3000,20000,28000,11,31458,0,0,0,0,0,1,0,0,0,0,0,0,0,"Infinite Eradicator - Cast Hasten"),
+(@ENTRY,0,1,0,0,0,100,0,3000,7000,12000,16000,11,31475,0,0,0,0,0,2,0,0,0,0,0,0,0,"Infinite Eradicator - Cast Wing Buffet"),
+(@ENTRY,0,2,0,0,0,100,0,10000,13000,20000,25000,11,52657,0,0,0,0,0,5,0,0,0,0,0,0,0,"Infinite Eradicator - Cast Temporal Vortex");
+
+-- Infinite Timebreaker SAI
+SET @ENTRY := 32186;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,0,7000,12000,14000,23000,11,60074,0,0,0,0,0,1,0,0,0,0,0,0,0,"Infinite Timebreaker - Time Stop"),
+(@ENTRY,0,1,0,2,0,100,1,0,30,10000,14000,11,60075,0,0,0,0,0,1,0,0,0,0,0,0,0,"Infinite Timebreaker - At 30% HP - Cast Enrage");
+
+-- Azure Stalker SAI
+SET @ENTRY := 32191;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,1,0,100,0,1000,1000,0,0,11,58040,0,0,0,0,0,1,0,0,0,0,0,0,0,"Azure Stalker - Cast Destroy Door Seal on Spawn"),
+(@ENTRY,0,1,0,9,0,100,0,0,5,5000,7000,11,58471,0,0,0,0,0,2,0,0,0,0,0,0,0,"Azure Stalker - In Combat - Cast Backstab"),
+(@ENTRY,0,2,0,0,0,100,0,11000,16000,13000,21000,11,58470,0,0,0,0,0,1,0,0,0,0,0,0,0,"Azure Stalker - Cast Tactical Blink");
+
+-- Arakkoa Talon Guard SAI
+SET @ENTRY := 32228;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,9,0,100,0,0,8,10000,16000,11,54462,0,0,0,0,0,1,0,0,0,0,0,0,0,"Arakkoa Talon Guard - Cast Howling Screech"),
+(@ENTRY,0,1,0,0,0,100,0,5000,7000,5000,7000,11,14516,0,0,0,0,0,2,0,0,0,0,0,0,0,"Arakkoa Talon Guard - In Combat - Cast Strike"),
+(@ENTRY,0,2,0,0,0,100,0,9000,14000,25000,30000,11,39215,0,0,0,0,0,2,0,0,0,0,0,0,0,"Arakkoa Talon Guard - Cast Gushing Wound");
+
+-- Void Lord SAI
+SET @ENTRY := 32230;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,0,6000,10000,9000,14000,11,59743,0,0,0,0,0,5,0,0,0,0,0,0,0,"Void Lord - Cast Void Shift"),
+(@ENTRY,0,1,0,0,0,100,0,3000,5000,12000,17000,11,59745,0,0,0,0,0,1,0,0,0,0,0,0,0,"Void Lord - Cast Shroud of Darkness"),
+(@ENTRY,0,2,0,0,0,100,0,1000,3000,30000,45000,11,54369,0,0,0,0,0,1,0,0,0,0,0,0,0,"Void Lord - Summon Void Sentry");
+
+-- Chaos Watcher SAI
+SET @ENTRY := 32235;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,9,0,100,0,0,8,4000,6000,11,54527,0,0,0,0,0,2,0,0,0,0,0,0,0,"Chaos Watcher - Cast Corrosive Saliva"),
+(@ENTRY,0,1,0,0,0,100,0,7000,11000,17000,21000,11,54396,0,0,0,0,0,2,0,0,0,0,0,0,0,"Chaos Watcher - Cast Optic Link");
+
+-- Lava Hound SAI
+SET @ENTRY := 32237;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,0,4000,7000,10000,14000,11,59468,0,0,0,0,0,2,0,0,0,0,0,0,0,"Lava Hound - In Combat - Cast Firebolt"),
+(@ENTRY,0,1,0,0,0,100,0,11000,15000,30000,40000,11,54249,0,0,0,0,0,5,0,0,0,0,0,0,0,"Lava Hound - Cast Lava Burn"),
+(@ENTRY,0,2,0,0,0,100,0,8000,11000,16000,22000,11,59469,0,0,0,0,0,1,0,0,0,0,0,0,0,"Lava Hound - Cast Flame Breath"),
+(@ENTRY,0,3,0,0,0,100,4,1000,3000,30000,45000,11,59466,0,0,0,0,0,5,0,0,0,0,0,0,0,"Lava Hound (Heroic) - Cast Cauterizing Flames");
+
+-- Ticking Time Bomb SAI
+SET @ENTRY := 32246;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,25,0,100,4,0,0,0,0,11,59686,0,0,0,0,0,1,0,0,0,0,0,0,0,"Ticking Time Bomb (Heroic) - Starts Countdown"),
+(@ENTRY,0,1,0,0,0,100,4,5500,5500,0,0,41,0,0,0,0,0,0,1,0,0,0,0,0,0,0,"Ticking Time Bomb (Heroic) - Despawn After Explosion");
+
+-- Infinite Corruptor SAI
+SET @ENTRY := 32273;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,9,0,100,4,0,5,6000,10000,11,60590,0,0,0,0,0,2,0,0,0,0,0,0,0,"Infinite Corruptor (Heroic) - Cast Void Strike"),
+(@ENTRY,0,1,0,0,0,100,4,12000,17000,25000,35000,11,60588,0,0,0,0,0,5,0,0,0,0,0,0,0,"Infinite Corruptor (Heroic) - Cast Corrupting Blight");
+
+-- Warmage Yurias SAI
+SET @ENTRY := 32375;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,1,0,100,0,1000,1000,1800000,1800000,11,12544,0,0,0,0,0,1,0,0,0,0,0,0,0,"Warmage Yurias - In Combat - Cast Frost Armor on Spawn");
+
+-- Tukemuth SAI
+SET @ENTRY := 32400;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,9,0,100,0,0,5,9000,13000,11,50410,0,0,0,0,0,2,0,0,0,0,0,0,0,"Tukemuth - Cast Tusk Strike"),
+(@ENTRY,0,1,0,0,0,100,0,9000,17000,15000,22000,11,57066,0,0,0,0,0,1,0,0,0,0,0,0,0,"Tukemuth - In Combat - Cast Trample");
+
+-- Crazed Indu'le Survivor SAI
+SET @ENTRY := 32409;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,0,3000,8000,10000,15000,11,39171,0,0,0,0,0,2,0,0,0,0,0,0,0,"Crazed Indu'le Survivor - In Combat - Cast Mortal Strike"),
+(@ENTRY,0,1,0,2,0,100,1,0,30,15000,20000,11,48139,0,0,0,0,0,1,0,0,0,0,0,0,0,"Crazed Indu'le Survivor - In Combat - Cast Crazed at 30% HP");
+
+-- Scarlet Highlord Daion SAI
+SET @ENTRY := 32417;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,0,5000,8000,7000,10000,11,48280,0,0,0,0,0,1,0,0,0,0,0,0,0,"Scarlet Highlord Daion - On Aggro - In Combat - Cast Whirlwind"),
+(@ENTRY,0,1,0,2,0,100,0,15000,19000,15000,19000,11,35949,0,0,0,0,0,1,0,0,0,0,0,0,0,"Scarlet Highlord Daion - On 15% HP - In Combat - Cast Bloodthirst");
+
+-- Grocklar SAI
+SET @ENTRY := 32422;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,4,0,100,0,0,0,0,0,11,49676,0,0,0,0,0,1,0,0,0,0,0,0,0,"Grocklar - On Aggro - Cast Stone Fist"),
+(@ENTRY,0,1,0,0,0,100,0,9000,12000,12000,15000,11,49675,0,0,0,0,0,2,0,0,0,0,0,0,0,"Grocklar - In Combat - Cast Stone Stomp");
+
+-- Seething Hate SAI
+SET @ENTRY := 32429;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,4,0,100,0,0,0,0,0,11,52342,0,0,0,0,0,1,0,0,0,0,0,0,0,"Seething Hate - On Aggro - Cast Seething Evil");
+
+-- Aotona SAI
+SET @ENTRY := 32481;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,0,3000,6000,12000,15000,11,49865,0,0,0,0,0,2,0,0,0,0,0,0,0,"Aotona - In Combat - Cast Eye Peck"),
+(@ENTRY,0,1,0,0,0,100,0,9000,13000,10000,15000,11,51144,0,0,0,0,0,1,0,0,0,0,0,0,0,"Aotona - In Combat - Cast Wing Buffet");
+
+-- King Krush SAI
+SET @ENTRY := 32485;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,9,0,100,0,8,25,12000,16000,11,36140,0,0,0,0,0,2,0,0,0,0,0,0,0,"King Krush - In Combat - Cast Charge"),
+(@ENTRY,0,1,0,0,0,100,0,6000,9000,6000,9000,11,48137,0,0,0,0,0,2,0,0,0,0,0,0,0,"King Krush - In Combat - Cast Mortal Wound"),
+(@ENTRY,0,2,0,0,0,100,0,12000,15000,22000,23000,11,36629,0,0,0,0,0,1,0,0,0,0,0,0,0,"King Krush - On 15% HP - Cast Terrifying Roar");
+
+-- Time-Lost Proto Drake SAI
+SET @ENTRY := 32491;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,0,5000,6000,12000,15000,11,51020,0,0,0,0,0,2,0,0,0,0,0,0,0,"Time-Lost Proto Drake - In Combat - Cast Time Lapse"),
+(@ENTRY,0,1,0,1,0,100,0,9000,12000,20000,25000,11,61084,0,0,0,0,0,1,0,0,0,0,0,0,0,"Time-Lost Proto Drake - Out of Combat - Cast Time Shift");
+
+-- Dirkee SAI
+SET @ENTRY := 32500;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,0,3000,7000,9000,14000,11,61110,0,0,0,0,0,2,0,0,0,0,0,0,0,"Dirkee - In Combat - Cast Mechano Kick"),
+(@ENTRY,0,1,0,0,0,100,0,9000,13000,15000,19000,11,61103,0,0,0,0,0,5,0,0,0,0,0,0,0,"Dirkee - In Combat - Cast Supressive Fire");
+
+-- Loque'nahak SAI
+SET @ENTRY := 32517;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,0,0,0,12000,15000,11,61184,0,0,0,0,0,2,0,0,0,0,0,0,0,"Loque'nahak - In Combat - Cast Pounce");
+
+-- Dragonblight Mage Hunter SAI
+SET @ENTRY := 32572;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,8,0,100,0,0,4,12000,15000,11,51758,0,0,0,0,0,1,0,0,0,0,0,0,0,"Dragonblight Mage Hunter - In Combat - Cast Fire Reflection"),
+(@ENTRY,0,1,0,8,0,100,0,0,16,12000,15000,11,51763,0,0,0,0,0,1,0,0,0,0,0,0,0,"Dragonblight Mage Hunter - In Combat - Cast Frost Reflection"),
+(@ENTRY,0,2,0,8,0,100,0,0,32,12000,15000,11,51764,0,0,0,0,0,1,0,0,0,0,0,0,0,"Dragonblight Mage Hunter - In Combat - Cast Shadow Reflection"),
+(@ENTRY,0,3,0,8,0,100,0,0,64,12000,15000,11,51766,0,0,0,0,0,1,0,0,0,0,0,0,0,"Dragonblight Mage Hunter - In Combat - Cast Arcane Reflection");
+
+-- Orabus the Helmsman SAI
+SET @ENTRY := 32576;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,11,0,100,0,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,"Orabus the Helmsman - On Spawn - Yell"),
+(@ENTRY,0,1,0,4,0,100,0,0,0,0,0,1,1,0,0,0,0,0,1,0,0,0,0,0,0,0,"Orabus the Helmsman - On Aggro - Yell");
+
+-- Ethereal Sphere SAI
+SET @ENTRY := 32582;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,25,0,100,4,0,0,0,0,41,40000,0,0,0,0,0,1,0,0,0,0,0,0,0,"Ethereal Sphere (Heroic) - On Spawn - Despawn with timer"),
+(@ENTRY,0,1,0,10,0,100,4,1,5,10000,14000,11,59474,0,0,0,0,0,7,0,0,0,0,0,0,0,"Ethereal Sphere (Heroic) - On LOS - Cast Arcane Power");
+
+-- Surveyor Hansen SAI
+SET @ENTRY := 32599;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,9,0,100,0,0,20,9000,14000,11,12024,0,0,0,0,0,2,0,0,0,0,0,0,0,"Surveyor Hansen - In Combat - Cast Net"),
+(@ENTRY,0,1,0,9,0,100,0,0,5,5000,8000,11,14516,0,0,0,0,0,2,0,0,0,0,0,0,0,"Surveyor Hansen - In Combat - Cast Strike");
+
+-- Vyragosa SAI
+SET @ENTRY := 32630;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,9,0,100,0,0,35,7000,9000,11,47425,0,0,0,0,0,2,0,0,0,0,0,0,0,"Vyragosa - In Combat - Cast Frost Breath"),
+(@ENTRY,0,1,0,9,0,100,0,0,5,3000,6000,11,51857,0,0,0,0,0,2,0,0,0,0,0,0,0,"Vyragosa - In Combat - Cast Frost Cleave");
+
+-- Warp-Huntress Kula SAI
+SET @ENTRY := 32711;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,11,0,100,0,0,0,0,0,11,61616,0,0,0,0,0,1,0,0,0,0,0,0,0,"Warp-Huntress Kula - On Spawn - Summon Backbiter");
+
+-- Moonglade Return Portal SAI
+SET @ENTRY := 32788;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,1,25,0,100,0,0,0,0,0,3,0,11686,0,0,0,0,1,0,0,0,0,0,0,0,"Moonglade Return Portal model & aura"),
+(@ENTRY,0,1,0,61,0,100,0,0,0,0,0,11,61722,0,0,0,0,0,1,0,0,0,0,0,0,0,"Moonglade Return Portal model & aura");
+
+-- Moonglade Portal SAI
+SET @ENTRY := 32790;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,1,25,0,100,0,0,0,0,0,3,0,11686,0,0,0,0,1,0,0,0,0,0,0,0,"Moonglade Portal model & aura"),
+(@ENTRY,0,1,0,61,0,100,0,0,0,0,0,11,61722,0,0,0,0,0,1,0,0,0,0,0,0,0,"Moonglade Portal model & aura");
+
+-- Smoldering Skeleton SAI
+SET @ENTRY := 33016;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,4,0,100,0,0,0,0,0,11,51437,0,0,0,0,0,1,0,0,0,0,0,0,0,"Smoldering Skeleton - On Aggro - Cast Smoldering Bones");
+
+-- Smoldering Construct SAI
+SET @ENTRY := 33017;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,0,4000,9000,14000,17000,11,51439,0,0,0,0,0,1,0,0,0,0,0,0,0,"Smoldering Construct - In Combat - Cast Backlash");
+
+-- Mokra the Skullcrusher SAI
+SET @ENTRY := 33361;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,25,0,100,0,0,0,0,0,11,63433,0,0,0,0,0,1,0,0,0,0,0,0,0,"Mokra the Skullcrusher - On Spawn - Cast Orgrimmar Champion's Pennant");
+
+-- Zul'tore SAI
+SET @ENTRY := 33372;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,25,0,100,0,0,0,0,0,11,63399,0,0,0,0,0,1,0,0,0,0,0,0,0,"Zul'tore - On Spawn - Cast Sen'Jin Champion's Pennant");
+
+-- Deathstalker Visceri SAI
+SET @ENTRY := 33373;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,25,0,100,0,0,0,0,0,11,63430,0,0,0,0,0,1,0,0,0,0,0,0,0,"Deathstalker Visceri - On Spawn - Cast Undercity Champion's Pennant");
+
+-- Eressea Dawnsinger SAI
+SET @ENTRY := 33379;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,25,0,100,0,0,0,0,0,11,63403,0,0,0,0,0,1,0,0,0,0,0,0,0,"Eressea Dawnsinger - On Spawn - Cast Silvermoon Champion's Pennant");
+
+-- Runok Wildmane SAI
+SET @ENTRY := 33403;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,25,0,100,0,0,0,0,0,11,63436,0,0,0,0,0,1,0,0,0,0,0,0,0,"Runok Wildmane - On Spawn - Cast Thunderbluff Champion's Pennant");
+
+-- Unbound Seer SAI
+SET @ENTRY := 33422;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,1,0,4,0,100,0,0,0,0,0,11,38204,0,0,0,0,0,2,0,0,0,0,0,0,0,"Unbound Seer - On Aggro - Cast Arcane Bolt"),
+(@ENTRY,0,2,0,0,0,100,0,9000,12000,12000,15000,11,58667,0,0,0,0,0,5,0,0,0,0,0,0,0,"Unbound Seer - In Combat - Cast Ley Curse");
+
+
+-- Frigid Abomination SAI
+SET @ENTRY := 33704;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,9,0,100,0,0,5,7000,10000,11,40504,0,0,0,0,0,2,0,0,0,0,0,0,0,"Frigid Abomination - In Combat - Cast Cleave");
+
+-- Kvaldir Reaver SAI
+SET @ENTRY := 34838;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,0,3000,6000,12000,15000,11,49922,0,0,0,0,0,2,0,0,0,0,0,0,0,"Kvaldir Reaver - In Combat - Cast Wave Crash");
+
+-- Kvaldir Mist Binder SAI
+SET @ENTRY := 34839;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,1,0,100,0,1000,1000,0,0,11,45658,0,0,0,0,0,1,0,0,0,0,0,0,0,"Kvaldir Mist Binder - On Spawn - Cast Call of the Mist"),
+(@ENTRY,0,1,0,0,0,100,0,6000,9000,12000,17000,11,49816,0,0,0,0,0,5,0,0,0,0,0,0,0,"Kvaldir Mist Binder - In Combat - Cast Mist of Strangulation");
+
+-- Slain Tualiq Villager SAI
+SET @ENTRY := 34852;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,1,8,0,100,0,66390,0,0,0,33,34852,0,0,0,0,0,7,0,0,0,0,0,0,0,"Slain Tualiq Villager - On Spellhit - Give Quest Credit"),
+(@ENTRY,0,1,0,61,0,100,0,0,0,0,0,41,0,0,0,0,0,0,1,0,0,0,0,0,0,0,"Slain Tualiq Villager - On Spellhit - Despawn");
+
+-- Tualiq Spirit SAI
+SET @ENTRY := 34888;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,1,0,100,0,60000,60000,60000,60000,23,1,0,0,0,0,0,1,0,0,0,0,0,0,0,"Wait 10s"),
+(@ENTRY,0,1,0,1,1,100,0,0,0,0,0,41,0,0,0,0,0,0,1,0,0,0,0,0,0,0,"Despawn Tualiq Spirit");
+
+-- North Sea Kraken SAI
+SET @ENTRY := 34925;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,4,0,100,0,0,0,0,0,22,1,0,0,0,0,0,1,0,0,0,0,0,0,0,"North Sea Kraken - Set Phase 1 on Aggro"),
+(@ENTRY,0,1,0,0,0,100,0,6000,9000,7000,9000,11,66514,0,0,0,0,0,1,0,0,0,0,0,0,0,"North Sea Kraken - In Combat - Cast Frost Breath"),
+(@ENTRY,0,2,0,8,62,100,0,66588,-1,0,0,23,1,0,0,0,0,0,1,0,0,0,0,0,0,0,"North Sea Kraken - Set Phase 2 on Flaming Spear Spellhit (Phase 1)"),
+(@ENTRY,0,3,0,8,61,100,0,66588,-1,0,0,23,1,0,0,0,0,0,1,0,0,0,0,0,0,0,"North Sea Kraken - Set Phase 3 on Flaming Spear Spellhit (Phase 2)"),
+(@ENTRY,0,4,0,8,59,100,0,66588,-1,0,0,23,1,0,0,0,0,0,1,0,0,0,0,0,0,0,"North Sea Kraken - Set Phase 4 on Flaming Spear Spellhit (Phase 3)"),
+(@ENTRY,0,5,0,8,55,100,0,66588,-1,0,0,23,1,0,0,0,0,0,1,0,0,0,0,0,0,0,"North Sea Kraken - Set Phase 5 on Flaming Spear Spellhit (Phase 4)"),
+(@ENTRY,0,6,0,8,47,100,0,66588,-1,0,0,23,1,0,0,0,0,0,1,0,0,0,0,0,0,0,"North Sea Kraken - Set Phase 6 on Flaming Spear Spellhit (Phase 5)"),
+(@ENTRY,0,7,0,8,31,100,0,66588,-1,0,0,11,66717,0,0,0,0,0,7,0,0,0,0,0,0,0,"North Sea Kraken - Cast Kraken Spear Quest Credit on Flaming Spear Spellhit and Despawn (Phase 6)"),
+(@ENTRY,0,8,0,8,31,100,0,66588,-1,0,0,41,0,0,0,0,0,0,1,0,0,0,0,0,0,0,"North Sea Kraken - Cast Kraken Spear Quest Credit on Flaming Spear Spellhit and Despawn (Phase 6)");
+
+-- Kvaldir Berserker SAI
+SET @ENTRY := 34947;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,0,1000,1000,8000,11000,11,38557,0,0,0,0,0,2,0,0,0,0,0,0,0,"Kvaldir Berserker - On Combat - In Combat - Cast Throw"),
+(@ENTRY,0,1,0,9,0,100,0,0,5,5000,7000,11,43410,0,0,0,0,0,2,0,0,0,0,0,0,0,"Kvaldir Berserker - In Combat - Cast Chop"),
+(@ENTRY,0,2,0,2,0,100,1,0,30,40000,40000,11,3019,0,0,0,0,0,1,0,0,0,0,0,0,0,"Kvaldir Berserker - At 30% HP - Cast Frenzy");
+
+-- Mistcaller Yngvar SAI
+SET @ENTRY := 34965;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,4,0,100,0,0,0,0,0,11,45658,0,0,0,0,0,1,0,0,0,0,0,0,0,"Mistcaller Yngvar - On Aggro - Cast Call of the Mist"),
+(@ENTRY,0,1,0,0,0,100,0,1000,3000,3400,6800,11,9532,0,0,0,0,0,2,0,0,0,0,0,0,0,"Mistcaller Yngvar - In Combat - Cast Lightning Bolt"),
+(@ENTRY,0,2,0,0,0,100,0,6000,9000,12000,17000,11,49816,0,0,0,0,0,5,0,0,0,0,0,0,0,"Mistcaller Yngvar - In Combat - Cast Mist of Strangulation"),
+(@ENTRY,0,3,0,2,0,100,1,0,30,0,0,11,49871,0,0,0,0,0,1,0,0,0,0,0,0,0,"Mistcaller Yngvar - At 30% HP - Cast Rune of Retribution");
+
+-- Drottinn Hrothgar SAI
+SET @ENTRY := 34980;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,25,0,100,0,0,0,0,0,11,66625,0,0,0,0,0,1,0,0,0,0,0,0,0,"Drottinn Hrothgar - On Spawn - Cast Cloud Aura"),
+(@ENTRY,0,1,0,1,0,100,1,1500,1500,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,"Drottinn Hrothgar - On Spawn - Yell"),
+(@ENTRY,0,2,0,9,0,100,0,0,5,5000,7000,11,15496,0,0,0,0,0,2,0,0,0,0,0,0,0,"Drottinn Hrothgar - In Combat - Cast Cleave"),
+(@ENTRY,0,3,0,0,0,100,0,12000,16000,15000,21000,11,67038,0,0,0,0,0,1,0,0,0,0,0,0,0,"Drottinn Hrothgar - In Combat - Cast Smash");
+
+-- Ornolf the Scarred SAI
+SET @ENTRY := 35012;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,0,1000,1000,8000,11000,11,38557,0,0,0,0,0,2,0,0,0,0,0,0,0,"Ornolf the Scarred - In Combat - Cast Throw"),
+(@ENTRY,0,1,0,9,0,100,0,0,5,5000,7000,11,43410,0,0,0,0,0,2,0,0,0,0,0,0,0,"Ornolf the Scarred - In Combat - Cast Chop"),
+(@ENTRY,0,2,0,0,0,100,0,8000,11000,8000,11000,11,67037,0,0,0,0,0,1,0,0,0,0,0,0,0,"Ornolf the Scarred - In Combat - Cast Whirlwind"),
+(@ENTRY,0,3,0,2,0,100,1,0,30,40000,40000,11,3019,0,0,0,0,0,1,0,0,0,0,0,0,0,"Ornolf the Scarred - At 30% HP - Cast Frenzy");
+
+-- Captain Elleane Wavecrest SAI
+SET @ENTRY := 35102;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,4,0,100,0,0,0,0,0,11,6660,0,0,0,0,0,2,0,0,0,0,0,0,0,"Captain Elleane Wavecrest - On Aggro - Cast Shoot"),
+(@ENTRY,0,1,0,0,0,100,0,1000,3000,4000,7000,11,29426,0,0,0,0,0,2,0,0,0,0,0,0,0,"Captain Elleane Wavecrest - In Combat - Cast Heroic Strike");
+
+-- Wilfred Fizzlebang SAI
+SET @ENTRY := 35476;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY*100 AND `source_type`=9;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,1,0,100,1,0,0,0,0,11,45104,0,0,0,0,0,1,0,0,0,0,0,0,0,"Wilfred Fizzlebang - Out of Combat - Cast Shadow Channelling"),
+(@ENTRY,0,1,0,1,0,100,0,20000,40000,140000,180000,80,@ENTRY*100,0,0,0,0,0,1,0,0,0,0,0,0,0,"Wilfred Fizzlebang - Out of Combat - Run Script"),
+(@ENTRY*100,9,0,0,0,0,100,0,1000,1000,1000,1000,28,45104,0,0,0,0,0,1,0,0,0,0,0,0,0,"Wilfred Fizzlebang - Script - Stop casting"),
+(@ENTRY*100,9,1,0,0,0,100,0,1000,1000,1000,1000,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,"Wilfred Fizzlebang - Script - Say 0"),
+(@ENTRY*100,9,2,0,0,0,100,0,3000,3000,3000,3000,5,5,0,0,0,0,0,1,0,0,0,0,0,0,0,"Wilfred Fizzlebang - Script - Exclamation emote"),
+(@ENTRY*100,9,3,0,0,0,100,0,4000,4000,4000,4000,5,11,0,0,0,0,0,1,0,0,0,0,0,0,0,"Wilfred Fizzlebang - Script - Laugh emote"),
+(@ENTRY*100,9,4,0,0,0,100,0,4000,4000,4000,4000,11,45104,0,0,0,0,0,1,0,0,0,0,0,0,0,"Wilfred Fizzlebang - Script - Cast Shadow Channelling");
+
+-- Soulguard Watchman SAI
+SET @ENTRY := 36478;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,4,0,100,0,0,0,0,0,39,10,0,0,0,0,0,1,0,0,0,0,0,0,0,"Soulguard Watchman - On Aggro - Call for Help"),
+(@ENTRY,0,1,0,0,0,100,0,5000,6000,9000,13000,11,69056,0,0,0,0,0,1,0,0,0,0,0,0,0,"Soulguard Watchman - In Combat - Cast Shroud of Runes"),
+(@ENTRY,0,2,0,2,0,100,1,0,50,3000,5000,11,69053,0,0,0,0,0,1,0,0,0,0,0,0,0,"Soulguard Watchman - At 50% HP - Cast Unholy Rage");
+
+-- Soulguard Reaper SAI
+SET @ENTRY := 36499;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,1,4,0,100,0,0,0,0,0,39,15,0,0,0,0,0,1,0,0,0,0,0,0,0,"Soulguard Reaper - On Aggro - Call for Help within 15 yards"),
+(@ENTRY,0,1,0,4,0,100,0,0,0,0,0,11,69058,0,0,0,0,0,5,0,0,0,0,0,0,0,"Soulguard Reaper - On Aggro - In Combat - Cast Shadow Lance"),
+(@ENTRY,0,2,0,9,0,100,0,10,100,8000,11000,11,69058,0,0,0,0,0,5,0,0,0,0,0,0,0,"Soulguard Reaper In Combat - Cast Shadow Lance"),
+(@ENTRY,0,3,0,9,0,100,2,0,10,7000,12000,11,69060,0,0,0,0,0,1,0,0,0,0,0,0,0,"Soulguard Reaper (Normal) - In Combat - Cast Frostnova"),
+(@ENTRY,0,4,0,9,0,100,4,0,10,7000,12000,11,70209,0,0,0,0,0,1,0,0,0,0,0,0,0,"Soulguard Reaper (Heroic) - In Combat - Cast Frostnova");
+
+-- Soul Horror SAI
+SET @ENTRY := 36522;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,4,0,100,0,0,0,0,0,39,15,0,0,0,0,0,1,0,0,0,0,0,0,0,"Soul Horror - On Aggro - Call for Help within 15 yards"),
+(@ENTRY,0,1,0,9,0,100,0,0,8,5000,13000,11,69088,0,0,0,0,0,5,0,0,0,0,0,0,0,"Soul Horror - In Combat - Cast Soul Strike");
+
+-- Spiteful Apparition SAI
+SET @ENTRY := 36551;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,9,0,100,2,0,3,0,0,11,68895,0,0,0,0,0,1,0,0,0,0,0,0,0,"Spiteful Appartion (Normal) - Cast Spite and Set Phase 1 and Stop Auto-Attack"),
+(@ENTRY,0,1,0,9,0,100,2,0,3,0,0,22,1,0,0,0,0,0,1,0,0,0,0,0,0,0,"Spiteful Appartion (Normal) - Cast Spite and Set Phase 1 and Stop Auto-Attack"),
+(@ENTRY,0,2,0,9,0,100,2,0,3,0,0,20,0,0,0,0,0,0,1,0,0,0,0,0,0,0,"Spiteful Appartion (Normal) - Cast Spite and Set Phase 1 and Stop Auto-Attack"),
+(@ENTRY,0,3,0,9,0,100,4,0,3,0,0,11,70212,0,0,0,0,0,1,0,0,0,0,0,0,0,"Spiteful Appartion (Heroic) - Cast Spite and Set Phase 1 and Stop Auto-Attack"),
+(@ENTRY,0,4,0,9,0,100,4,0,3,0,0,22,1,0,0,0,0,0,1,0,0,0,0,0,0,0,"Spiteful Appartion (Heroic) - Cast Spite and Set Phase 1 and Stop Auto-Attack"),
+(@ENTRY,0,5,0,9,0,100,4,0,3,0,0,20,0,0,0,0,0,0,1,0,0,0,0,0,0,0,"Spiteful Appartion (Heroic) - Cast Spite and Set Phase 1 and Stop Auto-Attack"),
+(@ENTRY,0,6,0,0,1,100,0,3000,3000,3000,3000,41,3000,0,0,0,0,0,1,0,0,0,0,0,0,0,"Spiteful Appartion - Delayed Despawn (Phase 1)");
+
+-- Onyxian Lair Guard SAI
+SET @ENTRY := 36561;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,75,0,15000,15000,30000,30000,11,68958,0,0,0,0,0,1,0,0,0,0,0,0,0,"Onyxia Lair Guard - In Combat - Cast Blast Nova"),
+(@ENTRY,0,1,0,0,0,90,0,5000,5000,20000,20000,11,68960,0,0,0,0,0,2,0,0,0,0,0,0,0,"Onyxia Lair Guard - In Combat - Cast Ignite Weapon"),
+(@ENTRY,0,2,0,0,0,80,0,7000,7000,9000,11000,11,15284,0,0,0,0,0,2,0,0,0,0,0,0,0,"Onyxia Lair Guard - In Combat - Cast Cleave");
+
+-- Arcanist Dulial SAI
+SET @ENTRY := 35599;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,25,0,100,0,0,0,0,0,11,12544,0,0,0,0,0,1,0,0,0,0,0,0,0,"Arcanist Dulial - On Respawn - Cast Frost Armor");
+
+-- Voice of Nozronn SAI
+SET @ENTRY := 28256;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY*100 AND `source_type`=9;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,54,0,100,0,0,0,0,0,80,@ENTRY*100,0,2,0,0,0,1,0,0,0,0,0,0,0,"Voice of Nozronn - Just Summoned - Run Script"),
+(@ENTRY*100,9,0,0,0,0,100,0,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,"Voice of Nozronn - On Script - Say Line 0"),
+(@ENTRY*100,9,1,0,0,0,100,0,8000,8000,0,0,1,1,0,0,0,0,0,1,0,0,0,0,0,0,0,"Voice of Nozronn - On Script - Say Line 1"),
+(@ENTRY*100,9,2,0,0,0,100,0,8000,8000,0,0,1,2,0,0,0,0,0,1,0,0,0,0,0,0,0,"Voice of Nozronn - On Script - Say Line 2"),
+(@ENTRY*100,9,3,0,0,0,100,0,8000,8000,0,0,1,3,0,0,0,0,0,1,0,0,0,0,0,0,0,"Voice of Nozronn - On Script - Say Line 3"),
+(@ENTRY*100,9,4,0,0,0,100,0,8000,8000,0,0,1,4,0,0,0,0,0,1,0,0,0,0,0,0,0,"Voice of Nozronn - On Script - Say Line 4"),
+(@ENTRY*100,9,5,0,0,0,100,0,2000,2000,0,0,33,@ENTRY,0,0,0,0,0,7,0,0,0,0,0,0,0,"Voice of Nozronn - On Script - Quest Credit"),
+(@ENTRY*100,9,6,0,0,0,100,0,1000,1000,0,0,41,0,0,0,0,0,0,1,0,0,0,0,0,0,0,"Voice of Nozronn - On Script - Forced Despawn");

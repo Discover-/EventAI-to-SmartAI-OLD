@@ -1757,6 +1757,12 @@ DELETE FROM `creature_text` WHERE `entry`=@ENTRY;
 INSERT INTO `creature_text` (`entry`,`groupid`,`id`,`text`,`type`,`language`,`probability`,`emote`,`duration`,`sound`,`comment`) VALUES
 (@ENTRY,0,0,"Finally, my soul may rest... Oh, dearest Cerellean...",12,0,100,0,0,0,"Anaya Dawnrunner");
 
+-- Text for Val'kyr Battle-maiden
+SET @ENTRY := 28487;
+DELETE FROM `creature_text` WHERE `entry`=@ENTRY;
+INSERT INTO `creature_text` (`entry`,`groupid`,`id`,`text`,`type`,`language`,`probability`,`emote`,`duration`,`sound`,`comment`) VALUES
+(@ENTRY,0,0,"It is not yet your time, champion. Rise! Rise and fight once more!",12,0,100,402,0,3439,"Val'kyr Battle-maiden");
+
 -- Text for Lord Cobrahn
 SET @ENTRY := 3669;
 DELETE FROM `creature_text` WHERE `entry`=@ENTRY;
