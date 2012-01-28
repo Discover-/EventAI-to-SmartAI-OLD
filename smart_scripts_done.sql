@@ -14484,3 +14484,74 @@ INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type
 (@ENTRY*100,9,4,0,0,0,100,0,8000,8000,0,0,1,4,0,0,0,0,0,1,0,0,0,0,0,0,0,"Voice of Nozronn - On Script - Say Line 4"),
 (@ENTRY*100,9,5,0,0,0,100,0,2000,2000,0,0,33,@ENTRY,0,0,0,0,0,7,0,0,0,0,0,0,0,"Voice of Nozronn - On Script - Quest Credit"),
 (@ENTRY*100,9,6,0,0,0,100,0,1000,1000,0,0,41,0,0,0,0,0,0,1,0,0,0,0,0,0,0,"Voice of Nozronn - On Script - Forced Despawn");
+
+-- Bloodsail Elder Magus SAI
+SET @ENTRY := 1653;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,1,0,100,0,0,0,0,0,21,0,0,0,0,0,0,1,0,0,0,0,0,0,0,"Bloodsail Elder Magus - On Respawn - Prevent Combat Movement"),
+(@ENTRY,0,1,0,4,0,100,0,0,0,0,0,11,20823,0,0,0,0,0,2,0,0,0,0,0,0,0,"Bloodsail Elder Magus - On Aggro - Cast Fireball"),
+(@ENTRY,0,2,0,4,0,100,0,0,0,0,0,23,1,0,0,0,0,0,1,0,0,0,0,0,0,0,"Bloodsail Elder Magus - On Aggro - Set Phase 1"),
+(@ENTRY,0,3,0,9,13,100,0,0,40,2400,3800,11,20823,0,0,0,0,0,2,0,0,0,0,0,0,0,"Bloodsail Elder Magus - Above 30% Mana - Cast Fireball"),
+(@ENTRY,0,4,0,3,13,100,1,0,15,0,0,21,1,0,0,0,0,0,1,0,0,0,0,0,0,0,"Bloodsail Elder Magus - At 15% Mana - Start Combat Movement"),
+(@ENTRY,0,5,0,3,13,100,1,0,15,0,0,23,1,0,0,0,0,0,1,0,0,0,0,0,0,0,"Bloodsail Elder Magus - At 15% Mana - Set Phase 2"),
+(@ENTRY,0,6,0,9,13,100,0,35,80,0,0,21,1,0,0,0,0,0,1,0,0,0,0,0,0,0,"Bloodsail Elder Magus - At 35 Yards - Start Combat Movement"),
+(@ENTRY,0,7,0,9,13,100,0,5,15,0,0,21,0,0,0,0,0,0,1,0,0,0,0,0,0,0,"Bloodsail Elder Magus - At 15 Yards - Prevent Combat Movement"),
+(@ENTRY,0,8,0,9,13,100,0,0,5,0,0,21,1,0,0,0,0,0,1,0,0,0,0,0,0,0,"Bloodsail Elder Magus - At 0-5 Yards - Start Combat Movement"),
+(@ENTRY,0,9,0,3,11,100,1,30,100,100,100,23,0,1,0,0,0,0,1,0,0,0,0,0,0,0,"Bloodsail Elder Magus - Above 30% Mana - Set Phase 1"),
+(@ENTRY,0,10,0,0,0,100,0,28700,28700,45200,45200,11,20827,0,0,0,0,0,2,0,0,0,0,0,0,0,"Bloodsail Elder Magus - Above 30% Mana - Cast Flamestrike"),
+(@ENTRY,0,11,0,0,0,100,0,14900,14900,43000,43000,11,11969,0,0,0,0,0,1,0,0,0,0,0,0,0,"Bloodsail Elder Magus - Above 30% Mana - Cast Fire Nova"),
+(@ENTRY,0,12,0,2,0,100,1,0,15,0,0,22,3,0,0,0,0,0,1,0,0,0,0,0,0,0,"Bloodsail Elder Magus - At 15% HP - Set Phase 3 at 15% HP"),
+(@ENTRY,0,13,0,2,7,100,1,0,15,0,0,21,1,0,0,0,0,0,1,0,0,0,0,0,0,0,"Bloodsail Elder Magus - At 15% HP - Start Combat Movement"),
+(@ENTRY,0,14,0,2,7,100,1,0,15,0,0,25,1,0,0,0,0,0,1,0,0,0,0,0,0,0,"Bloodsail Elder Magus - At 15% HP - Flee"),
+(@ENTRY,0,15,0,7,0,100,0,0,0,0,0,22,0,0,0,0,0,0,1,0,0,0,0,0,0,0,"Bloodsail Elder Magus - On Evade - Set Phase to 0");
+
+-- Defias Watchman SAI
+SET @ENTRY := 1725;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,1,0,100,0,0,0,0,0,21,0,0,0,0,0,0,1,0,0,0,0,0,0,0,"Defias Watchman - On Respawn - Prevent Combat Movement"),
+(@ENTRY,0,1,0,1,0,100,0,0,0,0,0,20,0,0,0,0,0,0,1,0,0,0,0,0,0,0,"Defias Watchman - On Respawn - Prevent Melee"),
+(@ENTRY,0,2,0,4,0,100,0,0,0,0,0,11,6660,0,0,0,0,0,2,0,0,0,0,0,0,0,"Defias Watchman - On Aggro - Cast Shoot"),
+(@ENTRY,0,3,0,4,0,100,0,0,0,0,0,23,1,0,0,0,0,0,1,0,0,0,0,0,0,0,"Defias Watchman - On Aggro - Set Phase 1"),
+(@ENTRY,0,4,0,9,5,100,0,5,30,2200,3800,11,6660,0,0,0,0,0,2,0,0,0,0,0,0,0,"Defias Watchman - At 15-25 Yards - Cast Shoot"),
+(@ENTRY,0,5,0,9,5,100,0,5,30,2200,3800,40,2,0,0,0,0,0,1,0,0,0,0,0,0,0,"Defias Watchman - At 15-25 Yards - Set Ranged Weapon Model"),
+(@ENTRY,0,6,0,9,5,100,0,25,80,0,0,21,1,1,0,0,0,0,1,0,0,0,0,0,0,0,"Defias Watchman - At 25 Yards - Start Combat Movement"),
+(@ENTRY,0,7,0,9,5,100,0,25,80,0,0,20,1,0,0,0,0,0,1,0,0,0,0,0,0,0,"Defias Watchman - At 25 Yards - Start Melee"),
+(@ENTRY,0,8,0,9,5,100,0,0,5,0,0,21,1,0,0,0,0,0,1,0,0,0,0,0,0,0,"Defias Watchman - At 0-5 Yards - Start Combat Movement"),
+(@ENTRY,0,9,0,9,5,100,0,0,5,0,0,40,1,0,0,0,0,0,1,0,0,0,0,0,0,0,"Defias Watchman - At 0-5 Yards - Set Melee Weapon Model"),
+(@ENTRY,0,10,0,9,5,100,0,0,5,0,0,20,1,0,0,0,0,0,1,0,0,0,0,0,0,0,"Defias Watchman - At 0-5 Yards - Start Melee"),
+(@ENTRY,0,11,0,9,5,100,0,5,15,0,0,21,0,1,0,0,0,0,1,0,0,0,0,0,0,0,"Defias Watchman - At 15 Yards - Prevent Combat Movement"),
+(@ENTRY,0,12,0,9,5,100,0,5,15,0,0,20,0,0,0,0,0,0,1,0,0,0,0,0,0,0,"Defias Watchman - At 15 Yards - Prevent Melee"),
+(@ENTRY,0,13,0,2,0,100,1,0,15,0,0,23,1,0,0,0,0,0,1,0,0,0,0,0,0,0,"Defias Watchman - At 15% HP - Set Phase 2"),
+(@ENTRY,0,14,0,2,3,100,1,0,15,0,0,21,1,0,0,0,0,0,1,0,0,0,0,0,0,0,"Defias Watchman - At 15% HP - Start Combat Movement"),
+(@ENTRY,0,15,0,2,3,100,1,0,15,0,0,25,1,0,0,0,0,0,1,0,0,0,0,0,0,0,"Defias Watchman - At 15% HP - Flee"),
+(@ENTRY,0,16,0,7,0,100,0,0,0,0,0,22,0,0,0,0,0,0,1,0,0,0,0,0,0,0,"Defias Watchman - On Evade - Set Phase to 0"),
+(@ENTRY,0,17,0,7,0,100,0,0,0,0,0,40,1,0,0,0,0,0,1,0,0,0,0,0,0,0,"Defias Watchman - On Evade - Set Melee Weapon Model");
+
+-- Defias Magician SAI
+SET @ENTRY := 1726;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,1,0,100,0,0,0,0,0,21,0,0,0,0,0,0,1,0,0,0,0,0,0,0,"Defias Magician - On Respawn - Prevent Combat Movement"),
+(@ENTRY,0,1,0,1,0,100,0,1000,1000,1800000,1800000,11,12544,0,0,0,0,0,1,0,0,0,0,0,0,0,"Defias Magician - On Respawn - Cast Frost Armor"),
+(@ENTRY,0,2,0,4,0,100,0,0,0,0,0,11,9053,0,0,0,0,0,2,0,0,0,0,0,0,0,"Defias Magician - On Aggro - Cast Fireball"),
+(@ENTRY,0,3,0,4,0,100,0,0,0,0,0,23,1,0,0,0,0,0,1,0,0,0,0,0,0,0,"Defias Magician - On Aggro - Set Phase 1"),
+(@ENTRY,0,4,0,9,13,100,0,0,40,4000,6600,11,9053,0,0,0,0,0,2,0,0,0,0,0,0,0,"Defias Magician - Above 30% Mana - Cast Fireball (Phase 1)"),
+(@ENTRY,0,5,0,3,13,100,1,0,15,0,0,21,1,0,0,0,0,0,1,0,0,0,0,0,0,0,"Defias Magician - At 15% Mana - Start Combat Movement"),
+(@ENTRY,0,6,0,3,13,100,1,0,15,0,0,23,1,0,0,0,0,0,1,0,0,0,0,0,0,0,"Defias Magician - At 15% Mana - Set Phase 2"),
+(@ENTRY,0,7,0,9,13,100,0,35,80,0,0,21,1,0,0,0,0,0,1,0,0,0,0,0,0,0,"Defias Magician - At 35 Yards - Start Combat Movement"),
+(@ENTRY,0,8,0,9,13,100,0,5,15,0,0,21,0,0,0,0,0,0,1,0,0,0,0,0,0,0,"Defias Magician - At 15 Yards - Prevent Combat Movement"),
+(@ENTRY,0,9,0,9,13,100,0,0,5,0,0,21,1,0,0,0,0,0,1,0,0,0,0,0,0,0,"Defias Magician - At 0-5 Yards - Start Combat Movement"),
+(@ENTRY,0,10,0,3,11,100,1,30,100,100,100,23,0,1,0,0,0,0,1,0,0,0,0,0,0,0,"Defias Magician - At 30% Mana - Set Phase 1"),
+(@ENTRY,0,11,0,0,0,100,0,0,0,23200,38500,11,5110,0,0,0,0,0,1,0,0,0,0,0,0,0,"Defias Magician - Above 30% Mana - Summon Living Flame"),
+(@ENTRY,0,12,0,2,0,100,1,0,15,0,0,22,3,0,0,0,0,0,1,0,0,0,0,0,0,0,"Defias Magician - At 15% HP - Set Phase 3 at 15% HP"),
+(@ENTRY,0,13,0,2,7,100,1,0,15,0,0,21,1,0,0,0,0,0,1,0,0,0,0,0,0,0,"Defias Magician - At 15% HP - Start Combat Movement"),
+(@ENTRY,0,14,0,2,7,100,1,0,15,0,0,25,1,0,0,0,0,0,1,0,0,0,0,0,0,0,"Defias Magician - At 15% HP - Flee"),
+(@ENTRY,0,15,0,7,0,100,0,0,0,0,0,22,0,0,0,0,0,0,1,0,0,0,0,0,0,0,"Defias Magician - Set Phase to 0 on Evade");
