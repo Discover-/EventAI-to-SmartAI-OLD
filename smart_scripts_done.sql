@@ -1469,14 +1469,14 @@ INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type
 (@ENTRY,0,1,0,4,0,100,0,0,0,0,0,1,0,0,0,0,0,0,2,0,0,0,0,0,0,0,"Edwin VanCleef - On Aggro - Say Line 0"),
 (@ENTRY,0,2,0,0,0,100,0,0,0,0,0,11,674,0,0,0,0,0,1,0,0,0,0,0,0,0,"Edwin VanCleef - On Aggro - Cast Dual Wield"),
 (@ENTRY,0,3,0,0,0,100,0,2200,14200,8000,17500,11,3391,0,0,0,0,0,1,0,0,0,0,0,0,0,"Edwin VanCleef - In Combat - Cast Thrash"),
-(@ENTRY,0,5,0,2,0,100,1,0,66,0,0,1,1,0,0,0,0,0,1,0,0,0,0,0,0,0,"Edwin VanCleef - At 66% HP - Say Line 1"),
-(@ENTRY,0,6,0,2,0,100,1,0,50,0,0,11,5200,0,0,0,0,0,1,0,0,0,0,0,0,0,"Edwin VanCleef - At 50% HP - Cast VanCleef's Allies"),
-(@ENTRY,0,7,0,2,0,100,1,0,50,0,0,1,3,0,0,0,0,0,1,0,0,0,0,0,0,0,"Edwin VanCleef - On Summon Allies - Say Line 3"),
-(@ENTRY,0,9,0,2,0,100,1,0,33,0,0,1,2,0,0,0,0,0,1,0,0,0,0,0,0,0,"Edwin VanCleef - At 33% HP - Say Line 2"),
-(@ENTRY,0,10,0,2,0,100,1,0,25,0,0,11,5200,0,0,0,0,0,1,0,0,0,0,0,0,0,"Edwin VanCleef - At 25% HP - Cast VanCleef's Allies"),
-(@ENTRY,0,11,0,2,0,100,1,0,25,0,0,1,3,0,0,0,0,0,1,0,0,0,0,0,0,0,"Edwin VanCleef - On Summon Allies - Say Line 3"),
-(@ENTRY,0,13,0,5,0,100,0,0,0,0,0,1,4,0,0,0,0,0,1,0,0,0,0,0,0,0,"Edwin VanCleef - On Player Kill - Say Line 4"),
-(@ENTRY,0,15,0,6,0,100,0,0,0,0,0,1,5,0,0,0,0,0,1,0,0,0,0,0,0,0,"Edwin VanCleef - On Death - Say Line 5");
+(@ENTRY,0,4,0,2,0,100,1,0,66,0,0,1,1,0,0,0,0,0,1,0,0,0,0,0,0,0,"Edwin VanCleef - At 66% HP - Say Line 1"),
+(@ENTRY,0,5,0,2,0,100,1,0,50,0,0,11,5200,0,0,0,0,0,1,0,0,0,0,0,0,0,"Edwin VanCleef - At 50% HP - Cast VanCleef's Allies"),
+(@ENTRY,0,6,0,2,0,100,1,0,50,0,0,1,3,0,0,0,0,0,1,0,0,0,0,0,0,0,"Edwin VanCleef - On Summon Allies - Say Line 3"),
+(@ENTRY,0,7,0,2,0,100,1,0,33,0,0,1,2,0,0,0,0,0,1,0,0,0,0,0,0,0,"Edwin VanCleef - At 33% HP - Say Line 2"),
+(@ENTRY,0,8,0,2,0,100,1,0,25,0,0,11,5200,0,0,0,0,0,1,0,0,0,0,0,0,0,"Edwin VanCleef - At 25% HP - Cast VanCleef's Allies"),
+(@ENTRY,0,9,0,2,0,100,1,0,25,0,0,1,3,0,0,0,0,0,1,0,0,0,0,0,0,0,"Edwin VanCleef - On Summon Allies - Say Line 3"),
+(@ENTRY,0,10,0,5,0,100,0,0,0,0,0,1,4,0,0,0,0,0,1,0,0,0,0,0,0,0,"Edwin VanCleef - On Player Kill - Say Line 4"),
+(@ENTRY,0,11,0,6,0,100,0,0,0,0,0,1,5,0,0,0,0,0,1,0,0,0,0,0,0,0,"Edwin VanCleef - On Death - Say Line 5");
 
 -- Goblin Woodcarver SAI
 SET @ENTRY := 641;
@@ -3398,7 +3398,7 @@ INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type
 (@ENTRY,0,0,0,0,0,100,0,1000,14700,10400,15200,11,1766,0,0,0,0,0,2,0,0,0,0,0,0,0,"Defias Prisoner - In Combat - Cast Kick"),
 (@ENTRY,0,1,0,0,0,100,0,5900,22400,9600,16600,11,6713,0,0,0,0,0,2,0,0,0,0,0,0,0,"Defias Prisoner - In Combat - Cast Disarm"),
 (@ENTRY,0,2,0,2,0,100,1,0,15,0,0,25,1,0,0,0,0,0,1,0,0,0,0,0,0,0,"Defias Prisoner - At 15% HP - Flee"),
-(@ENTRY,0,4,0,25,0,100,0,1,34,0,0,2,17,0,0,0,0,0,1,0,0,0,0,0,0,0,"Defias Prisoner - On Respawn Inside Stockade - Set Faction Hostile");
+(@ENTRY,0,3,0,25,0,100,0,1,34,0,0,2,17,0,0,0,0,0,1,0,0,0,0,0,0,0,"Defias Prisoner - On Respawn Inside Stockade - Set Faction Hostile");
 
 -- Defias Captive SAI
 SET @ENTRY := 1707;
@@ -3842,10 +3842,10 @@ UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
 DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
 DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
 INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
-(@ENTRY,0,7,0,4,0,100,0,0,0,0,0,11,20825,0,0,0,0,0,2,0,0,0,0,0,0,0,"Bloodsail Warlock - In Combat - Cast Shadow Bolt and Set Phase 3 on Aggro"),
-(@ENTRY,0,15,0,0,55,100,0,6900,20900,15900,15900,11,11980,0,0,0,0,0,2,0,0,0,0,0,0,0,"Bloodsail Warlock - In Combat - Cast Curse of Weakness"),
-(@ENTRY,0,18,0,2,31,100,1,0,15,0,0,21,1,0,0,0,0,0,1,0,0,0,0,0,0,0,"Bloodsail Warlock - Start Combat Movement and At 15% HP - Flee (Phase 5)"),
-(@ENTRY,0,19,0,2,31,100,1,0,15,0,0,25,1,0,0,0,0,0,1,0,0,0,0,0,0,0,"Bloodsail Warlock - Start Combat Movement and At 15% HP - Flee (Phase 5)");
+(@ENTRY,0,0,0,4,0,100,0,0,0,0,0,11,20825,0,0,0,0,0,2,0,0,0,0,0,0,0,"Bloodsail Warlock - On Aggro - Cast Shadow Bolt"),
+(@ENTRY,0,1,0,0,55,100,0,6900,20900,15900,15900,11,11980,0,0,0,0,0,2,0,0,0,0,0,0,0,"Bloodsail Warlock - In Combat - Cast Curse of Weakness"),
+(@ENTRY,0,2,0,2,31,100,1,0,15,0,0,21,1,0,0,0,0,0,1,0,0,0,0,0,0,0,"Bloodsail Warlock - At 15% HP - Start Combat Movement"),
+(@ENTRY,0,3,0,2,31,100,1,0,15,0,0,25,1,0,0,0,0,0,1,0,0,0,0,0,0,0,"Bloodsail Warlock - At 15% HP - Flee");
 
 -- Bloodsail Sea Dog SAI
 SET @ENTRY := 1565;
@@ -13142,8 +13142,8 @@ DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
 INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
 (@ENTRY,0,0,0,0,0,100,2,4000,7000,9000,12000,11,56580,0,0,0,0,0,5,0,0,0,0,0,0,0,"Deep Crawler (Normal)- Gluttinous Poison"),
 (@ENTRY,0,1,0,0,0,100,4,4000,7000,9000,12000,11,59108,0,0,0,0,0,5,0,0,0,0,0,0,0,"Deep Crawler (Heroic)- Gluttinous Poison"),
-(@ENTRY,0,2,0,12,0,100,3,0,20,14000,17000,11,56581,0,0,0,0,0,7,0,0,0,0,0,0,0,"Deep Crawler (Normal)- Cast Fatal Sting at 20% Target HP"),
-(@ENTRY,0,3,0,12,0,100,5,0,20,14000,17000,11,59109,0,0,0,0,0,7,0,0,0,0,0,0,0,"Deep Crawler (Heroic)- Cast Fatal Sting at 20% Target HP");
+(@ENTRY,0,2,0,12,0,100,3,0,20,14000,17000,11,56581,0,0,0,0,0,7,0,0,0,0,0,0,0,"Deep Crawler (Normal)- At Target 20% HP - Cast Fatal Sting"),
+(@ENTRY,0,3,0,12,0,100,5,0,20,14000,17000,11,59109,0,0,0,0,0,7,0,0,0,0,0,0,0,"Deep Crawler (Heroic)- At Target 20% HP - Cast Fatal Sting at 20% Target HP");
 
 -- Plague Walker SAI
 SET @ENTRY := 30283;
@@ -14491,7 +14491,7 @@ UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
 DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
 DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
 INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
-(@ENTRY,0,0,0,1,0,100,0,0,0,0,0,21,0,0,0,0,0,0,1,0,0,0,0,0,0,0,"Bloodsail Elder Magus - On Respawn - Prevent Combat Movement"),
+(@ENTRY,0,0,0,25,0,100,0,0,0,0,0,21,0,0,0,0,0,0,1,0,0,0,0,0,0,0,"Bloodsail Elder Magus - On Respawn - Prevent Combat Movement"),
 (@ENTRY,0,1,0,4,0,100,0,0,0,0,0,11,20823,0,0,0,0,0,2,0,0,0,0,0,0,0,"Bloodsail Elder Magus - On Aggro - Cast Fireball"),
 (@ENTRY,0,2,0,4,0,100,0,0,0,0,0,23,1,0,0,0,0,0,1,0,0,0,0,0,0,0,"Bloodsail Elder Magus - On Aggro - Set Phase 1"),
 (@ENTRY,0,3,0,9,13,100,0,0,40,2400,3800,11,20823,0,0,0,0,0,2,0,0,0,0,0,0,0,"Bloodsail Elder Magus - Above 30% Mana - Cast Fireball"),
@@ -14514,8 +14514,8 @@ UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
 DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
 DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
 INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
-(@ENTRY,0,0,0,1,0,100,0,0,0,0,0,21,0,0,0,0,0,0,1,0,0,0,0,0,0,0,"Defias Watchman - On Respawn - Prevent Combat Movement"),
-(@ENTRY,0,1,0,1,0,100,0,0,0,0,0,20,0,0,0,0,0,0,1,0,0,0,0,0,0,0,"Defias Watchman - On Respawn - Prevent Melee"),
+(@ENTRY,0,0,0,25,0,100,0,0,0,0,0,21,0,0,0,0,0,0,1,0,0,0,0,0,0,0,"Defias Watchman - On Respawn - Prevent Combat Movement"),
+(@ENTRY,0,1,0,25,0,100,0,0,0,0,0,20,0,0,0,0,0,0,1,0,0,0,0,0,0,0,"Defias Watchman - On Respawn - Prevent Melee"),
 (@ENTRY,0,2,0,4,0,100,0,0,0,0,0,11,6660,0,0,0,0,0,2,0,0,0,0,0,0,0,"Defias Watchman - On Aggro - Cast Shoot"),
 (@ENTRY,0,3,0,4,0,100,0,0,0,0,0,23,1,0,0,0,0,0,1,0,0,0,0,0,0,0,"Defias Watchman - On Aggro - Set Phase 1"),
 (@ENTRY,0,4,0,9,5,100,0,5,30,2200,3800,11,6660,0,0,0,0,0,2,0,0,0,0,0,0,0,"Defias Watchman - At 15-25 Yards - Cast Shoot"),
@@ -14539,8 +14539,8 @@ UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
 DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@ENTRY;
 DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=0;
 INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
-(@ENTRY,0,0,0,1,0,100,0,0,0,0,0,21,0,0,0,0,0,0,1,0,0,0,0,0,0,0,"Defias Magician - On Respawn - Prevent Combat Movement"),
-(@ENTRY,0,1,0,1,0,100,0,1000,1000,1800000,1800000,11,12544,0,0,0,0,0,1,0,0,0,0,0,0,0,"Defias Magician - On Respawn - Cast Frost Armor"),
+(@ENTRY,0,0,0,25,0,100,0,0,0,0,0,21,0,0,0,0,0,0,1,0,0,0,0,0,0,0,"Defias Magician - On Respawn - Prevent Combat Movement"),
+(@ENTRY,0,1,0,25,0,100,0,0,0,1800000,1800000,11,12544,0,0,0,0,0,1,0,0,0,0,0,0,0,"Defias Magician - On Respawn - Cast Frost Armor"),
 (@ENTRY,0,2,0,4,0,100,0,0,0,0,0,11,9053,0,0,0,0,0,2,0,0,0,0,0,0,0,"Defias Magician - On Aggro - Cast Fireball"),
 (@ENTRY,0,3,0,4,0,100,0,0,0,0,0,23,1,0,0,0,0,0,1,0,0,0,0,0,0,0,"Defias Magician - On Aggro - Set Phase 1"),
 (@ENTRY,0,4,0,9,13,100,0,0,40,4000,6600,11,9053,0,0,0,0,0,2,0,0,0,0,0,0,0,"Defias Magician - Above 30% Mana - Cast Fireball (Phase 1)"),
