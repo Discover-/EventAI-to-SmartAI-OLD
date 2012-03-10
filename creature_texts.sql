@@ -3907,8 +3907,8 @@ INSERT INTO `creature_text` (`entry`,`groupid`,`id`,`text`,`type`,`language`,`pr
 SET @ENTRY := 19255;
 DELETE FROM `creature_text` WHERE `entry`=@ENTRY;
 INSERT INTO `creature_text` (`entry`,`groupid`,`id`,`text`,`type`,`language`,`probability`,`emote`,`duration`,`sound`,`comment`) VALUES
-(@ENTRY,0,0,"Yea, we got problems. I think that's crystal clear. The question is, what are we gonna do about it?",12,0,100,0,0,0,"General Krakork"),
-(@ENTRY,0,1,"The warchief's put a price on Arazzius's head! As of right now, that no-good piece of demon refuse is enemy number one.",12,0,100,0,0,0,"General Krakork");
+(@ENTRY,0,0,"Yea, we got problems. I think that's crystal clear. The question is, what are we gonna do about it?",12,0,100,5,0,0,"General Krakork"),
+(@ENTRY,0,1,"The warchief's put a price on Arazzius's head! As of right now, that no-good piece of demon refuse is enemy number one.",12,0,100,5,0,0,"General Krakork");
 
 -- Text for Vagrant
 SET @ENTRY := 19283;
