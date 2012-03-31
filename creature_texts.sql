@@ -5319,3 +5319,22 @@ INSERT INTO `creature_text` (`entry`,`groupid`,`id`,`text`,`type`,`language`,`pr
 (@ENTRY,2,0,"Farunn walks the lands north of what your people call the Bittertide Falls. You will find him alone, but you will see her requires no defenders.",12,0,100,0,0,0,"Voice of Nozronn"),
 (@ENTRY,3,0,"Return to your companion. Tell him to go forth and claim his prize in Farunn.",12,0,100,0,0,0,"Voice of Nozronn"),
 (@ENTRY,4,0,"Once he has done so, tell him to leave this land in peace. He does not belong here.",12,0,100,0,0,0,"Voice of Nozronn");
+
+-- Text for Miles Sidney
+SET @ENTRY := 28347;
+DELETE FROM `creature_text` WHERE `entry`=@ENTRY;
+INSERT INTO `creature_text` (`entry`,`groupid`,`id`,`text`,`type`,`language`,`probability`,`emote`,`duration`,`sound`,`comment`) VALUES
+(@ENTRY,0,0,"Wright, have you finished that new concoction you've been working on? I'm tired of these spores filling up my shop!",12,0,100,1,0,0,"Miles Sidney"),
+(@ENTRY,1,0,"That's what you always say. Sometimes I think you're never going to finish that thing.",12,0,100,1,0,0,"Miles Sidney"),
+(@ENTRY,2,0,"Then put twice as much in next time!",12,0,100,1,0,0,"Miles Sidney"),
+(@ENTRY,3,0,"Remember, kid: You're always more wrong than you think you are. Double It!",12,0,100,1,0,0,"Miles Sidney"),
+(@ENTRY,4,0,"Only put half as much in next time.",12,0,100,1,0,0,"Miles Sidney");
+
+-- Text for Wright Williams
+SET @ENTRY := 28355;
+DELETE FROM `creature_text` WHERE `entry`=@ENTRY;
+INSERT INTO `creature_text` (`entry`,`groupid`,`id`,`text`,`type`,`language`,`probability`,`emote`,`duration`,`sound`,`comment`) VALUES
+(@ENTRY,0,0,"I'm working on it, I just don't want to sell it until I'm happy with it. It shouldn't be long.",12,0,100,1,0,0,"Wright Williams"),
+(@ENTRY,1,0,"Sir, our customers are complaining that there's not enough Maiden's Anguish in our Deadly Poisons.",12,0,100,1,0,0,"Wright Williams"),
+(@ENTRY,2,0,"Sir, I think we were close with the Lethargy Root in that last poison recipe.",12,0,100,1,0,0,"Wright Williams"),
+(@ENTRY,3,0,"Sir, our customers are complaining that there's too much Deathweed in our Anesthetics.",12,0,100,1,0,0,"Wright Williams");
